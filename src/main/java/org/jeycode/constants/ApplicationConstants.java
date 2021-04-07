@@ -53,7 +53,7 @@ public interface ApplicationConstants
 
       short LOCAL_WINNER = 1;
       short VISITOR_WINNER = 2;
-      short TIE = 1;
+      short TIE = 0;
 
       /*
        * Mail-const
