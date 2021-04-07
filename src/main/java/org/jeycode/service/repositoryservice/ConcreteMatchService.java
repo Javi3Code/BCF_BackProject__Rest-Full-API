@@ -111,6 +111,16 @@ public class ConcreteMatchService implements RestServiceUtils
             }
       }
 
+      public ConcreteMatch save(ConcreteMatch openConcreteMatch)
+      {
+            return concreteMatchRepository.save(openConcreteMatch);
+      }
+
+      public Optional<ConcreteMatch> findByResultOfConcreteMatchIsNull()
+      {
+            return concreteMatchRepository.findByResultOfConcreteMatchIsNull();
+      }
+
       /*
        * =============================private methods=============================
        */
@@ -145,16 +155,6 @@ public class ConcreteMatchService implements RestServiceUtils
             log.info("Se creo el partido correctamente");
             sendMailService.sendMailInfoStartNewFootballDay(localTeam + VERSUS + visitorTeam,playerService.allPlayerMail());
             return ResponseEntity.ok(concreteMatchMapper.toSimpleConcreteMatchDto(concreteMatchSaved));
-      }
-
-      public ConcreteMatch save(ConcreteMatch openConcreteMatch)
-      {
-            return concreteMatchRepository.save(openConcreteMatch);
-      }
-
-      public Optional<ConcreteMatch> findByResultOfConcreteMatchIsNull()
-      {
-            return concreteMatchRepository.findByResultOfConcreteMatchIsNull();
       }
 
 }
