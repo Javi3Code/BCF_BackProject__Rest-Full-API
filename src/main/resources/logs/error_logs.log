@@ -1,0 +1,702 @@
+2021-04-05 12:29:34.947  INFO 11060 --- [main] org.jeycode.ApplicationRunner            : Starting ApplicationRunner using Java 11.0.6 on LAPTOP-0FVBB724 with PID 11060 (C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes started by JAVIER in C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI)
+2021-04-05 12:29:34.950  INFO 11060 --- [main] org.jeycode.ApplicationRunner            : No active profile set, falling back to default profiles: default
+2021-04-05 12:29:36.195  INFO 11060 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-05 12:29:36.479  INFO 11060 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 264 ms. Found 5 JPA repository interfaces.
+2021-04-05 12:29:37.655  INFO 11060 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-05 12:29:37.670  INFO 11060 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-05 12:29:37.671  INFO 11060 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-05 12:29:37.802  INFO 11060 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-05 12:29:37.803  INFO 11060 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2776 ms
+2021-04-05 12:29:37.858  INFO 11060 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-05 12:29:38.114  INFO 11060 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-05 12:29:38.121  INFO 11060 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:1b125fb4-76da-4ec8-bf9d-895e418a21d2'
+2021-04-05 12:29:38.325  INFO 11060 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-05 12:29:38.395  INFO 11060 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-04-05 12:29:38.572  INFO 11060 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-05 12:29:38.736  INFO 11060 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-04-05 12:29:39.667  INFO 11060 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-05 12:29:39.676  INFO 11060 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-05 12:29:40.515  WARN 11060 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'concreteMatchController' defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\controllers\ConcreteMatchController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'concreteMatchService' defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\service\repositoryservice\ConcreteMatchService.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'playerService' defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\service\repositoryservice\PlayerService.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'playerMapperImpl' defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\mappers\PlayerMapperImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'playerFootballMatchMapperImpl' defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\mappers\PlayerFootballMatchMapperImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'playerMapperImpl': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2021-04-05 12:29:40.518  INFO 11060 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-05 12:29:40.519  INFO 11060 --- [main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-04-05 12:29:40.538  INFO 11060 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-04-05 12:29:40.547  INFO 11060 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-04-05 12:29:40.550  INFO 11060 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-04-05 12:29:40.575  INFO 11060 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-04-05 12:29:40.618 ERROR 11060 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+   concreteMatchController defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\controllers\ConcreteMatchController.class]
+      ↓
+   concreteMatchService defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\service\repositoryservice\ConcreteMatchService.class]
+      ↓
+   playerService defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\service\repositoryservice\PlayerService.class]
+┌─────┐
+|  playerMapperImpl defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\mappers\PlayerMapperImpl.class]
+↑     ↓
+|  playerFootballMatchMapperImpl defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\mappers\PlayerFootballMatchMapperImpl.class]
+└─────┘
+
+
+2021-04-05 12:33:45.818  INFO 5376 --- [main] org.jeycode.ApplicationRunner            : Starting ApplicationRunner using Java 11.0.6 on LAPTOP-0FVBB724 with PID 5376 (C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes started by JAVIER in C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI)
+2021-04-05 12:33:45.821  INFO 5376 --- [main] org.jeycode.ApplicationRunner            : No active profile set, falling back to default profiles: default
+2021-04-05 12:33:46.754  INFO 5376 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-05 12:33:46.898  INFO 5376 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 134 ms. Found 5 JPA repository interfaces.
+2021-04-05 12:33:47.847  INFO 5376 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-05 12:33:47.860  INFO 5376 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-05 12:33:47.866  INFO 5376 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-05 12:33:47.969  INFO 5376 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-05 12:33:47.970  INFO 5376 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2087 ms
+2021-04-05 12:33:48.024  INFO 5376 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-05 12:33:48.268  INFO 5376 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-05 12:33:48.299  INFO 5376 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:353d7b97-b48a-47be-ad42-c396154f7ee6'
+2021-04-05 12:33:48.501  INFO 5376 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-05 12:33:48.568  INFO 5376 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-04-05 12:33:48.870  INFO 5376 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-05 12:33:49.165  INFO 5376 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-04-05 12:33:50.305  INFO 5376 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-05 12:33:50.314  INFO 5376 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-05 12:33:50.861  WARN 5376 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'concreteMatchController' defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\controllers\ConcreteMatchController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'concreteMatchService' defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\service\repositoryservice\ConcreteMatchService.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'playerService' defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\service\repositoryservice\PlayerService.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'playerMapperImpl' defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\mappers\PlayerMapperImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'playerFootballMatchMapperImpl' defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\mappers\PlayerFootballMatchMapperImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'playerMapperImpl': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2021-04-05 12:33:50.862  INFO 5376 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-05 12:33:50.863  INFO 5376 --- [main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-04-05 12:33:50.875  INFO 5376 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-04-05 12:33:50.880  INFO 5376 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-04-05 12:33:50.881  INFO 5376 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-04-05 12:33:50.893  INFO 5376 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-04-05 12:33:50.911 ERROR 5376 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+   concreteMatchController defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\controllers\ConcreteMatchController.class]
+      ↓
+   concreteMatchService defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\service\repositoryservice\ConcreteMatchService.class]
+      ↓
+   playerService defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\service\repositoryservice\PlayerService.class]
+┌─────┐
+|  playerMapperImpl defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\mappers\PlayerMapperImpl.class]
+↑     ↓
+|  playerFootballMatchMapperImpl defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\mappers\PlayerFootballMatchMapperImpl.class]
+└─────┘
+
+
+2021-04-05 12:36:41.283  INFO 9496 --- [main] org.jeycode.ApplicationRunner            : Starting ApplicationRunner using Java 11.0.6 on LAPTOP-0FVBB724 with PID 9496 (C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes started by JAVIER in C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI)
+2021-04-05 12:36:41.286  INFO 9496 --- [main] org.jeycode.ApplicationRunner            : No active profile set, falling back to default profiles: default
+2021-04-05 12:36:42.384  INFO 9496 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-05 12:36:42.533  INFO 9496 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 138 ms. Found 5 JPA repository interfaces.
+2021-04-05 12:36:43.574  INFO 9496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-05 12:36:43.595  INFO 9496 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-05 12:36:43.601  INFO 9496 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-05 12:36:43.735  INFO 9496 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-05 12:36:43.735  INFO 9496 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2383 ms
+2021-04-05 12:36:43.809  INFO 9496 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-05 12:36:44.226  INFO 9496 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-05 12:36:44.261  INFO 9496 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:6a4e2047-1d95-4826-b0c9-bce7782313f0'
+2021-04-05 12:36:44.611  INFO 9496 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-05 12:36:44.744  INFO 9496 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-04-05 12:36:44.960  INFO 9496 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-05 12:36:45.119  INFO 9496 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-04-05 12:36:46.063  INFO 9496 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-05 12:36:46.072  INFO 9496 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-05 12:36:46.670  WARN 9496 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'concreteMatchController' defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\controllers\ConcreteMatchController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'concreteMatchService' defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\service\repositoryservice\ConcreteMatchService.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'playerService' defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\service\repositoryservice\PlayerService.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'playerMapperImpl' defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\mappers\PlayerMapperImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'playerFootballMatchMapperImpl' defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\mappers\PlayerFootballMatchMapperImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'playerMapperImpl': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2021-04-05 12:36:46.671  INFO 9496 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-05 12:36:46.672  INFO 9496 --- [main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-04-05 12:36:46.684  INFO 9496 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-04-05 12:36:46.686  INFO 9496 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-04-05 12:36:46.688  INFO 9496 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-04-05 12:36:46.703  INFO 9496 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-04-05 12:36:46.723 ERROR 9496 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+   concreteMatchController defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\controllers\ConcreteMatchController.class]
+      ↓
+   concreteMatchService defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\service\repositoryservice\ConcreteMatchService.class]
+      ↓
+   playerService defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\service\repositoryservice\PlayerService.class]
+┌─────┐
+|  playerMapperImpl defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\mappers\PlayerMapperImpl.class]
+↑     ↓
+|  playerFootballMatchMapperImpl defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\mappers\PlayerFootballMatchMapperImpl.class]
+└─────┘
+
+
+2021-04-05 12:37:09.108  INFO 7204 --- [main] org.jeycode.ApplicationRunner            : Starting ApplicationRunner using Java 11.0.6 on LAPTOP-0FVBB724 with PID 7204 (C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes started by JAVIER in C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI)
+2021-04-05 12:37:09.111  INFO 7204 --- [main] org.jeycode.ApplicationRunner            : No active profile set, falling back to default profiles: default
+2021-04-05 12:37:10.087  INFO 7204 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-05 12:37:10.232  INFO 7204 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 132 ms. Found 5 JPA repository interfaces.
+2021-04-05 12:37:11.377  INFO 7204 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-05 12:37:11.403  INFO 7204 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-05 12:37:11.404  INFO 7204 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-05 12:37:11.657  INFO 7204 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-05 12:37:11.658  INFO 7204 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2487 ms
+2021-04-05 12:37:11.766  INFO 7204 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-05 12:37:12.145  INFO 7204 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-05 12:37:12.154  INFO 7204 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:d4391e19-bed9-4250-9d2f-10b984b78ff6'
+2021-04-05 12:37:12.368  INFO 7204 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-05 12:37:12.441  INFO 7204 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-04-05 12:37:12.625  INFO 7204 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-05 12:37:12.825  INFO 7204 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-04-05 12:37:14.140  INFO 7204 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-05 12:37:14.153  INFO 7204 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-05 12:37:14.932  WARN 7204 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'concreteMatchController' defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\controllers\ConcreteMatchController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'concreteMatchService' defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\service\repositoryservice\ConcreteMatchService.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'playerService' defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\service\repositoryservice\PlayerService.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'playerMapperImpl' defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\mappers\PlayerMapperImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'playerFootballMatchMapperImpl' defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\mappers\PlayerFootballMatchMapperImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'playerMapperImpl': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2021-04-05 12:37:14.933  INFO 7204 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-05 12:37:14.934  INFO 7204 --- [main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-04-05 12:37:14.949  INFO 7204 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-04-05 12:37:14.955  INFO 7204 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-04-05 12:37:14.958  INFO 7204 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-04-05 12:37:14.977  INFO 7204 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-04-05 12:37:15.009 ERROR 7204 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+   concreteMatchController defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\controllers\ConcreteMatchController.class]
+      ↓
+   concreteMatchService defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\service\repositoryservice\ConcreteMatchService.class]
+      ↓
+   playerService defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\service\repositoryservice\PlayerService.class]
+┌─────┐
+|  playerMapperImpl defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\mappers\PlayerMapperImpl.class]
+↑     ↓
+|  playerFootballMatchMapperImpl defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\mappers\PlayerFootballMatchMapperImpl.class]
+└─────┘
+
+
+2021-04-05 12:37:27.297  INFO 7772 --- [main] org.jeycode.ApplicationRunner            : Starting ApplicationRunner using Java 11.0.6 on LAPTOP-0FVBB724 with PID 7772 (C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes started by JAVIER in C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI)
+2021-04-05 12:37:27.302  INFO 7772 --- [main] org.jeycode.ApplicationRunner            : No active profile set, falling back to default profiles: default
+2021-04-05 12:37:28.739  INFO 7772 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-05 12:37:28.945  INFO 7772 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 189 ms. Found 5 JPA repository interfaces.
+2021-04-05 12:37:30.287  INFO 7772 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-05 12:37:30.306  INFO 7772 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-05 12:37:30.306  INFO 7772 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-05 12:37:30.495  INFO 7772 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-05 12:37:30.496  INFO 7772 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3095 ms
+2021-04-05 12:37:30.577  INFO 7772 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-05 12:37:30.908  INFO 7772 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-05 12:37:30.920  INFO 7772 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:b8e24d69-b334-468e-96a2-eacc1725233d'
+2021-04-05 12:37:31.209  INFO 7772 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-05 12:37:31.306  INFO 7772 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-04-05 12:37:31.552  INFO 7772 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-05 12:37:31.765  INFO 7772 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-04-05 12:37:32.882  INFO 7772 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-05 12:37:32.894  INFO 7772 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-05 12:37:33.647  WARN 7772 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'concreteMatchController' defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\controllers\ConcreteMatchController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'concreteMatchService' defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\service\repositoryservice\ConcreteMatchService.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'playerService' defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\service\repositoryservice\PlayerService.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'playerMapperImpl' defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\mappers\PlayerMapperImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'playerFootballMatchMapperImpl' defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\mappers\PlayerFootballMatchMapperImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'playerMapperImpl': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2021-04-05 12:37:33.649  INFO 7772 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-05 12:37:33.650  INFO 7772 --- [main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-04-05 12:37:33.663  INFO 7772 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-04-05 12:37:33.668  INFO 7772 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-04-05 12:37:33.671  INFO 7772 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-04-05 12:37:33.688  INFO 7772 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-04-05 12:37:33.715 ERROR 7772 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+   concreteMatchController defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\controllers\ConcreteMatchController.class]
+      ↓
+   concreteMatchService defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\service\repositoryservice\ConcreteMatchService.class]
+      ↓
+   playerService defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\service\repositoryservice\PlayerService.class]
+┌─────┐
+|  playerMapperImpl defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\mappers\PlayerMapperImpl.class]
+↑     ↓
+|  playerFootballMatchMapperImpl defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\mappers\PlayerFootballMatchMapperImpl.class]
+└─────┘
+
+
+2021-04-05 12:37:52.934  INFO 6460 --- [main] org.jeycode.ApplicationRunner            : Starting ApplicationRunner using Java 11.0.6 on LAPTOP-0FVBB724 with PID 6460 (C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes started by JAVIER in C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI)
+2021-04-05 12:37:52.940  INFO 6460 --- [main] org.jeycode.ApplicationRunner            : No active profile set, falling back to default profiles: default
+2021-04-05 12:37:54.360  INFO 6460 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-05 12:37:54.586  INFO 6460 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 213 ms. Found 5 JPA repository interfaces.
+2021-04-05 12:37:55.911  INFO 6460 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-05 12:37:55.930  INFO 6460 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-05 12:37:55.937  INFO 6460 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-05 12:37:56.093  INFO 6460 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-05 12:37:56.093  INFO 6460 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3068 ms
+2021-04-05 12:37:56.179  INFO 6460 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-05 12:37:56.473  INFO 6460 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-05 12:37:56.487  INFO 6460 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:27726e4b-588c-455e-86f2-91277e60724f'
+2021-04-05 12:37:56.767  INFO 6460 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-05 12:37:56.856  INFO 6460 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-04-05 12:37:57.095  INFO 6460 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-05 12:37:57.312  INFO 6460 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-04-05 12:37:58.521  INFO 6460 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-05 12:37:58.534  INFO 6460 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-05 12:37:59.291  WARN 6460 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'concreteMatchController' defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\controllers\ConcreteMatchController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'concreteMatchService' defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\service\repositoryservice\ConcreteMatchService.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'playerService' defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\service\repositoryservice\PlayerService.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'playerMapperImpl' defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\mappers\PlayerMapperImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'playerFootballMatchMapperImpl' defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\mappers\PlayerFootballMatchMapperImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'playerMapperImpl': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2021-04-05 12:37:59.293  INFO 6460 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-05 12:37:59.295  INFO 6460 --- [main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-04-05 12:37:59.308  INFO 6460 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-04-05 12:37:59.315  INFO 6460 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-04-05 12:37:59.317  INFO 6460 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-04-05 12:37:59.335  INFO 6460 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-04-05 12:37:59.364 ERROR 6460 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+   concreteMatchController defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\controllers\ConcreteMatchController.class]
+      ↓
+   concreteMatchService defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\service\repositoryservice\ConcreteMatchService.class]
+      ↓
+   playerService defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\service\repositoryservice\PlayerService.class]
+┌─────┐
+|  playerMapperImpl defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\mappers\PlayerMapperImpl.class]
+↑     ↓
+|  playerFootballMatchMapperImpl defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\mappers\PlayerFootballMatchMapperImpl.class]
+└─────┘
+
+
+2021-04-05 12:38:47.378  INFO 16680 --- [main] org.jeycode.ApplicationRunner            : Starting ApplicationRunner using Java 11.0.6 on LAPTOP-0FVBB724 with PID 16680 (C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes started by JAVIER in C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI)
+2021-04-05 12:38:47.382  INFO 16680 --- [main] org.jeycode.ApplicationRunner            : No active profile set, falling back to default profiles: default
+2021-04-05 12:38:48.748  INFO 16680 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-05 12:38:48.975  INFO 16680 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 214 ms. Found 5 JPA repository interfaces.
+2021-04-05 12:38:50.316  INFO 16680 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-05 12:38:50.335  INFO 16680 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-05 12:38:50.337  INFO 16680 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-05 12:38:50.503  INFO 16680 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-05 12:38:50.504  INFO 16680 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3037 ms
+2021-04-05 12:38:50.598  INFO 16680 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-05 12:38:50.923  INFO 16680 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-05 12:38:50.933  INFO 16680 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:c0ebdb66-281e-494d-bd84-8b190daf7a23'
+2021-04-05 12:38:51.251  INFO 16680 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-05 12:38:51.349  INFO 16680 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-04-05 12:38:51.592  INFO 16680 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-05 12:38:51.805  INFO 16680 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-04-05 12:38:52.991  INFO 16680 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-05 12:38:53.003  INFO 16680 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-05 12:38:53.778  WARN 16680 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'concreteMatchController' defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\controllers\ConcreteMatchController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'concreteMatchService' defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\service\repositoryservice\ConcreteMatchService.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'playerService' defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\service\repositoryservice\PlayerService.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'playerMapperImpl' defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\mappers\PlayerMapperImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'playerFootballMatchMapperImpl': Unsatisfied dependency expressed through field 'playerMapper'; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'playerMapperImpl': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2021-04-05 12:38:53.781  INFO 16680 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-05 12:38:53.781  INFO 16680 --- [main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-04-05 12:38:53.795  INFO 16680 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-04-05 12:38:53.801  INFO 16680 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-04-05 12:38:53.804  INFO 16680 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-04-05 12:38:53.819  INFO 16680 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-04-05 12:38:53.849 ERROR 16680 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+   concreteMatchController defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\controllers\ConcreteMatchController.class]
+      ↓
+   concreteMatchService defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\service\repositoryservice\ConcreteMatchService.class]
+      ↓
+   playerService defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\service\repositoryservice\PlayerService.class]
+┌─────┐
+|  playerMapperImpl defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\mappers\PlayerMapperImpl.class]
+↑     ↓
+|  playerFootballMatchMapperImpl (field private org.jeycode.mappers.PlayerMapper org.jeycode.mappers.PlayerFootballMatchMapperImpl.playerMapper)
+└─────┘
+
+
+2021-04-05 12:39:12.338  INFO 15416 --- [main] org.jeycode.ApplicationRunner            : Starting ApplicationRunner using Java 11.0.6 on LAPTOP-0FVBB724 with PID 15416 (C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes started by JAVIER in C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI)
+2021-04-05 12:39:12.342  INFO 15416 --- [main] org.jeycode.ApplicationRunner            : No active profile set, falling back to default profiles: default
+2021-04-05 12:39:13.539  INFO 15416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-05 12:39:13.746  INFO 15416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 191 ms. Found 5 JPA repository interfaces.
+2021-04-05 12:39:15.082  INFO 15416 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-05 12:39:15.100  INFO 15416 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-05 12:39:15.101  INFO 15416 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-05 12:39:15.273  INFO 15416 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-05 12:39:15.274  INFO 15416 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2869 ms
+2021-04-05 12:39:15.356  INFO 15416 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-05 12:39:15.702  INFO 15416 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-05 12:39:15.714  INFO 15416 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:c0d12e69-bc97-4833-ad83-752d24d9bea7'
+2021-04-05 12:39:15.991  INFO 15416 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-05 12:39:16.075  INFO 15416 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-04-05 12:39:16.328  INFO 15416 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-05 12:39:16.583  INFO 15416 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-04-05 12:39:17.898  INFO 15416 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-05 12:39:17.912  INFO 15416 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-05 12:39:18.709  WARN 15416 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'concreteMatchController' defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\controllers\ConcreteMatchController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'concreteMatchService' defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\service\repositoryservice\ConcreteMatchService.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'playerService' defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\service\repositoryservice\PlayerService.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'playerMapperImpl' defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\mappers\PlayerMapperImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'playerFootballMatchMapperImpl': Unsatisfied dependency expressed through field 'playerMapper'; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'playerMapperImpl': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2021-04-05 12:39:18.710  INFO 15416 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-05 12:39:18.711  INFO 15416 --- [main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-04-05 12:39:18.726  INFO 15416 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-04-05 12:39:18.731  INFO 15416 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-04-05 12:39:18.735  INFO 15416 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-04-05 12:39:18.759  INFO 15416 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-04-05 12:39:18.790 ERROR 15416 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+   concreteMatchController defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\controllers\ConcreteMatchController.class]
+      ↓
+   concreteMatchService defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\service\repositoryservice\ConcreteMatchService.class]
+      ↓
+   playerService defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\service\repositoryservice\PlayerService.class]
+┌─────┐
+|  playerMapperImpl defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\mappers\PlayerMapperImpl.class]
+↑     ↓
+|  playerFootballMatchMapperImpl (field private org.jeycode.mappers.PlayerMapper org.jeycode.mappers.PlayerFootballMatchMapperImpl.playerMapper)
+└─────┘
+
+
+2021-04-05 12:39:38.662  INFO 16412 --- [main] org.jeycode.ApplicationRunner            : Starting ApplicationRunner using Java 11.0.6 on LAPTOP-0FVBB724 with PID 16412 (C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes started by JAVIER in C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI)
+2021-04-05 12:39:38.667  INFO 16412 --- [main] org.jeycode.ApplicationRunner            : No active profile set, falling back to default profiles: default
+2021-04-05 12:39:40.089  INFO 16412 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-05 12:39:40.299  INFO 16412 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 194 ms. Found 5 JPA repository interfaces.
+2021-04-05 12:39:41.636  INFO 16412 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-05 12:39:41.656  INFO 16412 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-05 12:39:41.657  INFO 16412 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-05 12:39:41.831  INFO 16412 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-05 12:39:41.832  INFO 16412 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3078 ms
+2021-04-05 12:39:41.920  INFO 16412 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-05 12:39:42.226  INFO 16412 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-05 12:39:42.241  INFO 16412 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:1d7d42c8-d725-44ea-8c14-568a5749c94a'
+2021-04-05 12:39:42.512  INFO 16412 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-05 12:39:42.606  INFO 16412 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-04-05 12:39:42.842  INFO 16412 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-05 12:39:43.072  INFO 16412 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-04-05 12:39:44.305  INFO 16412 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-05 12:39:44.317  INFO 16412 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-05 12:39:45.411  INFO 16412 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService
+2021-04-05 12:39:45.413  INFO 16412 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'sendMailServiceTaskExecutor'
+2021-04-05 12:39:45.491  WARN 16412 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-05 12:39:46.064  INFO 16412 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-05 12:39:46.081  INFO 16412 --- [main] org.jeycode.ApplicationRunner            : Started ApplicationRunner in 8.095 seconds (JVM running for 8.864)
+2021-04-05 12:40:12.751  INFO 16412 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-05 12:40:12.752  INFO 16412 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-05 12:40:12.753  INFO 16412 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-05 12:40:12.977  INFO 16412 --- [http-nio-8080-exec-1] o.j.s.repositoryservice.PlayerService    : Se han obtenido todos los jugadores de la database.
+2021-04-05 12:40:21.160  INFO 16412 --- [http-nio-8080-exec-5] o.j.s.repositoryservice.TeamService      : Se añadió el equipo correctamente
+2021-04-05 12:40:29.433  INFO 16412 --- [http-nio-8080-exec-8] o.j.s.r.ConcreteMatchService             : Se creo el partido correctamente
+2021-04-05 12:40:29.471  INFO 16412 --- [Jey-Code-BCF1] o.j.s.genericservice.SendMailService     : Aún no existen usuarios a los que avisar
+2021-04-05 12:40:33.483  INFO 16412 --- [http-nio-8080-exec-9] o.j.s.repositoryservice.PlayerService    : Se añadió el jugador correctamente
+2021-04-05 12:40:33.483  INFO 16412 --- [Jey-Code-BCF1] o.j.s.genericservice.SendMailService     : Se inicia servicio de mail para avisar de registro
+2021-04-05 12:40:36.746  INFO 16412 --- [http-nio-8080-exec-2] o.j.s.repositoryservice.PlayerService    : Se añadió el jugador correctamente
+2021-04-05 12:40:43.155  INFO 16412 --- [http-nio-8080-exec-6] o.j.s.r.FootballDayService               : Se ha añadido la porra correctamente
+2021-04-05 12:40:45.645  INFO 16412 --- [Jey-Code-BCF1] o.j.s.genericservice.SendMailService     : Se envío mail de registro a asd
+2021-04-05 12:40:45.647  INFO 16412 --- [Jey-Code-BCF1] o.j.s.genericservice.SendMailService     : Se inicia servicio de mail para avisar de registro
+2021-04-05 12:40:48.353  INFO 16412 --- [http-nio-8080-exec-10] o.j.s.r.FootballDayService               : Se ha añadido la porra correctamente
+2021-04-05 12:40:56.292  INFO 16412 --- [Jey-Code-BCF1] o.j.s.genericservice.SendMailService     : Se envío mail de registro a asda
+2021-04-05 12:40:57.490  INFO 16412 --- [http-nio-8080-exec-7] o.j.s.r.FootballDayService               : Se han obtenido todos los datos requeridos.
+2021-04-05 12:41:05.065  INFO 16412 --- [http-nio-8080-exec-3] o.j.s.g.PointCalculationService          : Se calcularon los puntos de cada jugador
+2021-04-05 12:41:05.067  INFO 16412 --- [http-nio-8080-exec-3] o.j.s.r.FootballDayService               : Se han finalizado el partido y actualizado todos los puntos
+2021-04-05 12:41:05.078  INFO 16412 --- [Jey-Code-BCF1] o.j.s.genericservice.SendMailService     : Se inicia servicio de mail para notificar el fin de la jornada
+2021-04-05 12:41:15.933  INFO 16412 --- [Jey-Code-BCF1] o.j.s.genericservice.SendMailService     : Se enviaron los mails de notificación, fin de jornada
+2021-04-05 12:41:17.921  INFO 16412 --- [http-nio-8080-exec-4] o.j.s.repositoryservice.PlayerService    : Se han obtenido todos los jugadores de la database.
+2021-04-05 12:44:48.842  INFO 10644 --- [main] org.jeycode.ApplicationRunner            : Starting ApplicationRunner using Java 11.0.6 on LAPTOP-0FVBB724 with PID 10644 (C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes started by JAVIER in C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI)
+2021-04-05 12:44:48.846  INFO 10644 --- [main] org.jeycode.ApplicationRunner            : No active profile set, falling back to default profiles: default
+2021-04-05 12:44:50.172  INFO 10644 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-05 12:44:50.396  INFO 10644 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 208 ms. Found 5 JPA repository interfaces.
+2021-04-05 12:44:51.677  INFO 10644 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-05 12:44:51.696  INFO 10644 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-05 12:44:51.704  INFO 10644 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-05 12:44:51.855  INFO 10644 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-05 12:44:51.856  INFO 10644 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2918 ms
+2021-04-05 12:44:51.931  INFO 10644 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-05 12:44:52.252  INFO 10644 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-05 12:44:52.264  INFO 10644 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:8926fff5-a347-4d6e-b2b0-0edac4ea2e15'
+2021-04-05 12:44:52.535  INFO 10644 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-05 12:44:52.622  INFO 10644 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-04-05 12:44:52.842  INFO 10644 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-05 12:44:53.056  INFO 10644 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-04-05 12:44:54.276  INFO 10644 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-05 12:44:54.288  INFO 10644 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-05 12:44:55.055  WARN 10644 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'concreteMatchController' defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\controllers\ConcreteMatchController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'concreteMatchService' defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\service\repositoryservice\ConcreteMatchService.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'playerService' defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\service\repositoryservice\PlayerService.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'playerMapperImpl' defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\mappers\PlayerMapperImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'playerFootballMatchMapperImpl' defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\mappers\PlayerFootballMatchMapperImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'playerMapperImpl': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2021-04-05 12:44:55.056  INFO 10644 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-05 12:44:55.056  INFO 10644 --- [main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-04-05 12:44:55.067  INFO 10644 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-04-05 12:44:55.074  INFO 10644 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-04-05 12:44:55.077  INFO 10644 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-04-05 12:44:55.093  INFO 10644 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-04-05 12:44:55.121 ERROR 10644 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+   concreteMatchController defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\controllers\ConcreteMatchController.class]
+      ↓
+   concreteMatchService defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\service\repositoryservice\ConcreteMatchService.class]
+      ↓
+   playerService defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\service\repositoryservice\PlayerService.class]
+┌─────┐
+|  playerMapperImpl defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\mappers\PlayerMapperImpl.class]
+↑     ↓
+|  playerFootballMatchMapperImpl defined in file [C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes\org\jeycode\mappers\PlayerFootballMatchMapperImpl.class]
+└─────┘
+
+
+2021-04-05 12:47:48.143  INFO 17404 --- [main] org.jeycode.ApplicationRunner            : Starting ApplicationRunner using Java 11.0.6 on LAPTOP-0FVBB724 with PID 17404 (C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes started by JAVIER in C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI)
+2021-04-05 12:47:48.146  INFO 17404 --- [main] org.jeycode.ApplicationRunner            : No active profile set, falling back to default profiles: default
+2021-04-05 12:47:49.156  INFO 17404 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-05 12:47:49.291  INFO 17404 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 126 ms. Found 5 JPA repository interfaces.
+2021-04-05 12:47:50.291  INFO 17404 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-05 12:47:50.305  INFO 17404 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-05 12:47:50.310  INFO 17404 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-05 12:47:50.438  INFO 17404 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-05 12:47:50.438  INFO 17404 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2233 ms
+2021-04-05 12:47:50.496  INFO 17404 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-05 12:47:50.747  INFO 17404 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-05 12:47:50.757  INFO 17404 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:14a3e892-cd0b-47a7-baec-4587625f6c72'
+2021-04-05 12:47:50.948  INFO 17404 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-05 12:47:51.005  INFO 17404 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-04-05 12:47:51.154  INFO 17404 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-05 12:47:51.307  INFO 17404 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-04-05 12:47:52.749  INFO 17404 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-05 12:47:52.760  INFO 17404 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-05 12:47:53.459  INFO 17404 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService
+2021-04-05 12:47:53.461  INFO 17404 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'sendMailServiceTaskExecutor'
+2021-04-05 12:47:53.515  WARN 17404 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-05 12:47:53.923  INFO 17404 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-05 12:47:53.934  INFO 17404 --- [main] org.jeycode.ApplicationRunner            : Started ApplicationRunner in 6.334 seconds (JVM running for 6.859)
+2021-04-05 12:48:01.809  INFO 17404 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-05 12:48:01.810  INFO 17404 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-05 12:48:01.812  INFO 17404 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-04-05 12:48:02.172  INFO 17404 --- [http-nio-8080-exec-2] o.j.s.repositoryservice.TeamService      : Se añadió el equipo correctamente
+2021-04-05 12:48:04.816  INFO 17404 --- [http-nio-8080-exec-4] o.j.s.r.ConcreteMatchService             : Se creo el partido correctamente
+2021-04-05 12:48:04.860  INFO 17404 --- [Jey-Code-BCF1] o.j.s.genericservice.SendMailService     : Aún no existen usuarios a los que avisar
+2021-04-05 12:48:06.215  INFO 17404 --- [http-nio-8080-exec-3] o.j.s.repositoryservice.PlayerService    : Se añadió el jugador correctamente
+2021-04-05 12:48:06.216  INFO 17404 --- [Jey-Code-BCF1] o.j.s.genericservice.SendMailService     : Se inicia servicio de mail para avisar de registro
+2021-04-05 12:48:13.301  INFO 17404 --- [http-nio-8080-exec-7] o.j.s.r.FootballDayService               : Se ha añadido la porra correctamente
+2021-04-05 12:48:15.043  INFO 17404 --- [http-nio-8080-exec-8] o.j.s.g.PointCalculationService          : Se calcularon los puntos de cada jugador
+2021-04-05 12:48:15.045  INFO 17404 --- [http-nio-8080-exec-8] o.j.s.r.FootballDayService               : Se han finalizado el partido y actualizado todos los puntos
+2021-04-05 12:48:17.701  INFO 17404 --- [Jey-Code-BCF1] o.j.s.genericservice.SendMailService     : Se envío mail de registro a asd
+2021-04-05 12:48:17.702  INFO 17404 --- [Jey-Code-BCF1] o.j.s.genericservice.SendMailService     : Se inicia servicio de mail para notificar el fin de la jornada
+2021-04-05 12:48:28.309  INFO 17404 --- [Jey-Code-BCF1] o.j.s.genericservice.SendMailService     : Se enviaron los mails de notificación, fin de jornada
+2021-04-05 12:50:12.339  INFO 13340 --- [main] org.jeycode.ApplicationRunner            : Starting ApplicationRunner using Java 11.0.6 on LAPTOP-0FVBB724 with PID 13340 (C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI\target\classes started by JAVIER in C:\Users\JAVIER\Desktop\EClipse ACTIV\WORKSPACEs\SPRINGBOOT_WS\BCF_Project_Backend_RestFullAPI)
+2021-04-05 12:50:12.342  INFO 13340 --- [main] org.jeycode.ApplicationRunner            : No active profile set, falling back to default profiles: default
+2021-04-05 12:50:13.338  INFO 13340 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-05 12:50:13.479  INFO 13340 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 130 ms. Found 5 JPA repository interfaces.
+2021-04-05 12:50:14.991  INFO 13340 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-05 12:50:15.007  INFO 13340 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-05 12:50:15.008  INFO 13340 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-05 12:50:15.164  INFO 13340 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-05 12:50:15.164  INFO 13340 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2762 ms
+2021-04-05 12:50:15.229  INFO 13340 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-05 12:50:15.479  INFO 13340 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-05 12:50:15.487  INFO 13340 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:c507ad20-9d90-4038-9f44-aa49c7a1635b'
+2021-04-05 12:50:15.686  INFO 13340 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-05 12:50:15.750  INFO 13340 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-04-05 12:50:15.916  INFO 13340 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-05 12:50:16.061  INFO 13340 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-04-05 12:50:17.130  INFO 13340 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-05 12:50:17.139  INFO 13340 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-05 12:50:17.827  INFO 13340 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService
+2021-04-05 12:50:17.828  INFO 13340 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'sendMailServiceTaskExecutor'
+2021-04-05 12:50:17.874  WARN 13340 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-05 12:50:18.409  INFO 13340 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-05 12:50:18.431  INFO 13340 --- [main] org.jeycode.ApplicationRunner            : Started ApplicationRunner in 6.626 seconds (JVM running for 7.135)
+2021-04-05 12:50:20.808  INFO 13340 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-05 12:50:20.809  INFO 13340 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-05 12:50:20.810  INFO 13340 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-05 12:50:21.198  INFO 13340 --- [http-nio-8080-exec-2] o.j.s.repositoryservice.TeamService      : Se añadió el equipo correctamente
+2021-04-05 12:50:22.896  INFO 13340 --- [http-nio-8080-exec-3] o.j.s.r.ConcreteMatchService             : Se creo el partido correctamente
+2021-04-05 12:50:22.935  INFO 13340 --- [Jey-Code-BCF1] o.j.s.genericservice.SendMailService     : Aún no existen usuarios a los que avisar
+2021-04-05 12:50:24.922  INFO 13340 --- [http-nio-8080-exec-4] o.j.s.repositoryservice.PlayerService    : Se añadió el jugador correctamente
+2021-04-05 12:50:24.922  INFO 13340 --- [Jey-Code-BCF1] o.j.s.genericservice.SendMailService     : Se inicia servicio de mail para avisar de registro
+2021-04-05 12:50:27.864  INFO 13340 --- [http-nio-8080-exec-5] o.j.s.repositoryservice.PlayerService    : Se añadió el jugador correctamente
+2021-04-05 12:50:31.197 ERROR 13340 --- [http-nio-8080-exec-6] o.j.s.repositoryservice.PlayerService    : Nick no válido, ya existe un usuario con ese mismo nick.
+
+org.jeycode.execptionsmanaged.UniqueConstraintException: Nick no válido, ya existe un usuario con ese mismo nick.
+	at org.jeycode.service.repositoryservice.PlayerService.tryToSave(PlayerService.java:180) ~[classes/:na]
+	at org.jeycode.service.repositoryservice.PlayerService.tryToSaveOrUpdate(PlayerService.java:159) ~[classes/:na]
+	at org.jeycode.service.repositoryservice.PlayerService.insertOnePlayer(PlayerService.java:44) ~[classes/:na]
+	at org.jeycode.service.repositoryservice.PlayerService$$FastClassBySpringCGLIB$$ff1e404b.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.4.jar:5.3.4]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.4.jar:5.3.4]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.jeycode.service.repositoryservice.PlayerService$$EnhancerBySpringCGLIB$$eed014f7.insertOnePlayer(<generated>) ~[classes/:na]
+	at org.jeycode.controllers.PlayerController.insertOnePlayer(PlayerController.java:31) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-04-05 12:50:35.650  INFO 13340 --- [http-nio-8080-exec-8] o.j.s.r.FootballDayService               : Se ha añadido la porra correctamente
+2021-04-05 12:50:36.198  INFO 13340 --- [Jey-Code-BCF1] o.j.s.genericservice.SendMailService     : Se envío mail de registro a asd
+2021-04-05 12:50:36.199  INFO 13340 --- [Jey-Code-BCF1] o.j.s.genericservice.SendMailService     : Se inicia servicio de mail para avisar de registro
+2021-04-05 12:50:47.169  INFO 13340 --- [http-nio-8080-exec-9] o.j.s.r.FootballDayService               : Se ha añadido la porra correctamente
+2021-04-05 12:50:47.592  INFO 13340 --- [Jey-Code-BCF1] o.j.s.genericservice.SendMailService     : Se envío mail de registro a asda
+2021-04-05 12:50:51.751 ERROR 13340 --- [http-nio-8080-exec-10] o.j.s.r.FootballDayService               : asd ya tiene una apuesta asociada a este partido.
+
+org.jeycode.execptionsmanaged.RequestParamException: asd ya tiene una apuesta asociada a este partido.
+	at org.jeycode.service.repositoryservice.FootballDayService.tryToSaveResult(FootballDayService.java:152) ~[classes/:na]
+	at org.jeycode.service.repositoryservice.FootballDayService.insertOnePlayerResult(FootballDayService.java:55) ~[classes/:na]
+	at org.jeycode.service.repositoryservice.FootballDayService$$FastClassBySpringCGLIB$$d06ba56f.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.4.jar:5.3.4]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.4.jar:5.3.4]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.jeycode.service.repositoryservice.FootballDayService$$EnhancerBySpringCGLIB$$399e9ae3.insertOnePlayerResult(<generated>) ~[classes/:na]
+	at org.jeycode.controllers.FootballDayController.insertOnePlayerResult(FootballDayController.java:30) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-04-05 12:50:57.279  INFO 13340 --- [http-nio-8080-exec-2] o.j.s.g.PointCalculationService          : Se calcularon los puntos de cada jugador
+2021-04-05 12:50:57.282  INFO 13340 --- [http-nio-8080-exec-2] o.j.s.r.FootballDayService               : Se han finalizado el partido y actualizado todos los puntos
+2021-04-05 12:50:57.294  INFO 13340 --- [Jey-Code-BCF1] o.j.s.genericservice.SendMailService     : Se inicia servicio de mail para notificar el fin de la jornada
+2021-04-05 12:51:08.298  INFO 13340 --- [Jey-Code-BCF1] o.j.s.genericservice.SendMailService     : Se enviaron los mails de notificación, fin de jornada
