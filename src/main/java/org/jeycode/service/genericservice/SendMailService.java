@@ -1,16 +1,19 @@
 package org.jeycode.service.genericservice;
 
+import java.io.File;
 import java.sql.Date;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Collections;
 import java.util.List;
+import java.util.Set;
 
 import javax.mail.MessagingException;
 
 import org.jeycode.models.PlayerFootballMatch;
 import org.jeycode.service.genericservice.utils.RestServiceUtils;
 import org.jeycode.service.genericservice.utils.SendMailImages;
+import org.springframework.context.annotation.Scope;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.scheduling.annotation.Async;
@@ -20,6 +23,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
 @Service
+@Scope("prototype")
 @RequiredArgsConstructor
 @Slf4j
 public class SendMailService implements RestServiceUtils
@@ -27,6 +31,7 @@ public class SendMailService implements RestServiceUtils
 
       private final JavaMailSender mailSender;
       private final SendMailImages mailImages;
+      private final ZipFileService zipFileService;
 
       @Async(EXECUTOR_SEND_MAIL)
       public void sendRegistrationMail(String playerMail,String playerNick)
@@ -43,7 +48,7 @@ public class SendMailService implements RestServiceUtils
                                           + MAIL_GENERIC_OWNER_INFO,
                                true);
                   addMailFormat(mail);
-                  mail.addAttachment(PDF_RULES,PDF_APPLICATION_GAME_RULES);
+                  mail.addAttachment(PDF_RULES_NAME,PDF_APPLICATION_GAME_RULES);
 
                   mailSender.send(message);
                   log.info("Se envío mail de registro a " + playerNick);
@@ -132,11 +137,13 @@ public class SendMailService implements RestServiceUtils
                   var mail = new MimeMessageHelper(message,true);
                   mail.setSubject(MAIL_END_FOOTBALLDAY_SUBJECT);
                   Collections.sort(lstOfPlayerFootBallMatch,(plfm,plfmO)-> plfm.getMatchPoints() > plfmO.getMatchPoints() ? -1 : 1);
+                  var rowCountHelper = new RowCountHelper();
                   var htmlTableContent = lstOfPlayerFootBallMatch.stream()
                                                                  .map(plfm->
                                                                        {
                                                                              var player = plfm.getPlayer();
-                                                                             return htmlTableRow(player,plfm.getMatchPoints());
+                                                                             return htmlTableRow(player,plfm.getMatchPoints(),
+                                                                                                 rowCountHelper);
                                                                        })
                                                                  .reduce(new StringBuilder(),StringBuilder::append);
                   mail.setText(MAIL_END_FOOTBALLDAY_HEADER + MAIL_END_FOOTBALLDAY_BODY_HEADER + htmlTableContent.toString()
@@ -150,6 +157,28 @@ public class SendMailService implements RestServiceUtils
             catch (MessagingException ex)
             {
                   log.error("Error al crear el mail de fin de jornada");
+            }
+      }
+
+      @Async(EXECUTOR_SEND_MAIL)
+      public void sendLogsToApplicationSupport(Set<File> loadLogFiles, String errorNotificationRequest)
+      {
+            log.info("Se inicia servicio de mail para enviar los logs a soporte.");
+            var message = mailSender.createMimeMessage();
+            try
+            {
+                  var mail = new MimeMessageHelper(message,true);
+                  mail.setTo(MAIL_OWNER);
+                  mail.setSubject(MAIL_REGISTRATION_SUBJECT);
+                  mail.setText("",true);
+                  mail.addAttachment(PDF_RULES_NAME,PDF_APPLICATION_GAME_RULES);
+
+                  mailSender.send(message);
+                  log.info("");
+            }
+            catch (MessagingException ex)
+            {
+                  log.error("Error al enviar los logs a soporte.");
             }
       }
 

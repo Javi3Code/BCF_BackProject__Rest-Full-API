@@ -1,32 +1,18 @@
 package org.jeycode.service.genericservice;
 
-import java.nio.file.Path;
-import java.util.stream.Stream;
-
-import javax.servlet.http.HttpServletRequest;
+import java.io.File;
+import java.util.Set;
 
 import org.jeycode.constants.ApplicationConstants;
-import org.springframework.core.io.Resource;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.multipart.MultipartFile;
 
 public interface StorageService extends ApplicationConstants
 {
 
-      void init();
+      String storeNewPdfRules(MultipartFile file);
 
-      String store(MultipartFile file);
+      Set<File> loadLogFiles();
 
-      Stream<Path> loadAll();
-
-      Path load(String filename);
-
-      Resource loadAsResource(String filename);
-
-      void delete(String filename);
-
-      void deleteAll();
-
-      ResponseEntity<Resource> serveFile(String filename,HttpServletRequest request);
+      void deleteAllLogs();
 
 }

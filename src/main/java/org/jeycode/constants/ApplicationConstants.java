@@ -70,9 +70,6 @@ public interface ApplicationConstants
       String CID_GITHUB = "imgGHub";
       Path GITHUB_IMAGE = Path.of("src\\main\\resources\\image_mail\\github.png");
 
-      String PDF_RULES = "Reglas_del_juego.pdf";
-      File PDF_APPLICATION_GAME_RULES = new File("src\\main\\resources\\pdf_files\\Reglas_del_juego.pdf");
-
       String MAIL_OWNER = "devhelloworld4@gmail.com";
 
       String MAIL_REGISTRATION_SUBJECT = "Registro completado con éxito.";
@@ -122,8 +119,16 @@ public interface ApplicationConstants
        * PDF fileservice
        */
 
-      String RULES_PDF_NAME = "Reglas_del_juego";
-      String FILE_LOCATION_VAR = "${upload.root-location}";
+      String PDF_EXT_VALID = ".pdf";
+      String PDF_RULES_NAME = "Reglas_del_juego.pdf";
+      String PDF_RULES_FILE_NAME = "pdf_files\\" + PDF_RULES_NAME;
+      File PDF_APPLICATION_GAME_RULES = new File("src\\main\\resources\\system_files\\" + PDF_RULES_FILE_NAME);
+
+      String LOGS_FILE_LOCATION_VAR = "${upload.logs-root-location}";
+      String RULES_PDF_LOCATION_VAR = "${upload.rulespdf-root-location}";
+      String GZIP_TEMP_DIR_LOCATION_VAR = "${gzip-compressor-temp-dir}";
+
+      String DIR_TO_COMPRESS = "//fileToCompress";
 
       String FILE_READ_ERROR = "Falló al leer los ficheros";
       String SERVE_FILE_ERROR = "Error al procesar el fichero";
@@ -134,9 +139,7 @@ public interface ApplicationConstants
             protected boolean isEvenRow = true;
       }
 
-      RowCountHelper rowCountHelper = new RowCountHelper();
-
-      default StringBuilder htmlTableRow(Player player,short matchPoints)
+      default StringBuilder htmlTableRow(Player player,short matchPoints,RowCountHelper rowCountHelper)
       {
             var isEvenRow = rowCountHelper.isEvenRow;
             var playerNick = player.getPlayerNick();
