@@ -10,7 +10,7 @@
 Lenguaje de programación: Java - Jdk 11
 Framework e inicializador de proyecto: SpringBoot
 Gestor de Proyecto: Maven
-Librerías utilizadas no pertenecientes o incluidas en las dependecias Springboot: MapStruct y Lombok. *A la espera de añadir Swagger*
+Librerías utilizadas: MapStruct, Lombok, Plexus, Javax Validations, Jackson (embebido), Slf4j(facade), etc. *A la espera de añadir Swagger*
 Base de datos: Actualmente utilizando H2 database, ideal para pruebas o demos como este proyecto.
 ```
 
