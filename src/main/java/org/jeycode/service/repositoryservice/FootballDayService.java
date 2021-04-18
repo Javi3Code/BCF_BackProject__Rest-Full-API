@@ -19,7 +19,7 @@ import org.jeycode.models.ConcreteMatch;
 import org.jeycode.models.Player;
 import org.jeycode.models.PlayerFootballMatch;
 import org.jeycode.repositories.PlayerFootballMatchRepository;
-import org.jeycode.service.genericservice.PointCalculationComponent;
+import org.jeycode.service.components.PointCalculationComponent;
 import org.jeycode.service.genericservice.SendMailService;
 import org.jeycode.service.genericservice.utils.RestServiceUtils;
 import org.springframework.http.HttpStatus;

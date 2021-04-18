@@ -1,4 +1,4 @@
-package org.jeycode.service.genericservice;
+package org.jeycode.service.components;
 
 import java.io.File;
 

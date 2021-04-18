@@ -9,6 +9,7 @@ import java.util.List;
 import javax.mail.MessagingException;
 
 import org.jeycode.models.PlayerFootballMatch;
+import org.jeycode.service.components.ZipFileComponent;
 import org.jeycode.service.genericservice.utils.RestServiceUtils;
 import org.jeycode.service.genericservice.utils.SendMailImages;
 import org.springframework.context.annotation.Scope;
