@@ -26,9 +26,9 @@ public class ApiErrorAttributes extends DefaultErrorAttributes implements Applic
             var statuscode = super.getErrorAttributes(webRequest,options).get(STATUS);
             var throwable = getError(webRequest);
             var message = getMessage(throwable);
-            Map<String,Object> apiErrorAttributes = Map.of(STATUS,HttpStatus.valueOf((int)statuscode),DATE,LocalDateTime.now()
-                                                                                                                        .format(FORMATTER_PATTERN),
-                                                           MESSAGE,message);
+            String dateFormatted = LocalDateTime.now()
+                                                .format(FORMATTER_PATTERN);
+            Map<String,Object> apiErrorAttributes = Map.of(STATUS,HttpStatus.valueOf((int)statuscode),DATE,dateFormatted,MESSAGE,message);
             return apiErrorAttributes;
       }
 
