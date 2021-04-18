@@ -1,4 +1,4 @@
-package org.jeycode.service.repositoryservice.utils;
+package org.jeycode.service.genericservice.utils;
 
 import org.jeycode.dtos.playerdto.PlayerDtoToCreate;
 import org.springframework.http.ResponseEntity;

@@ -19,4 +19,8 @@ public interface FilesStorageService extends ApplicationConstants,ApplicationExc
 
       CompletableFuture<Boolean> prepareLogsPackage();
 
+      boolean deleteTempDir();
+
+      File getFileToSend();
+
 }

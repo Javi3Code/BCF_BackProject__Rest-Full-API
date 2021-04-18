@@ -12,6 +12,8 @@ public interface ApplicationConstants
       String EXECUTOR_SEND_MAIL = "sendMailServiceTaskExecutor";
       String EXECUTOR_PREPARE_LOGS = "prepareLogsPackageExecutor";
 
+      String ZIP_PASS = "aAz*{XY32";
+
       /*
        * Strings
        */
@@ -139,6 +141,7 @@ public interface ApplicationConstants
       String GZIP_TEMP_DIR_LOCATION_VAR = "${gzip-compressor-temp-dir}";
       String LOGS_FILE_LOCATION_VAR = "${upload.logs-root-location}";
       String DIR_TO_COMPRESS = "//Logs-Support";
+      String DIR_TO_MOVE = "//Logs-Temp.zip";
       String LOGS_GZIP_NAME = "Logs-Support-";
 
       class RowCountHelper

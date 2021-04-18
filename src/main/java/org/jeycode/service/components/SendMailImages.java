@@ -1,4 +1,4 @@
-package org.jeycode.service.genericservice.utils;
+package org.jeycode.service.components;
 
 import java.net.MalformedURLException;
 

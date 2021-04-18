@@ -13,6 +13,7 @@ import java.util.concurrent.CompletableFuture;
 import java.util.stream.Collectors;
 
 import org.jeycode.execptionsmanaged.StorageException;
+import org.jeycode.service.components.ZipFileComponent;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.scheduling.annotation.Async;
@@ -25,8 +26,8 @@ import org.springframework.web.server.ResponseStatusException;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * Implementación de un {@link FilesStorageService} que almacena los ficheros subidos
- * dentro del servidor donde se ha desplegado la aplicación.
+ * Implementación de un {@link FilesStorageService} que almacena los ficheros
+ * subidos dentro del servidor donde se ha desplegado la aplicación.
  *
  */
 @Service
@@ -34,14 +35,19 @@ import lombok.extern.slf4j.Slf4j;
 public class FileSystemStorageServiceImpl implements FilesStorageService
 {
 
-      private final Path logsLocation,logsToSendLocation,rulesPdfLocation;
+      private final Path logsLocation,logsToSendLocation,logsCompressedLocation,rulesPdfLocation,compressFileTemporalDestination;
+      private final ZipFileComponent zipFileService;
 
       public FileSystemStorageServiceImpl(@Value(LOGS_FILE_LOCATION_VAR) String logsPath,
-            @Value(GZIP_TEMP_DIR_LOCATION_VAR) String logsToSendLocation,@Value(RULES_PDF_LOCATION_VAR) String rulesPdfPath)
+            @Value(GZIP_TEMP_DIR_LOCATION_VAR) String logsToSendLocation,@Value(RULES_PDF_LOCATION_VAR) String rulesPdfPath,
+            ZipFileComponent zipFileService)
       {
             this.logsLocation = Paths.get(logsPath);
-            this.logsToSendLocation = Paths.get(logsToSendLocation+DIR_TO_COMPRESS);
+            this.logsToSendLocation = Paths.get(logsToSendLocation + DIR_TO_COMPRESS);
+            this.logsCompressedLocation = Paths.get(logsToSendLocation + DIR_TO_MOVE);
             this.rulesPdfLocation = Paths.get(rulesPdfPath);
+            this.compressFileTemporalDestination = Paths.get(logsToSendLocation);
+            this.zipFileService = zipFileService;
       }
 
       /**
@@ -77,10 +83,10 @@ public class FileSystemStorageServiceImpl implements FilesStorageService
                         return storedFilename;
                   }
             }
-            catch (IOException e)
+            catch (Exception ex)
             {
-                  log.error(errorMsg);
-                  throw new StorageException(errorMsg + filename,e);
+                  log.error(errorMsg + ex);
+                  throw new StorageException(errorMsg + filename,ex);
             }
 
       }
@@ -92,23 +98,30 @@ public class FileSystemStorageServiceImpl implements FilesStorageService
             return CompletableFuture.supplyAsync(()->
                   {
                         var logs = loadLogFiles();
+                        log.info("Se han recuperado todos los ficheros de logs a enviar.");
                         if (logs.isEmpty())
                         {
                               log.error(LOGS_EMPTY);
                               throw new ResponseStatusException(HttpStatus.CONFLICT,LOGS_EMPTY);
                         }
+                        tryToCreateDir();
                         logs.forEach(file->
                               {
                                     try
                                     {
-                                          Files.copy(file.toPath(),logsToSendLocation,null);
+                                          var pathTarget = Paths.get(logsToSendLocation.toString() + "/" + file.getName());
+                                          Files.copy(file.toPath(),pathTarget,StandardCopyOption.REPLACE_EXISTING);
+                                          log.info("Se copió un fichero de logs en el directorio: " + DIR_TO_COMPRESS);
                                     }
-                                    catch (IOException ex)
+                                    catch (Exception ex)
                                     {
-                                          log.error(COPY_LOGS_ERROR);
+                                          log.error(COPY_LOGS_ERROR,ex);
                                           throw new ResponseStatusException(HttpStatus.CONFLICT,COPY_LOGS_ERROR);
                                     }
                               });
+                        log.info("Se cargaron todos los logs a comprimir en el directorio: " + DIR_TO_COMPRESS);
+                        zipFileService.compress();
+                        log.info("Se comprimieron los archivos de log.");
                         return true;
                   });
       }
@@ -123,12 +136,37 @@ public class FileSystemStorageServiceImpl implements FilesStorageService
                               .map(Path::toFile)
                               .sorted(lastModification)
                               .limit(5)
+                              .peek(file-> log.info(file.getName() + " es uno de los ficheros de logs a enviar."))
                               .collect(Collectors.toSet());
             }
             catch (IOException ex)
             {
-                  log.error(FILE_READ_ERROR);
+                  log.error(FILE_READ_ERROR,ex);
                   throw new StorageException(FILE_READ_ERROR,ex);
+            }
+      }
+
+      @Override
+      public boolean deleteTempDir()
+      {
+            try
+            {
+                  var deleteIn = FileSystemUtils.deleteRecursively(compressFileTemporalDestination.toFile());
+                  if (!deleteIn)
+                  {
+                        throw new Exception();
+                  }
+                  var deleteIfExists = Files.deleteIfExists(compressFileTemporalDestination);
+                  if (deleteIfExists)
+                  {
+                        log.info("Se borró el directorio temporal para compresión de logs.");
+                  }
+                  return deleteIfExists;
+            }
+            catch (Exception ex)
+            {
+                  log.error(DELETE_TEMP_DIR_COMPRESSION,ex);
+                  throw new ResponseStatusException(HttpStatus.CONFLICT,DELETE_TEMP_DIR_COMPRESSION);
             }
       }
 
@@ -140,6 +178,26 @@ public class FileSystemStorageServiceImpl implements FilesStorageService
       public void deleteAllLogs()
       {
             FileSystemUtils.deleteRecursively(logsLocation.toFile());
+      }
+
+      @Override
+      public File getFileToSend()
+      {
+            return logsCompressedLocation.toFile();
+      }
+
+      private void tryToCreateDir()
+      {
+            try
+            {
+                  Files.createDirectories(logsToSendLocation);
+                  log.info("Se ha creado el directorio temporal: " + logsToSendLocation.toString());
+            }
+            catch (Exception ex)
+            {
+                  log.error(CREATE_DIR_LOGZIP_ERR,ex);
+                  throw new ResponseStatusException(HttpStatus.CONFLICT,CREATE_DIR_LOGZIP_ERR);
+            }
       }
 
 }
