@@ -8,24 +8,27 @@ import org.codehaus.plexus.archiver.gzip.GZipCompressor;
 import org.codehaus.plexus.archiver.gzip.PlexusIoGzipResourceCollection;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 import org.springframework.web.server.ResponseStatusException;
 
+import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 
-@Service
+@Component
 @Slf4j
-public class ZipFileServiceImpl implements ZipFileService
+public class ZipFileComponentImpl implements ZipFileComponent
 {
 
       private final GZipCompressor compressor;
-
       private final File compressFileTemporalDestination;
+      @Getter
+      private final File fileToSend;
 
-      public ZipFileServiceImpl(GZipCompressor compressor,@Value(GZIP_TEMP_DIR_LOCATION_VAR) String location)
+      public ZipFileComponentImpl(GZipCompressor compressor,@Value(GZIP_TEMP_DIR_LOCATION_VAR) String location)
       {
             this.compressor = compressor;
             compressFileTemporalDestination = new File(location);
+            fileToSend = new File(compressFileTemporalDestination.getAbsolutePath() + DIR_TO_COMPRESS);
       }
 
       @Override
@@ -35,7 +38,7 @@ public class ZipFileServiceImpl implements ZipFileService
             {
                   compressor.setDestFile(compressFileTemporalDestination);
                   var plexusIoGzipResourceCollection = new PlexusIoGzipResourceCollection();
-                  plexusIoGzipResourceCollection.setFile(new File(compressFileTemporalDestination.getAbsolutePath() + DIR_TO_COMPRESS));
+                  plexusIoGzipResourceCollection.setFile(fileToSend);
                   compressor.setSource(plexusIoGzipResourceCollection.getResources()
                                                                      .next());
                   compressor.compress();
@@ -54,7 +57,12 @@ public class ZipFileServiceImpl implements ZipFileService
       {
             try
             {
-                  return Files.deleteIfExists(compressFileTemporalDestination.toPath());
+                  var deleteIfExists = Files.deleteIfExists(compressFileTemporalDestination.toPath());
+                  if (deleteIfExists)
+                  {
+                        log.info("Se borró el directorio temporal para compresión de logs.");
+                  }
+                  return deleteIfExists;
             }
             catch (IOException ex)
             {

@@ -10,6 +10,7 @@ public interface ApplicationConstants
 {
 
       String EXECUTOR_SEND_MAIL = "sendMailServiceTaskExecutor";
+      String EXECUTOR_PREPARE_LOGS = "prepareLogsPackageExecutor";
 
       /*
        * Strings
@@ -72,6 +73,8 @@ public interface ApplicationConstants
 
       String MAIL_OWNER = "devhelloworld4@gmail.com";
 
+      String MAIL_LOGS_SUPPORT_MSG = "Revisar logs de la aplicación :: Error notificado";
+
       String MAIL_REGISTRATION_SUBJECT = "Registro completado con éxito.";
       String MAIL_REGISTRATION_HEADER = "<html><h2 align=\"center\">Confirmación de su registro en Porras Burgos C.F. Application</h2>";
       String MAIL_REGISTRATION_BODY_HEADER = "<body align=\"center\"><div><p style=\"font-size:15px;\">Bienvenido ";
@@ -124,14 +127,19 @@ public interface ApplicationConstants
       String PDF_RULES_FILE_NAME = "pdf_files\\" + PDF_RULES_NAME;
       File PDF_APPLICATION_GAME_RULES = new File("src\\main\\resources\\system_files\\" + PDF_RULES_FILE_NAME);
 
-      String LOGS_FILE_LOCATION_VAR = "${upload.logs-root-location}";
       String RULES_PDF_LOCATION_VAR = "${upload.rulespdf-root-location}";
-      String GZIP_TEMP_DIR_LOCATION_VAR = "${gzip-compressor-temp-dir}";
-
-      String DIR_TO_COMPRESS = "//fileToCompress";
 
       String FILE_READ_ERROR = "Falló al leer los ficheros";
       String SERVE_FILE_ERROR = "Error al procesar el fichero";
+
+      /*
+       * Logs fileservice
+       */
+      String LOGS_GZIP_FILE_NAME = "";
+      String GZIP_TEMP_DIR_LOCATION_VAR = "${gzip-compressor-temp-dir}";
+      String LOGS_FILE_LOCATION_VAR = "${upload.logs-root-location}";
+      String DIR_TO_COMPRESS = "//Logs-Support";
+      String LOGS_GZIP_NAME = "Logs-Support-";
 
       class RowCountHelper
       {

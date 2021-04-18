@@ -9,33 +9,38 @@ import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 import java.util.Comparator;
 import java.util.Set;
+import java.util.concurrent.CompletableFuture;
 import java.util.stream.Collectors;
 
 import org.jeycode.execptionsmanaged.StorageException;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.HttpStatus;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 import org.springframework.util.FileSystemUtils;
 import org.springframework.util.StringUtils;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.server.ResponseStatusException;
 
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * Implementación de un {@link StorageService} que almacena los ficheros subidos
+ * Implementación de un {@link FilesStorageService} que almacena los ficheros subidos
  * dentro del servidor donde se ha desplegado la aplicación.
  *
  */
 @Service
 @Slf4j
-public class FileSystemStorageService implements StorageService
+public class FileSystemStorageServiceImpl implements FilesStorageService
 {
 
-      private final Path logsLocation;
-      private final Path rulesPdfLocation;
+      private final Path logsLocation,logsToSendLocation,rulesPdfLocation;
 
-      public FileSystemStorageService(@Value(LOGS_FILE_LOCATION_VAR) String logsPath,@Value(RULES_PDF_LOCATION_VAR) String rulesPdfPath)
+      public FileSystemStorageServiceImpl(@Value(LOGS_FILE_LOCATION_VAR) String logsPath,
+            @Value(GZIP_TEMP_DIR_LOCATION_VAR) String logsToSendLocation,@Value(RULES_PDF_LOCATION_VAR) String rulesPdfPath)
       {
             this.logsLocation = Paths.get(logsPath);
+            this.logsToSendLocation = Paths.get(logsToSendLocation+DIR_TO_COMPRESS);
             this.rulesPdfLocation = Paths.get(rulesPdfPath);
       }
 
@@ -78,6 +83,34 @@ public class FileSystemStorageService implements StorageService
                   throw new StorageException(errorMsg + filename,e);
             }
 
+      }
+
+      @Async(EXECUTOR_PREPARE_LOGS)
+      @Override
+      public CompletableFuture<Boolean> prepareLogsPackage()
+      {
+            return CompletableFuture.supplyAsync(()->
+                  {
+                        var logs = loadLogFiles();
+                        if (logs.isEmpty())
+                        {
+                              log.error(LOGS_EMPTY);
+                              throw new ResponseStatusException(HttpStatus.CONFLICT,LOGS_EMPTY);
+                        }
+                        logs.forEach(file->
+                              {
+                                    try
+                                    {
+                                          Files.copy(file.toPath(),logsToSendLocation,null);
+                                    }
+                                    catch (IOException ex)
+                                    {
+                                          log.error(COPY_LOGS_ERROR);
+                                          throw new ResponseStatusException(HttpStatus.CONFLICT,COPY_LOGS_ERROR);
+                                    }
+                              });
+                        return true;
+                  });
       }
 
       @Override

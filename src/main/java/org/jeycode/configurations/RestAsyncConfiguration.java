@@ -1,6 +1,7 @@
 package org.jeycode.configurations;
 
 import java.util.concurrent.Executor;
+import java.util.concurrent.Executors;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -24,5 +25,11 @@ public class RestAsyncConfiguration
             executor.setThreadNamePrefix("Jey-Code-BCF");
             executor.initialize();
             return executor;
+      }
+
+      @Bean
+      public Executor prepareLogsPackageExecutor()
+      {
+            return Executors.newSingleThreadExecutor();
       }
 }

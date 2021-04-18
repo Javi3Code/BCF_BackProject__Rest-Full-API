@@ -5,13 +5,13 @@ import java.util.List;
 import org.jeycode.models.ConcreteMatch;
 import org.jeycode.models.PlayerFootballMatch;
 import org.jeycode.service.genericservice.utils.RestServiceUtils;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
 import lombok.extern.slf4j.Slf4j;
 
-@Service
+@Component
 @Slf4j
-public class PointCalculationService implements RestServiceUtils
+public class PointCalculationComponent implements RestServiceUtils
 {
 
       public void calculatePoints(List<PlayerFootballMatch> lstOfPlayerFootBallMatch,ConcreteMatch openConcreteMatch)

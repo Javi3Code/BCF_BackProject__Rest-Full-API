@@ -4,6 +4,9 @@ public interface ApplicationExceptionUtils
 {
 
       String LOGS_REQUEST_DEFAULT_MSG = "Error en la aplicación, revisar los logs.";
+      String LOGS_EMPTY = "No existen logs a enviar.";
+      String COPY_LOGS_ERROR = "Ocurrión un error al intentar copiar los logs al directorio de compresión.";
+      String SEND_LOGS_ERROR = "Error en el envío de logs a soporte.";
 
       /*
        * ============================Exception's message===========================

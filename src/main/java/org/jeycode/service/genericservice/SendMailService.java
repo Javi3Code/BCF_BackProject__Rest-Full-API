@@ -1,12 +1,10 @@
 package org.jeycode.service.genericservice;
 
-import java.io.File;
 import java.sql.Date;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Collections;
 import java.util.List;
-import java.util.Set;
 
 import javax.mail.MessagingException;
 
@@ -31,13 +29,13 @@ public class SendMailService implements RestServiceUtils
 
       private final JavaMailSender mailSender;
       private final SendMailImages mailImages;
-      private final ZipFileService zipFileService;
+      private final ZipFileComponent zipFileService;
 
       @Async(EXECUTOR_SEND_MAIL)
       public void sendRegistrationMail(String playerMail,String playerNick)
       {
 
-            log.info("Se inicia servicio de mail para avisar de registro");
+            log.info("Se inicia servicio de mail para avisar de registro.");
             var message = mailSender.createMimeMessage();
             try
             {
@@ -51,11 +49,11 @@ public class SendMailService implements RestServiceUtils
                   mail.addAttachment(PDF_RULES_NAME,PDF_APPLICATION_GAME_RULES);
 
                   mailSender.send(message);
-                  log.info("Se envío mail de registro a " + playerNick);
+                  log.info("Se envío mail de registro a " + playerNick + ".");
             }
             catch (MessagingException ex)
             {
-                  log.error("Error al crear el mail de registro");
+                  log.error("Error al crear el mail de registro.");
             }
       }
 
@@ -67,7 +65,7 @@ public class SendMailService implements RestServiceUtils
 
                   try
                   {
-                        log.info("Se inicia nueva jornada, se envía aviso a todos los jugadores ");
+                        log.info("Se inicia nueva jornada, se envía aviso a todos los jugadores.");
                         var message = mailSender.createMimeMessage();
                         var mail = new MimeMessageHelper(message,true);
                         mail.setSubject(MAIL_INIT_NEW_FB_DAY_SUBJECT);
@@ -81,16 +79,16 @@ public class SendMailService implements RestServiceUtils
                         addMailFormat(mail);
 
                         mailSender.send(message);
-                        log.info("Se envío mail de aviso a todos los usuarios");
+                        log.info("Se envío mail de aviso a todos los usuarios.");
                   }
                   catch (MessagingException ex)
                   {
-                        log.error("Error al crear el mail de inicio de jornada");
+                        log.error("Error al crear el mail de inicio de jornada.");
                   }
             }
             else
             {
-                  log.info("Aún no existen usuarios a los que avisar");
+                  log.info("Aún no existen usuarios a los que avisar.");
             }
       }
 
@@ -102,7 +100,7 @@ public class SendMailService implements RestServiceUtils
             {
                   try
                   {
-                        log.info("Se resetea la temporada, se envía aviso a todos los jugadores");
+                        log.info("Se resetea la temporada, se envía aviso a todos los jugadores.");
                         var message = mailSender.createMimeMessage();
                         var mail = new MimeMessageHelper(message,true);
                         mail.setSubject(MAIL_END_SEASON_SUBJECT);
@@ -114,23 +112,23 @@ public class SendMailService implements RestServiceUtils
                         addMailFormat(mail);
 
                         mailSender.send(message);
-                        log.info("Se envío mail de aviso a todos los usuarios");
+                        log.info("Se envío mail de aviso a todos los usuarios.");
                   }
                   catch (MessagingException ex)
                   {
-                        log.error("Error al crear el mail de reseteo de temporada");
+                        log.error("Error al crear el mail de reseteo de temporada.");
                   }
             }
             else
             {
-                  log.info("Aún no existen usuarios a los que avisar");
+                  log.info("Aún no existen usuarios a los que avisar.");
             }
       }
 
       @Async(EXECUTOR_SEND_MAIL)
       public void sendEndTheFootballDayMail(List<PlayerFootballMatch> lstOfPlayerFootBallMatch,String[] allPlayerMail)
       {
-            log.info("Se inicia servicio de mail para notificar el fin de la jornada");
+            log.info("Se inicia servicio de mail para notificar el fin de la jornada.");
             var message = mailSender.createMimeMessage();
             try
             {
@@ -152,33 +150,40 @@ public class SendMailService implements RestServiceUtils
                   mail.setTo(allPlayerMail);
                   addMailFormat(mail);
                   mailSender.send(message);
-                  log.info("Se enviaron los mails de notificación, fin de jornada");
+                  log.info("Se enviaron los mails de notificación, fin de jornada.");
             }
             catch (MessagingException ex)
             {
-                  log.error("Error al crear el mail de fin de jornada");
+                  log.error("Error al crear el mail de fin de jornada.");
             }
       }
 
       @Async(EXECUTOR_SEND_MAIL)
-      public void sendLogsToApplicationSupport(Set<File> loadLogFiles, String errorNotificationRequest)
+      public void sendLogsToApplicationSupport(String errorNotificationRequest)
       {
+            zipFileService.compress();
             log.info("Se inicia servicio de mail para enviar los logs a soporte.");
             var message = mailSender.createMimeMessage();
             try
             {
                   var mail = new MimeMessageHelper(message,true);
                   mail.setTo(MAIL_OWNER);
-                  mail.setSubject(MAIL_REGISTRATION_SUBJECT);
-                  mail.setText("",true);
-                  mail.addAttachment(PDF_RULES_NAME,PDF_APPLICATION_GAME_RULES);
+                  mail.setSubject(MAIL_LOGS_SUPPORT_MSG);
+                  mail.setText(errorNotificationRequest,true);
+                  var actualDateTime = LocalDateTime.now()
+                                                    .toString();
+                  mail.addAttachment(LOGS_GZIP_NAME + actualDateTime,zipFileService.getFileToSend());
 
                   mailSender.send(message);
-                  log.info("");
+                  log.info("Se envió el correo con los logs a soporte.");
             }
             catch (MessagingException ex)
             {
                   log.error("Error al enviar los logs a soporte.");
+            }
+            finally
+            {
+                  zipFileService.deleteTempDir();
             }
       }
 
