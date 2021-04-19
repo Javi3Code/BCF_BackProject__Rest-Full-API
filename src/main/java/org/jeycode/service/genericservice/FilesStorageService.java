@@ -11,7 +11,7 @@ import org.springframework.web.multipart.MultipartFile;
 public interface FilesStorageService extends ApplicationConstants,ApplicationExceptionUtils
 {
 
-      String storeNewPdfRules(MultipartFile file);
+      void storeNewPdfRules(MultipartFile file);
 
       Set<File> loadLogFiles();
 

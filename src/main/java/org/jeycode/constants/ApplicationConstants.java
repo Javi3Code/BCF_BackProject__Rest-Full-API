@@ -124,7 +124,7 @@ public interface ApplicationConstants
        * PDF fileservice
        */
 
-      String PDF_EXT_VALID = ".pdf";
+      String PDF_EXT_VALID = "pdf";
       String PDF_RULES_NAME = "Reglas_del_juego.pdf";
       String PDF_RULES_FILE_NAME = "pdf_files\\" + PDF_RULES_NAME;
       File PDF_APPLICATION_GAME_RULES = new File("src\\main\\resources\\system_files\\" + PDF_RULES_FILE_NAME);

@@ -3,6 +3,10 @@ package org.jeycode.constants;
 public interface ApplicationExceptionUtils
 {
 
+      String STORE_PDF_ERR = "Error al guardar el pdf de reglas actuales. Imposible actualizar las reglas. ";
+      String NOT_VALID_EXT_PDF = "El fichero no tiene una extensión válida(.pdf). ";
+      String PART_PDF_NO_NULL_OR_EMPTY = "Falta el pdf adjunto con las reglas. ";
+
       String LOGS_REQUEST_DEFAULT_MSG = "Error en la aplicación, revisar los logs. ";
       String LOGS_EMPTY = "No existen logs a enviar. ";
       String COPY_LOGS_ERROR = "Ocurrió un error al intentar copiar los logs al directorio de compresión. ";
@@ -103,6 +107,5 @@ public interface ApplicationExceptionUtils
 
       String FDSERVICE_PARAM_TYPE_OF_DATA_NOT_VALID = "El atributo tipo de data sólo acepta 0, 1 y 2 como valores.";
       String PLSERVICE_PARAM_DTOLEVEL_NOT_VALID = "El atributo nivel de datos(level) sólo acepta 0, 1 y 2 como valores.";
-
 
 }

@@ -12,6 +12,8 @@ import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 import java.util.stream.Collectors;
 
+import org.jeycode.execptionsmanaged.GenericBackendException;
+import org.jeycode.execptionsmanaged.RequestParamException;
 import org.jeycode.execptionsmanaged.StorageException;
 import org.jeycode.service.components.ZipFileComponent;
 import org.springframework.beans.factory.annotation.Value;
@@ -58,35 +60,23 @@ public class FileSystemStorageServiceImpl implements FilesStorageService
        * 
        */
       @Override
-      public String storeNewPdfRules(MultipartFile file)
+      public void storeNewPdfRules(MultipartFile file)
       {
-            var filename = StringUtils.cleanPath(file.getOriginalFilename());
-            var extension = StringUtils.getFilenameExtension(filename);
-            var storedFilename = PDF_RULES_NAME;
-            var errorMsg = "Error al guardar el fichero ";
             try
             {
-                  if (file.isEmpty())
-                  {
-                        log.error(errorMsg);
-                        throw new StorageException(errorMsg + filename);
-                  }
-                  if (!extension.equals(PDF_EXT_VALID))
-                  {
-                        var isInvalidExtMsg = errorMsg + ". El fichero no tiene una extensión válida(.pdf).";
-                        log.error(isInvalidExtMsg);
-                        throw new StorageException(isInvalidExtMsg);
-                  }
+                  validate(file);
                   try (InputStream inputStream = file.getInputStream())
                   {
-                        Files.copy(inputStream,this.rulesPdfLocation.resolve(storedFilename),StandardCopyOption.REPLACE_EXISTING);
-                        return storedFilename;
+                        Files.copy(inputStream,this.rulesPdfLocation.resolve(PDF_RULES_NAME),StandardCopyOption.REPLACE_EXISTING);
                   }
             }
             catch (Exception ex)
             {
-                  log.error(errorMsg + ex);
-                  throw new StorageException(errorMsg + filename,ex);
+                  var erroMessage = ex.getMessage();
+                  log.error(erroMessage,ex);
+                  HttpStatus status = ex instanceof GenericBackendException ? ((GenericBackendException)ex).getStatus() :
+                        HttpStatus.CONFLICT;
+                  throw new ResponseStatusException(status,erroMessage);
             }
 
       }
@@ -186,6 +176,9 @@ public class FileSystemStorageServiceImpl implements FilesStorageService
             return logsCompressedLocation.toFile();
       }
 
+      /*
+       * *************Private Methods***************
+       */
       private void tryToCreateDir()
       {
             try
@@ -198,6 +191,24 @@ public class FileSystemStorageServiceImpl implements FilesStorageService
                   log.error(CREATE_DIR_LOGZIP_ERR,ex);
                   throw new ResponseStatusException(HttpStatus.CONFLICT,CREATE_DIR_LOGZIP_ERR);
             }
+      }
+
+      private void validate(MultipartFile file)
+      {
+            if (file == null || file.isEmpty())
+            {
+                  throw new RequestParamException(PART_PDF_NO_NULL_OR_EMPTY);
+            }
+            var filename = StringUtils.cleanPath(file.getOriginalFilename());
+            var extension = StringUtils.getFilenameExtension(filename);
+            log.info("extensión del fichero-> " + extension);
+            if (!extension.equals(PDF_EXT_VALID))
+            {
+                  var isInvalidExtMsg = NOT_VALID_EXT_PDF + STORE_PDF_ERR + filename;
+                  throw new RequestParamException(isInvalidExtMsg);
+
+            }
+            log.info("El pdf de reglas es válido, se procede a guardar en el storage secundario.");
       }
 
 }
