@@ -1,10 +1,8 @@
-package org.jeycode.service.genericservice.utils;
+package org.jeycode.utilities;
 
 import java.time.DayOfWeek;
 import java.util.Map;
 
-import org.jeycode.constants.ApplicationConstants;
-import org.jeycode.constants.ApplicationExceptionUtils;
 import org.jeycode.dtos.playerdto.AbstractPlayerDto;
 import org.jeycode.mappers.PlayerMapper;
 import org.jeycode.models.ConcreteMatch;

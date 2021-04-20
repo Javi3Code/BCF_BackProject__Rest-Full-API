@@ -3,7 +3,7 @@ package org.jeycode.service.genericservice;
 import java.util.concurrent.ExecutionException;
 import java.util.function.BiConsumer;
 
-import org.jeycode.constants.ApplicationExceptionUtils;
+import org.jeycode.utilities.ApplicationExceptionUtils;
 import org.springframework.stereotype.Service;
 
 import lombok.RequiredArgsConstructor;

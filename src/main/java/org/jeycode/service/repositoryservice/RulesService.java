@@ -6,7 +6,7 @@ import org.jeycode.execptionsmanaged.RequestParamException;
 import org.jeycode.mappers.RulesMapper;
 import org.jeycode.models.Rules;
 import org.jeycode.repositories.RulesRepository;
-import org.jeycode.service.genericservice.utils.RestServiceUtils;
+import org.jeycode.utilities.RestServiceUtils;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;

@@ -1,4 +1,4 @@
-package org.jeycode.constants;
+package org.jeycode.utilities;
 
 import java.io.File;
 import java.nio.file.Path;

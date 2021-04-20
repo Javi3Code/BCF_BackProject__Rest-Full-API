@@ -1,7 +1,7 @@
 package org.jeycode.controllers;
 
-import org.jeycode.constants.ApplicationExceptionUtils;
 import org.jeycode.service.genericservice.SendLogsToSupportService;
+import org.jeycode.utilities.ApplicationExceptionUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -2,7 +2,7 @@ package org.jeycode.service.components;
 
 import java.net.MalformedURLException;
 
-import org.jeycode.constants.ApplicationConstants;
+import org.jeycode.utilities.ApplicationConstants;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.UrlResource;
 import org.springframework.stereotype.Component;

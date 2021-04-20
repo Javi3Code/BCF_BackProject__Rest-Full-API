@@ -8,7 +8,7 @@ import org.jeycode.execptionsmanaged.RequestParamException;
 import org.jeycode.execptionsmanaged.UniqueConstraintException;
 import org.jeycode.mappers.TeamsMapper;
 import org.jeycode.repositories.TeamRepository;
-import org.jeycode.service.genericservice.utils.RestServiceUtils;
+import org.jeycode.utilities.RestServiceUtils;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;

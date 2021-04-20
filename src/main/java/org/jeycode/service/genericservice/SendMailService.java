@@ -12,7 +12,7 @@ import javax.mail.MessagingException;
 
 import org.jeycode.models.PlayerFootballMatch;
 import org.jeycode.service.components.SendMailImages;
-import org.jeycode.service.genericservice.utils.RestServiceUtils;
+import org.jeycode.utilities.RestServiceUtils;
 import org.springframework.context.annotation.Scope;
 import org.springframework.http.HttpStatus;
 import org.springframework.mail.javamail.JavaMailSender;

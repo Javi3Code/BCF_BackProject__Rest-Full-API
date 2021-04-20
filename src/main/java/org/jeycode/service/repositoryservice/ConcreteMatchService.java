@@ -9,7 +9,7 @@ import org.jeycode.mappers.ConcreteMatchMapper;
 import org.jeycode.models.ConcreteMatch;
 import org.jeycode.repositories.ConcreteMatchRepository;
 import org.jeycode.service.genericservice.SendMailService;
-import org.jeycode.service.genericservice.utils.RestServiceUtils;
+import org.jeycode.utilities.RestServiceUtils;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;

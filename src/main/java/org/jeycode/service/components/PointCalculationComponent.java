@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.jeycode.models.ConcreteMatch;
 import org.jeycode.models.PlayerFootballMatch;
-import org.jeycode.service.genericservice.utils.RestServiceUtils;
+import org.jeycode.utilities.RestServiceUtils;
 import org.springframework.stereotype.Component;
 
 import lombok.extern.slf4j.Slf4j;

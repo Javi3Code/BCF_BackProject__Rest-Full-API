@@ -1,4 +1,4 @@
-package org.jeycode.execptionsmanaged;
+package org.jeycode.utilities;
 
 @FunctionalInterface
 public interface ThrowableMessage

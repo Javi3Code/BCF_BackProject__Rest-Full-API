@@ -1,4 +1,4 @@
-package org.jeycode.constants;
+package org.jeycode.utilities;
 
 public interface ApplicationExceptionUtils
 {

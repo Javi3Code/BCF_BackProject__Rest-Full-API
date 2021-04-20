@@ -4,7 +4,7 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
-import org.jeycode.constants.ApplicationExceptionUtils;
+import org.jeycode.utilities.ApplicationExceptionUtils;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

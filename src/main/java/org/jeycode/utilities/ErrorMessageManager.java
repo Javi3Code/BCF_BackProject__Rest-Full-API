@@ -1,10 +1,9 @@
-package org.jeycode.execptionsmanaged;
+package org.jeycode.utilities;
 
 import java.sql.SQLIntegrityConstraintViolationException;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-import org.jeycode.constants.ApplicationConstants;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.validation.ObjectError;

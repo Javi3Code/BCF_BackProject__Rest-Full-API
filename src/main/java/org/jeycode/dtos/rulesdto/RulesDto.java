@@ -3,7 +3,7 @@ package org.jeycode.dtos.rulesdto;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 
-import org.jeycode.constants.ApplicationExceptionUtils;
+import org.jeycode.utilities.ApplicationExceptionUtils;
 
 import lombok.Builder;
 import lombok.Data;
