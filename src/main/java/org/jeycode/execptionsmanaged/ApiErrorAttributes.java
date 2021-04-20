@@ -1,33 +1,33 @@
 package org.jeycode.execptionsmanaged;
 
-import java.sql.SQLIntegrityConstraintViolationException;
 import java.time.LocalDateTime;
 import java.util.Map;
-import java.util.stream.Collectors;
 
-import org.jeycode.constants.ApplicationConstants;
 import org.springframework.boot.web.error.ErrorAttributeOptions;
 import org.springframework.boot.web.servlet.error.DefaultErrorAttributes;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.stereotype.Component;
-import org.springframework.validation.ObjectError;
-import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.context.request.WebRequest;
-import org.springframework.web.server.ResponseStatusException;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 @Component
-public class ApiErrorAttributes extends DefaultErrorAttributes implements ApplicationConstants
+public class ApiErrorAttributes extends DefaultErrorAttributes implements ErrorMessageManager
 {
 
       @Override
       public Map<String,Object> getErrorAttributes(WebRequest webRequest,ErrorAttributeOptions options)
       {
+            log.error("Ha ocurrido un error, obteniendo atributos y mensajes.");
             var statuscode = super.getErrorAttributes(webRequest,options).get(STATUS);
+            log.error("Status: " + statuscode);
             var throwable = getError(webRequest);
+            log.error("Throwable: " + throwable);
             var message = getMessage(throwable);
-            String dateFormatted = LocalDateTime.now()
-                                                .format(FORMATTER_PATTERN);
+            log.error("Message: " + message);
+            var dateFormatted = LocalDateTime.now()
+                                             .format(FORMATTER_PATTERN);
             Map<String,Object> apiErrorAttributes = Map.of(STATUS,HttpStatus.valueOf((int)statuscode),DATE,dateFormatted,MESSAGE,message);
             return apiErrorAttributes;
       }
@@ -36,34 +36,17 @@ public class ApiErrorAttributes extends DefaultErrorAttributes implements Applic
       {
             if (throwable != null)
             {
-                  if (throwable instanceof ResponseStatusException)
+                  var message = getErrorMessage(throwable);
+                  if (message != null)
                   {
-                        var responseStatusEx = (ResponseStatusException)throwable;
-                        return responseStatusEx.getReason() == null ? EMPTY_STRING : responseStatusEx.getReason();
-
-                  }
-                  if (throwable instanceof MethodArgumentNotValidException)
-                  {
-                        return ((MethodArgumentNotValidException)throwable).getAllErrors()
-                                                                           .stream()
-                                                                           .map(ObjectError::getDefaultMessage)
-                                                                           .collect(Collectors.joining(MSG_ERRS_DELIMITER));
-                  }
-                  if (throwable instanceof HttpMessageNotReadableException)
-                  {
-                        return ((HttpMessageNotReadableException)throwable).getMostSpecificCause()
-                                                                           .getMessage();
-                  }
-
-                  if (throwable instanceof SQLIntegrityConstraintViolationException)
-                  {
-                        return ((SQLIntegrityConstraintViolationException)throwable).getCause()
-                                                                                    .getMessage();
+                        log.error("Mensaje a devolver: " + message);
+                        return message;
                   }
                   var throwableCause = throwable.getCause();
                   if (throwableCause != null)
                   {
                         var throwableCauseMessage = throwableCause.getMessage();
+                        log.error("Mensaje a devolver: " + throwableCauseMessage);
                         return throwableCauseMessage == null ? EMPTY_STRING : throwableCauseMessage;
                   }
             }
