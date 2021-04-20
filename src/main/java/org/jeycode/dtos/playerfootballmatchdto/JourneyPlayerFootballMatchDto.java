@@ -7,6 +7,7 @@ import lombok.Data;
 @Data
 public class JourneyPlayerFootballMatchDto
 {
-      protected String playerNick, playerFootBallMatchResult;
+
+      protected String playerNick,playerFootBallMatchResult;
       protected int matchPoints;
 }
