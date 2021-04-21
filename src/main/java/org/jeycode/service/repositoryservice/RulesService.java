@@ -6,11 +6,14 @@ import org.jeycode.execptionsmanaged.RequestParamException;
 import org.jeycode.mappers.RulesMapper;
 import org.jeycode.models.Rules;
 import org.jeycode.repositories.RulesRepository;
+import org.jeycode.service.genericservice.FilesStorageService;
+import org.jeycode.service.genericservice.SendMailService;
 import org.jeycode.utilities.RestServiceUtils;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.server.ResponseStatusException;
 
 import lombok.RequiredArgsConstructor;
@@ -25,11 +28,15 @@ public class RulesService implements RestServiceUtils
 
       private final RulesMapper rulesMapper;
       private final RulesRepository rulesRepository;
+      private final FilesStorageService fileStorageService;
+      private final PlayerService playerService;
+      private final SendMailService sendMailService;
 
-      public ResponseEntity<?> updateRules(RulesDto rulesDto)
+      public ResponseEntity<?> updateRules(MultipartFile rulesPdf,RulesDto rulesDto)
       {
             try
             {
+                  tryToStoreNewPdfAndNotificateAll(rulesPdf);
                   var resultPoints = rulesDto.getResultPoints();
                   var bcfGoalsPoints = rulesDto.getGoalsBCFPoints();
                   var signPoints = rulesDto.getSignPoints();
@@ -53,15 +60,16 @@ public class RulesService implements RestServiceUtils
             catch (Exception ex)
             {
                   log.error(UP_RULES_SERV_UNKNOWN_ERROR,ex);
-                  throw new ResponseStatusException(HttpStatus.CONFLICT,UP_RULES_SERV_UNKNOWN_ERROR);
+                  throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR,UP_RULES_SERV_UNKNOWN_ERROR);
             }
       }
 
-      public ResponseEntity<?> updateToDefaultRules()
+      public ResponseEntity<?> updateToDefaultRules(MultipartFile rulesPdf)
       {
 
             try
             {
+                  tryToStoreNewPdfAndNotificateAll(rulesPdf);
                   String logMsg = null;
                   var defaultRules = getDefaultRulesObj();
 
@@ -92,7 +100,18 @@ public class RulesService implements RestServiceUtils
             catch (Exception ex)
             {
                   log.error(UP_RULES_SERV_UNKNOWN_ERROR,ex);
-                  throw new ResponseStatusException(HttpStatus.CONFLICT,UP_RULES_SERV_UNKNOWN_ERROR);
+                  throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR,UP_RULES_SERV_UNKNOWN_ERROR);
+            }
+      }
+
+      private void tryToStoreNewPdfAndNotificateAll(MultipartFile rulesPdf)
+      {
+            fileStorageService.storeNewPdfRules(rulesPdf);
+            var allPlayerMail = playerService.allPlayerMail();
+            if (allPlayerMail != null && allPlayerMail.length != 0)
+            {
+                  log.info("Existen correos de usuarios activos, por lo que se les va a enviar notificación.");
+                  sendMailService.sendNewRulesNotificationMail(allPlayerMail);
             }
       }
 
@@ -105,7 +124,7 @@ public class RulesService implements RestServiceUtils
             catch (Exception ex)
             {
                   log.error(GET_RULES_SERV_UNKNOWN_ERROR,ex);
-                  throw new ResponseStatusException(HttpStatus.CONFLICT,GET_RULES_SERV_UNKNOWN_ERROR);
+                  throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR,GET_RULES_SERV_UNKNOWN_ERROR);
             }
       }
 

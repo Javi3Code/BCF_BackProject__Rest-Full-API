@@ -65,7 +65,7 @@ public class FootballDayService implements RestServiceUtils
             catch (Exception ex)
             {
                   log.error(INSERT_PLFM_SERV_UNKNOWN_ERROR,ex);
-                  throw new ResponseStatusException(HttpStatus.CONFLICT,INSERT_PLFM_SERV_UNKNOWN_ERROR);
+                  throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR,INSERT_PLFM_SERV_UNKNOWN_ERROR);
             }
       }
 
@@ -96,7 +96,7 @@ public class FootballDayService implements RestServiceUtils
             catch (Exception ex)
             {
                   log.error(GET_PLAYERS_SERV_UNKNOWN_ERROR,ex);
-                  throw new ResponseStatusException(HttpStatus.CONFLICT,GET_PLAYERS_SERV_UNKNOWN_ERROR);
+                  throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR,GET_PLAYERS_SERV_UNKNOWN_ERROR);
             }
       }
 
@@ -127,7 +127,7 @@ public class FootballDayService implements RestServiceUtils
             catch (Exception ex)
             {
                   log.error(UPDATE_FOOTBALLDAY_SERV_UNKNOWN_ERROR,ex);
-                  throw new ResponseStatusException(HttpStatus.CONFLICT,UPDATE_FOOTBALLDAY_SERV_UNKNOWN_ERROR);
+                  throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR,UPDATE_FOOTBALLDAY_SERV_UNKNOWN_ERROR);
             }
       }
 

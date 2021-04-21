@@ -52,7 +52,7 @@ public class ConcreteMatchService implements RestServiceUtils
             catch (Exception ex)
             {
                   log.error(INSERT_CONCRETEMATCH_SERV_UNKNOWN_ERROR,ex);
-                  throw new ResponseStatusException(HttpStatus.CONFLICT,INSERT_CONCRETEMATCH_SERV_UNKNOWN_ERROR);
+                  throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR,INSERT_CONCRETEMATCH_SERV_UNKNOWN_ERROR);
             }
       }
 
@@ -74,7 +74,7 @@ public class ConcreteMatchService implements RestServiceUtils
             catch (Exception ex)
             {
                   log.error(GET_OPEN_CONCRETEMATCH_SERV_UNKNOWN_ERROR,ex);
-                  throw new ResponseStatusException(HttpStatus.CONFLICT,GET_OPEN_CONCRETEMATCH_SERV_UNKNOWN_ERROR);
+                  throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR,GET_OPEN_CONCRETEMATCH_SERV_UNKNOWN_ERROR);
             }
       }
 
@@ -107,7 +107,7 @@ public class ConcreteMatchService implements RestServiceUtils
             catch (Exception ex)
             {
                   log.error(DELETE_CONCRETEMATCH_SERV_UNKNOWN_ERROR,ex);
-                  throw new ResponseStatusException(HttpStatus.CONFLICT,DELETE_CONCRETEMATCH_SERV_UNKNOWN_ERROR);
+                  throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR,DELETE_CONCRETEMATCH_SERV_UNKNOWN_ERROR);
             }
       }
 

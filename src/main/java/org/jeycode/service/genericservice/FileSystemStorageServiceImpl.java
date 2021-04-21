@@ -75,7 +75,7 @@ public class FileSystemStorageServiceImpl implements FilesStorageService
                   var erroMessage = ex.getMessage();
                   log.error(erroMessage,ex);
                   HttpStatus status = ex instanceof GenericBackendException ? ((GenericBackendException)ex).getStatus() :
-                        HttpStatus.CONFLICT;
+                        HttpStatus.INTERNAL_SERVER_ERROR;
                   throw new ResponseStatusException(status,erroMessage);
             }
 
@@ -106,7 +106,7 @@ public class FileSystemStorageServiceImpl implements FilesStorageService
                                     catch (Exception ex)
                                     {
                                           log.error(COPY_LOGS_ERROR,ex);
-                                          throw new ResponseStatusException(HttpStatus.CONFLICT,COPY_LOGS_ERROR);
+                                          throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR,COPY_LOGS_ERROR);
                                     }
                               });
                         log.info("Se cargaron todos los logs a comprimir en el directorio: " + DIR_TO_COMPRESS);
@@ -156,7 +156,7 @@ public class FileSystemStorageServiceImpl implements FilesStorageService
             catch (Exception ex)
             {
                   log.error(DELETE_TEMP_DIR_COMPRESSION,ex);
-                  throw new ResponseStatusException(HttpStatus.CONFLICT,DELETE_TEMP_DIR_COMPRESSION);
+                  throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR,DELETE_TEMP_DIR_COMPRESSION);
             }
       }
 
@@ -189,7 +189,7 @@ public class FileSystemStorageServiceImpl implements FilesStorageService
             catch (Exception ex)
             {
                   log.error(CREATE_DIR_LOGZIP_ERR,ex);
-                  throw new ResponseStatusException(HttpStatus.CONFLICT,CREATE_DIR_LOGZIP_ERR);
+                  throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR,CREATE_DIR_LOGZIP_ERR);
             }
       }
 

@@ -52,7 +52,7 @@ public class TeamService implements RestServiceUtils
             catch (Exception ex)
             {
                   log.error(INSERT_TEAM_SERV_UNKNOWN_ERROR,ex);
-                  throw new ResponseStatusException(HttpStatus.CONFLICT,INSERT_TEAM_SERV_UNKNOWN_ERROR);
+                  throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR,INSERT_TEAM_SERV_UNKNOWN_ERROR);
             }
       }
 
@@ -72,7 +72,7 @@ public class TeamService implements RestServiceUtils
             catch (Exception ex)
             {
                   log.error(GET_TEAMS_SERV_UNKNOWN_ERROR,ex);
-                  throw new ResponseStatusException(HttpStatus.CONFLICT,GET_TEAMS_SERV_UNKNOWN_ERROR);
+                  throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR,GET_TEAMS_SERV_UNKNOWN_ERROR);
             }
       }
 
@@ -92,7 +92,7 @@ public class TeamService implements RestServiceUtils
             {
                   var errorMsg = all ? DELETE_TEAMS_SERV_UNKNOWN_ERROR : DELETE_TEAM_SERV_UNKNOWN_ERROR;
                   log.error(errorMsg,ex);
-                  throw new ResponseStatusException(HttpStatus.CONFLICT,errorMsg);
+                  throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR,errorMsg);
             }
       }
 

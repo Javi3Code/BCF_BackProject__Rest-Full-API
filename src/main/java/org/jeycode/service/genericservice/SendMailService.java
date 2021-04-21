@@ -192,6 +192,27 @@ public class SendMailService implements RestServiceUtils
                   });
       }
 
+      public void sendNewRulesNotificationMail(String[] allPlayerMails)
+      {
+            log.info("Se inicia servicio de mail para notificar nuevas reglas establecidas.");
+            var message = mailSender.createMimeMessage();
+            try
+            {
+                  var mail = new MimeMessageHelper(message,true);
+                  mail.setSubject(MAIL_NEW_RULES);
+                  mail.setText(MAIL_NEW_RULES_HEADER + MAIL_GENERIC_OWNER_INFO,true);
+                  mail.setTo(allPlayerMails);
+                  addMailFormat(mail);
+                  mail.addAttachment(PDF_RULES_NAME,PDF_APPLICATION_GAME_RULES);
+                  mailSender.send(message);
+                  log.info("Se enviaron los mails de notificación, nuevas reglas.");
+            }
+            catch (MessagingException ex)
+            {
+                  log.error("Error al crear el mail de nuevas rerglas.",ex);
+            }
+      }
+
       private void addMailFormat(MimeMessageHelper mail) throws MessagingException
       {
             mail.setSentDate(Date.valueOf(LocalDate.now()));

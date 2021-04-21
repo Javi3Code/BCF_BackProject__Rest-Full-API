@@ -78,6 +78,9 @@ public interface ApplicationConstants
       String MAIL_LOGS_SUPPORT_MSG = "Revisar logs de la aplicación :: Error notificado";
 
       String MAIL_REGISTRATION_SUBJECT = "Registro completado con éxito.";
+      String MAIL_NEW_RULES = "Nuevas reglas establecidas";
+      String MAIL_NEW_RULES_HEADER = "<html><h2 align=\"center\">Se han establecido nuevas reglas, toda la información en el pdf adjunto.</h2><body align=\"center\">";
+
       String MAIL_REGISTRATION_HEADER = "<html><h2 align=\"center\">Confirmación de su registro en Porras Burgos C.F. Application</h2>";
       String MAIL_REGISTRATION_BODY_HEADER = "<body align=\"center\"><div><p style=\"font-size:15px;\">Bienvenido ";
       String MAIL_REGISTRATION_BODY = " a la mejor aplicación de porras de tu equipo favorito.<br>Esperamos que disfrutes de la aplicación, puedes ver un pdf adjunto con las reglas, mucha suerte!"

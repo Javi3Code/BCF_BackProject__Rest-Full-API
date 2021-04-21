@@ -63,7 +63,7 @@ public class PlayerService implements RestServiceUtils
             catch (Exception ex)
             {
                   log.error(UPDATE_PLAYERS_SERV_UNKNOWN_ERROR,ex);
-                  throw new ResponseStatusException(HttpStatus.CONFLICT,UPDATE_PLAYERS_SERV_UNKNOWN_ERROR);
+                  throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR,UPDATE_PLAYERS_SERV_UNKNOWN_ERROR);
             }
       }
 
@@ -89,7 +89,7 @@ public class PlayerService implements RestServiceUtils
             catch (Exception ex)
             {
                   log.error(GET_PLAYERS_SERV_UNKNOWN_ERROR,ex);
-                  throw new ResponseStatusException(HttpStatus.CONFLICT,GET_PLFM_SERV_UNKNOWN_ERROR);
+                  throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR,GET_PLFM_SERV_UNKNOWN_ERROR);
             }
       }
 
@@ -118,7 +118,7 @@ public class PlayerService implements RestServiceUtils
             {
                   var errorMsg = DELETE_TEAMS_SERV_UNKNOWN_ERROR;
                   log.error(errorMsg,ex);
-                  throw new ResponseStatusException(HttpStatus.CONFLICT,errorMsg);
+                  throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR,errorMsg);
             }
       }
 
@@ -168,7 +168,7 @@ public class PlayerService implements RestServiceUtils
             catch (Exception ex)
             {
                   log.error(INSERT_OR_UPDATE_PLAYER_SERV_UNKNOWN_ERROR,ex);
-                  throw new ResponseStatusException(HttpStatus.CONFLICT,INSERT_OR_UPDATE_PLAYER_SERV_UNKNOWN_ERROR);
+                  throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR,INSERT_OR_UPDATE_PLAYER_SERV_UNKNOWN_ERROR);
             }
       }
 
