@@ -12,12 +12,19 @@ import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 import java.util.stream.Collectors;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.jeycode.execptionsmanaged.GenericBackendException;
 import org.jeycode.execptionsmanaged.RequestParamException;
 import org.jeycode.execptionsmanaged.StorageException;
+import org.jeycode.execptionsmanaged.StorageFileNotFoundException;
 import org.jeycode.service.components.ZipFileComponent;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.core.io.Resource;
+import org.springframework.core.io.UrlResource;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 import org.springframework.util.FileSystemUtils;
@@ -133,6 +140,42 @@ public class FileSystemStorageServiceImpl implements FilesStorageService
             {
                   log.error(FILE_READ_ERROR,ex);
                   throw new StorageException(FILE_READ_ERROR,ex);
+            }
+      }
+
+      @Override
+      public ResponseEntity<Resource> serveApplicationLicenseFile(HttpServletRequest request)
+      {
+            try
+            {
+                  Path filePath = Path.of(".");
+                  var file = new UrlResource(filePath.toUri());
+                  if (!file.exists() || !file.isReadable())
+                  {
+                        throw new StorageFileNotFoundException(FILESERVICE_LICENSE_NOT_FOUND);
+                  }
+                  var contentType = request.getServletContext()
+                                           .getMimeType(file.getFile()
+                                                            .getAbsolutePath());
+
+                  if (contentType == null)
+                  {
+                        contentType = LICENSE_NOT_FOUND;
+                  }
+
+                  return ResponseEntity.ok()
+                                       .contentType(MediaType.parseMediaType(contentType))
+                                       .body(file);
+            }
+            catch (StorageFileNotFoundException ex)
+            {
+                  log.error(ex.getMessage(),ex);
+                  throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR,ex.getMessage());
+            }
+            catch (Exception ex)
+            {
+                  log.error(ex.getMessage(),ex);
+                  throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR,ex.getMessage());
             }
       }
 

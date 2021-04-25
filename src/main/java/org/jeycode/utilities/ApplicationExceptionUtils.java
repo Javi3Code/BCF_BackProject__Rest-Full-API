@@ -108,4 +108,6 @@ public interface ApplicationExceptionUtils
       String FDSERVICE_PARAM_TYPE_OF_DATA_NOT_VALID = "El atributo tipo de data sólo acepta 0, 1 y 2 como valores.";
       String PLSERVICE_PARAM_DTOLEVEL_NOT_VALID = "El atributo nivel de datos(level) sólo acepta 0, 1 y 2 como valores.";
 
+      String FILESERVICE_LICENSE_NOT_FOUND = "No se ha encontrado el archivo de la licencia de la aplicación.";
+
 }

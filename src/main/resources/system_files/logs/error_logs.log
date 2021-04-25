@@ -1,240 +1,38 @@
-2021-04-21 21:31:57.321  INFO 11708 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-04-21 21:31:57.321  INFO 11708 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2301 ms
-2021-04-21 21:31:57.395  INFO 11708 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-04-21 21:31:57.614  INFO 11708 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-04-21 21:31:57.635  INFO 11708 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:e03dc8af-a7b1-46aa-a248-772f368d2179'
-2021-04-21 21:31:57.834  INFO 11708 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-04-21 21:31:57.886  INFO 11708 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
-2021-04-21 21:31:58.027  INFO 11708 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2021-04-21 21:31:58.167  INFO 11708 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2021-04-21 21:31:59.448  INFO 11708 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-04-21 21:31:59.464  INFO 11708 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-04-21 21:32:00.472  INFO 11708 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService
-2021-04-21 21:32:00.474  INFO 11708 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'sendMailServiceTaskExecutor'
-2021-04-21 21:32:00.498  INFO 11708 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2021-04-21 21:32:00.815  INFO 11708 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-04-21 21:32:00.816  INFO 11708 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2021-04-21 21:32:00.840  INFO 11708 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2021-04-21 21:32:00.876  INFO 11708 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2021-04-21 21:32:01.102  INFO 11708 --- [main] org.jeycode.ApplicationRunner            : Started ApplicationRunner in 6.656 seconds (JVM running for 7.148)
-2021-04-21 21:32:03.124  INFO 11708 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-04-21 21:32:03.125  INFO 11708 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-04-21 21:32:03.127  INFO 11708 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2021-04-21 21:32:03.415 ERROR 11708 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-21 21:32:03.417 ERROR 11708 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-04-21 21:32:03.418 ERROR 11708 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-04-21 21:32:03.420 ERROR 11708 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Message: 
-2021-04-21 21:32:03.442 ERROR 11708 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-21 21:32:03.442 ERROR 11708 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-04-21 21:32:03.442 ERROR 11708 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-04-21 21:32:03.443 ERROR 11708 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Message: 
-2021-04-21 21:33:01.001  INFO 844 --- [main] org.jeycode.ApplicationRunner            : Starting ApplicationRunner using Java 11.0.6 on LAPTOP-0FVBB724 with PID 844 (C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI\target\classes started by JAVIER in C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI)
-2021-04-21 21:33:01.003  INFO 844 --- [main] org.jeycode.ApplicationRunner            : No active profile set, falling back to default profiles: default
-2021-04-21 21:33:02.371  INFO 844 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-04-21 21:33:02.486  INFO 844 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 118 ms. Found 5 JPA repository interfaces.
-2021-04-21 21:33:03.404  INFO 844 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-04-21 21:33:03.407  INFO 844 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-04-21 21:33:03.407  INFO 844 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
-2021-04-21 21:33:03.516  INFO 844 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-04-21 21:33:03.532  INFO 844 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2468 ms
-2021-04-21 21:33:03.579  INFO 844 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-04-21 21:33:03.793  INFO 844 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-04-21 21:33:03.795  INFO 844 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:496ee086-4935-43cf-83ed-36fbf19474a9'
-2021-04-21 21:33:03.976  INFO 844 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-04-21 21:33:04.024  INFO 844 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
-2021-04-21 21:33:04.153  INFO 844 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2021-04-21 21:33:04.325  INFO 844 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2021-04-21 21:33:05.079  INFO 844 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-04-21 21:33:05.095  INFO 844 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-04-21 21:33:06.373  INFO 844 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService
-2021-04-21 21:33:06.390  INFO 844 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'sendMailServiceTaskExecutor'
-2021-04-21 21:33:06.422  INFO 844 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2021-04-21 21:33:06.872  INFO 844 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-04-21 21:33:06.872  INFO 844 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2021-04-21 21:33:06.903  INFO 844 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2021-04-21 21:33:06.935  INFO 844 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2021-04-21 21:33:07.169  INFO 844 --- [main] org.jeycode.ApplicationRunner            : Started ApplicationRunner in 6.702 seconds (JVM running for 7.189)
-2021-04-21 21:33:08.237  INFO 844 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-04-21 21:33:08.239  INFO 844 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-04-21 21:33:08.240  INFO 844 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-04-21 21:33:08.568 ERROR 844 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-21 21:33:08.571 ERROR 844 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-04-21 21:33:08.572 ERROR 844 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-04-21 21:33:08.573 ERROR 844 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Message: 
-2021-04-21 21:33:08.593 ERROR 844 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-21 21:33:08.593 ERROR 844 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-04-21 21:33:08.593 ERROR 844 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-04-21 21:33:08.593 ERROR 844 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Message: 
-2021-04-21 21:33:46.500  INFO 11148 --- [main] org.jeycode.ApplicationRunner            : Starting ApplicationRunner using Java 11.0.6 on LAPTOP-0FVBB724 with PID 11148 (C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI\target\classes started by JAVIER in C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI)
-2021-04-21 21:33:46.516  INFO 11148 --- [main] org.jeycode.ApplicationRunner            : No active profile set, falling back to default profiles: default
-2021-04-21 21:33:47.615  INFO 11148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-04-21 21:33:47.749  INFO 11148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 126 ms. Found 5 JPA repository interfaces.
-2021-04-21 21:33:48.658  INFO 11148 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-04-21 21:33:48.662  INFO 11148 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-04-21 21:33:48.662  INFO 11148 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
-2021-04-21 21:33:48.772  INFO 11148 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-04-21 21:33:48.772  INFO 11148 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2205 ms
-2021-04-21 21:33:48.826  INFO 11148 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-04-21 21:33:49.047  INFO 11148 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-04-21 21:33:49.047  INFO 11148 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:79e7b628-21f8-431d-9f20-a219b534d980'
-2021-04-21 21:33:49.235  INFO 11148 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-04-21 21:33:49.286  INFO 11148 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
-2021-04-21 21:33:49.482  INFO 11148 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2021-04-21 21:33:49.737  INFO 11148 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2021-04-21 21:33:50.808  INFO 11148 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-04-21 21:33:50.808  INFO 11148 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-04-21 21:33:51.920  INFO 11148 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService
-2021-04-21 21:33:51.923  INFO 11148 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'sendMailServiceTaskExecutor'
-2021-04-21 21:33:51.942  INFO 11148 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2021-04-21 21:33:52.255  INFO 11148 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-04-21 21:33:52.257  INFO 11148 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2021-04-21 21:33:52.279  INFO 11148 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2021-04-21 21:33:52.320  INFO 11148 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2021-04-21 21:33:52.394  INFO 11148 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-04-21 21:33:52.395  INFO 11148 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-04-21 21:33:52.397  INFO 11148 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2021-04-21 21:33:52.614  INFO 11148 --- [main] org.jeycode.ApplicationRunner            : Started ApplicationRunner in 6.694 seconds (JVM running for 7.209)
-2021-04-21 21:33:52.772 ERROR 11148 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-21 21:33:52.773 ERROR 11148 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-04-21 21:33:52.774 ERROR 11148 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-04-21 21:33:52.774 ERROR 11148 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Message: 
-2021-04-21 21:33:52.797 ERROR 11148 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-21 21:33:52.797 ERROR 11148 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-04-21 21:33:52.797 ERROR 11148 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-04-21 21:33:52.798 ERROR 11148 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Message: 
-2021-04-21 21:37:04.593  INFO 6968 --- [main] org.jeycode.ApplicationRunner            : Starting ApplicationRunner using Java 11.0.6 on LAPTOP-0FVBB724 with PID 6968 (C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI\target\classes started by JAVIER in C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI)
-2021-04-21 21:37:04.594  INFO 6968 --- [main] org.jeycode.ApplicationRunner            : No active profile set, falling back to default profiles: default
-2021-04-21 21:37:05.775  INFO 6968 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-04-21 21:37:05.930  INFO 6968 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 138 ms. Found 5 JPA repository interfaces.
-2021-04-21 21:37:06.941  INFO 6968 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-04-21 21:37:06.953  INFO 6968 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-04-21 21:37:06.954  INFO 6968 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
-2021-04-21 21:37:07.078  INFO 6968 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-04-21 21:37:07.079  INFO 6968 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2418 ms
-2021-04-21 21:37:07.139  INFO 6968 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-04-21 21:37:07.353  INFO 6968 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-04-21 21:37:07.353  INFO 6968 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:4ef95aa4-2b20-4ca1-9171-362f1d8ca6dd'
-2021-04-21 21:37:07.710  INFO 6968 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-04-21 21:37:07.850  INFO 6968 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
-2021-04-21 21:37:08.108  INFO 6968 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2021-04-21 21:37:08.365  INFO 6968 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2021-04-21 21:37:09.218  INFO 6968 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-04-21 21:37:09.227  INFO 6968 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-04-21 21:37:10.280  INFO 6968 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService
-2021-04-21 21:37:10.283  INFO 6968 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'sendMailServiceTaskExecutor'
-2021-04-21 21:37:10.308  INFO 6968 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2021-04-21 21:37:10.632  INFO 6968 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-04-21 21:37:10.633  INFO 6968 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2021-04-21 21:37:10.659  INFO 6968 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2021-04-21 21:37:10.699  INFO 6968 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2021-04-21 21:37:10.703  INFO 6968 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-04-21 21:37:10.705  INFO 6968 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-04-21 21:37:10.708  INFO 6968 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2021-04-21 21:37:11.067  INFO 6968 --- [main] org.jeycode.ApplicationRunner            : Started ApplicationRunner in 6.96 seconds (JVM running for 7.454)
-2021-04-21 21:37:11.167 ERROR 6968 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-21 21:37:11.168 ERROR 6968 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-04-21 21:37:11.168 ERROR 6968 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-04-21 21:37:11.168 ERROR 6968 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Message: 
-2021-04-21 21:37:11.192 ERROR 6968 --- [http-nio-8080-exec-9] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-21 21:37:11.192 ERROR 6968 --- [http-nio-8080-exec-9] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-04-21 21:37:11.192 ERROR 6968 --- [http-nio-8080-exec-9] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-04-21 21:37:11.192 ERROR 6968 --- [http-nio-8080-exec-9] o.j.e.ApiErrorAttributes                 : Message: 
-2021-04-21 21:37:29.171  WARN 6968 --- [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required request part 'rulesPdf' is not present]
-2021-04-21 21:37:29.172 ERROR 6968 --- [http-nio-8080-exec-6] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-21 21:37:29.172 ERROR 6968 --- [http-nio-8080-exec-6] o.j.e.ApiErrorAttributes                 : Status: 400
-2021-04-21 21:37:29.172 ERROR 6968 --- [http-nio-8080-exec-6] o.j.e.ApiErrorAttributes                 : Throwable: org.springframework.web.multipart.support.MissingServletRequestPartException: Required request part 'rulesPdf' is not present
-2021-04-21 21:37:29.173 ERROR 6968 --- [http-nio-8080-exec-6] o.j.e.ApiErrorAttributes                 : Mensaje a devolver: rulesPdf falta por añadir en los parámetros y es requerido para realizar la petición.
-2021-04-21 21:37:29.173 ERROR 6968 --- [http-nio-8080-exec-6] o.j.e.ApiErrorAttributes                 : Message: rulesPdf falta por añadir en los parámetros y es requerido para realizar la petición.
-2021-04-21 21:37:46.846  WARN 6968 --- [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required request part 'rulesPdf' is not present]
-2021-04-21 21:37:46.850 ERROR 6968 --- [http-nio-8080-exec-10] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-21 21:37:46.850 ERROR 6968 --- [http-nio-8080-exec-10] o.j.e.ApiErrorAttributes                 : Status: 400
-2021-04-21 21:37:46.850 ERROR 6968 --- [http-nio-8080-exec-10] o.j.e.ApiErrorAttributes                 : Throwable: org.springframework.web.multipart.support.MissingServletRequestPartException: Required request part 'rulesPdf' is not present
-2021-04-21 21:37:46.851 ERROR 6968 --- [http-nio-8080-exec-10] o.j.e.ApiErrorAttributes                 : Mensaje a devolver: rulesPdf falta por añadir en los parámetros y es requerido para realizar la petición.
-2021-04-21 21:37:46.851 ERROR 6968 --- [http-nio-8080-exec-10] o.j.e.ApiErrorAttributes                 : Message: rulesPdf falta por añadir en los parámetros y es requerido para realizar la petición.
-2021-04-21 21:38:01.258  WARN 6968 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required request part 'rulesPdf' is not present]
-2021-04-21 21:38:01.261 ERROR 6968 --- [http-nio-8080-exec-1] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-21 21:38:01.261 ERROR 6968 --- [http-nio-8080-exec-1] o.j.e.ApiErrorAttributes                 : Status: 400
-2021-04-21 21:38:01.262 ERROR 6968 --- [http-nio-8080-exec-1] o.j.e.ApiErrorAttributes                 : Throwable: org.springframework.web.multipart.support.MissingServletRequestPartException: Required request part 'rulesPdf' is not present
-2021-04-21 21:38:01.262 ERROR 6968 --- [http-nio-8080-exec-1] o.j.e.ApiErrorAttributes                 : Mensaje a devolver: rulesPdf falta por añadir en los parámetros y es requerido para realizar la petición.
-2021-04-21 21:38:01.262 ERROR 6968 --- [http-nio-8080-exec-1] o.j.e.ApiErrorAttributes                 : Message: rulesPdf falta por añadir en los parámetros y es requerido para realizar la petición.
-2021-04-21 21:38:32.422  WARN 6968 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required request part 'rulesPdf' is not present]
-2021-04-21 21:38:32.424 ERROR 6968 --- [http-nio-8080-exec-3] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-21 21:38:32.424 ERROR 6968 --- [http-nio-8080-exec-3] o.j.e.ApiErrorAttributes                 : Status: 400
-2021-04-21 21:38:32.424 ERROR 6968 --- [http-nio-8080-exec-3] o.j.e.ApiErrorAttributes                 : Throwable: org.springframework.web.multipart.support.MissingServletRequestPartException: Required request part 'rulesPdf' is not present
-2021-04-21 21:38:32.424 ERROR 6968 --- [http-nio-8080-exec-3] o.j.e.ApiErrorAttributes                 : Mensaje a devolver: rulesPdf falta por añadir en los parámetros y es requerido para realizar la petición.
-2021-04-21 21:38:32.425 ERROR 6968 --- [http-nio-8080-exec-3] o.j.e.ApiErrorAttributes                 : Message: rulesPdf falta por añadir en los parámetros y es requerido para realizar la petición.
-2021-04-21 21:38:57.836  WARN 6968 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required request part 'rulesPdf' is not present]
-2021-04-21 21:38:57.840 ERROR 6968 --- [http-nio-8080-exec-2] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-21 21:38:57.840 ERROR 6968 --- [http-nio-8080-exec-2] o.j.e.ApiErrorAttributes                 : Status: 400
-2021-04-21 21:38:57.840 ERROR 6968 --- [http-nio-8080-exec-2] o.j.e.ApiErrorAttributes                 : Throwable: org.springframework.web.multipart.support.MissingServletRequestPartException: Required request part 'rulesPdf' is not present
-2021-04-21 21:38:57.840 ERROR 6968 --- [http-nio-8080-exec-2] o.j.e.ApiErrorAttributes                 : Mensaje a devolver: rulesPdf falta por añadir en los parámetros y es requerido para realizar la petición.
-2021-04-21 21:38:57.841 ERROR 6968 --- [http-nio-8080-exec-2] o.j.e.ApiErrorAttributes                 : Message: rulesPdf falta por añadir en los parámetros y es requerido para realizar la petición.
-2021-04-21 21:39:26.012  WARN 6968 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required request part 'rulesPdf' is not present]
-2021-04-21 21:39:26.015 ERROR 6968 --- [http-nio-8080-exec-4] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-21 21:39:26.015 ERROR 6968 --- [http-nio-8080-exec-4] o.j.e.ApiErrorAttributes                 : Status: 400
-2021-04-21 21:39:26.015 ERROR 6968 --- [http-nio-8080-exec-4] o.j.e.ApiErrorAttributes                 : Throwable: org.springframework.web.multipart.support.MissingServletRequestPartException: Required request part 'rulesPdf' is not present
-2021-04-21 21:39:26.015 ERROR 6968 --- [http-nio-8080-exec-4] o.j.e.ApiErrorAttributes                 : Mensaje a devolver: rulesPdf falta por añadir en los parámetros y es requerido para realizar la petición.
-2021-04-21 21:39:26.016 ERROR 6968 --- [http-nio-8080-exec-4] o.j.e.ApiErrorAttributes                 : Message: rulesPdf falta por añadir en los parámetros y es requerido para realizar la petición.
-2021-04-21 21:39:42.813  WARN 6968 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required request part 'rulesPdf' is not present]
-2021-04-21 21:39:42.816 ERROR 6968 --- [http-nio-8080-exec-5] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-21 21:39:42.816 ERROR 6968 --- [http-nio-8080-exec-5] o.j.e.ApiErrorAttributes                 : Status: 400
-2021-04-21 21:39:42.816 ERROR 6968 --- [http-nio-8080-exec-5] o.j.e.ApiErrorAttributes                 : Throwable: org.springframework.web.multipart.support.MissingServletRequestPartException: Required request part 'rulesPdf' is not present
-2021-04-21 21:39:42.816 ERROR 6968 --- [http-nio-8080-exec-5] o.j.e.ApiErrorAttributes                 : Mensaje a devolver: rulesPdf falta por añadir en los parámetros y es requerido para realizar la petición.
-2021-04-21 21:39:42.816 ERROR 6968 --- [http-nio-8080-exec-5] o.j.e.ApiErrorAttributes                 : Message: rulesPdf falta por añadir en los parámetros y es requerido para realizar la petición.
-2021-04-21 21:41:29.180  INFO 8384 --- [main] org.jeycode.ApplicationRunner            : Starting ApplicationRunner using Java 11.0.6 on LAPTOP-0FVBB724 with PID 8384 (C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI\target\classes started by JAVIER in C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI)
-2021-04-21 21:41:29.183  INFO 8384 --- [main] org.jeycode.ApplicationRunner            : No active profile set, falling back to default profiles: default
-2021-04-21 21:41:30.449  INFO 8384 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-04-21 21:41:30.573  INFO 8384 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 112 ms. Found 5 JPA repository interfaces.
-2021-04-21 21:41:31.527  INFO 8384 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-04-21 21:41:31.539  INFO 8384 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-04-21 21:41:31.539  INFO 8384 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
-2021-04-21 21:41:31.654  INFO 8384 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-04-21 21:41:31.654  INFO 8384 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2409 ms
-2021-04-21 21:41:31.701  INFO 8384 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-04-21 21:41:32.099  INFO 8384 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-04-21 21:41:32.114  INFO 8384 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:b71a48aa-2aec-4723-89a6-40d70e284a31'
-2021-04-21 21:41:32.448  INFO 8384 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-04-21 21:41:32.557  INFO 8384 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
-2021-04-21 21:41:32.815  INFO 8384 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2021-04-21 21:41:32.945  INFO 8384 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2021-04-21 21:41:33.786  INFO 8384 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-04-21 21:41:33.801  INFO 8384 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-04-21 21:41:34.848  INFO 8384 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService
-2021-04-21 21:41:34.856  INFO 8384 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'sendMailServiceTaskExecutor'
-2021-04-21 21:41:34.873  INFO 8384 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2021-04-21 21:41:35.201  INFO 8384 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-04-21 21:41:35.201  INFO 8384 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2021-04-21 21:41:35.216  INFO 8384 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2021-04-21 21:41:35.248  INFO 8384 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2021-04-21 21:41:35.474  INFO 8384 --- [main] org.jeycode.ApplicationRunner            : Started ApplicationRunner in 6.825 seconds (JVM running for 7.302)
-2021-04-21 21:41:35.803  INFO 8384 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-04-21 21:41:35.804  INFO 8384 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-04-21 21:41:35.805  INFO 8384 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-04-21 21:41:36.253 ERROR 8384 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-21 21:41:36.254 ERROR 8384 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-04-21 21:41:36.254 ERROR 8384 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-04-21 21:41:36.255 ERROR 8384 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Message: 
-2021-04-21 21:41:36.295 ERROR 8384 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-21 21:41:36.295 ERROR 8384 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-04-21 21:41:36.295 ERROR 8384 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-04-21 21:41:36.296 ERROR 8384 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Message: 
-2021-04-21 21:41:57.976  INFO 8384 --- [http-nio-8080-exec-9] o.j.s.g.FileSystemStorageServiceImpl     : extensión del fichero-> pdf
-2021-04-21 21:41:57.977  INFO 8384 --- [http-nio-8080-exec-9] o.j.s.g.FileSystemStorageServiceImpl     : El pdf de reglas es válido, se procede a guardar en el storage secundario.
-2021-04-21 21:41:58.049  INFO 8384 --- [http-nio-8080-exec-9] o.j.s.genericservice.SendMailService     : Se inicia servicio de mail para notificar nuevas reglas establecidas.
-2021-04-21 21:41:59.132 ERROR 8384 --- [http-nio-8080-exec-9] o.j.s.repositoryservice.RulesService     : Ocurrió un error no identificado al tratar de actualizar las reglas. 
+2021-04-25 10:59:09.441  INFO 8848 --- [main] org.jeycode.ApplicationRunner            : Starting ApplicationRunner using Java 11.0.6 on LAPTOP-0FVBB724 with PID 8848 (C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI\target\classes started by JAVIER in C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI)
+2021-04-25 10:59:09.461  INFO 8848 --- [main] org.jeycode.ApplicationRunner            : No active profile set, falling back to default profiles: default
+2021-04-25 10:59:11.006  INFO 8848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-25 10:59:11.146  INFO 8848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 126 ms. Found 5 JPA repository interfaces.
+2021-04-25 10:59:12.048  INFO 8848 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-25 10:59:12.061  INFO 8848 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-25 10:59:12.061  INFO 8848 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-25 10:59:12.157  INFO 8848 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-25 10:59:12.157  INFO 8848 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2571 ms
+2021-04-25 10:59:12.209  INFO 8848 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-25 10:59:12.422  INFO 8848 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-25 10:59:12.431  INFO 8848 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:82d947a9-2c1d-4646-bdaf-9c2375a52aac'
+2021-04-25 10:59:12.603  INFO 8848 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-25 10:59:12.682  INFO 8848 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-04-25 10:59:12.853  INFO 8848 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-25 10:59:13.025  INFO 8848 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-04-25 10:59:13.818  INFO 8848 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-25 10:59:13.834  INFO 8848 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-25 10:59:14.853  INFO 8848 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService
+2021-04-25 10:59:14.870  INFO 8848 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'sendMailServiceTaskExecutor'
+2021-04-25 10:59:14.885  INFO 8848 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-25 10:59:15.187  INFO 8848 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-25 10:59:15.187  INFO 8848 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-25 10:59:15.218  INFO 8848 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-04-25 10:59:15.249  INFO 8848 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-25 10:59:15.452  INFO 8848 --- [main] org.jeycode.ApplicationRunner            : Started ApplicationRunner in 6.557 seconds (JVM running for 7.031)
+2021-04-25 10:59:28.137  INFO 8848 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-25 10:59:28.138  INFO 8848 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-25 10:59:28.139  INFO 8848 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-25 10:59:28.499 ERROR 8848 --- [http-nio-8080-exec-1] o.j.s.r.ConcreteMatchService             : asdadad no es un equipo participante, no se pudo crear el partido. 
 
-org.springframework.mail.MailSendException: Failed messages: javax.mail.SendFailedException: No recipient addresses
-	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:491) ~[spring-context-support-5.3.4.jar:5.3.4]
-	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:361) ~[spring-context-support-5.3.4.jar:5.3.4]
-	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:356) ~[spring-context-support-5.3.4.jar:5.3.4]
-	at org.jeycode.service.genericservice.SendMailService.sendNewRulesNotificationMail(SendMailService.java:207) ~[classes/:na]
-	at org.jeycode.service.genericservice.SendMailService$$FastClassBySpringCGLIB$$422fcfac.invoke(<generated>) ~[classes/:na]
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.jeycode.service.genericservice.SendMailService$$EnhancerBySpringCGLIB$$653ac34a.sendNewRulesNotificationMail(<generated>) ~[classes/:na]
-	at org.jeycode.service.repositoryservice.RulesService.tryToStoreNewPdfAndNotificateAll(RulesService.java:110) ~[classes/:na]
-	at org.jeycode.service.repositoryservice.RulesService.updateToDefaultRules(RulesService.java:72) ~[classes/:na]
-	at org.jeycode.service.repositoryservice.RulesService$$FastClassBySpringCGLIB$$d4e34327.invoke(<generated>) ~[classes/:na]
+org.jeycode.execptionsmanaged.RequestParamException: asdadad no es un equipo participante, no se pudo crear el partido. 
+	at org.jeycode.service.repositoryservice.ConcreteMatchService.tryToInsertNewConcreteMatch(ConcreteMatchService.java:152) ~[classes/:na]
+	at org.jeycode.service.repositoryservice.ConcreteMatchService.insertOneConcreteMatch(ConcreteMatchService.java:44) ~[classes/:na]
+	at org.jeycode.service.repositoryservice.ConcreteMatchService$$FastClassBySpringCGLIB$$e9b9cbe.invoke(<generated>) ~[classes/:na]
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.4.jar:5.3.4]
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779) ~[spring-aop-5.3.4.jar:5.3.4]
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.4.jar:5.3.4]
@@ -245,8 +43,8 @@ org.springframework.mail.MailSendException: Failed messages: javax.mail.SendFail
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.4.jar:5.3.4]
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.4.jar:5.3.4]
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.jeycode.service.repositoryservice.RulesService$$EnhancerBySpringCGLIB$$f0a78596.updateToDefaultRules(<generated>) ~[classes/:na]
-	at org.jeycode.controllers.RulesController.updateRules(RulesController.java:53) ~[classes/:na]
+	at org.jeycode.service.repositoryservice.ConcreteMatchService$$EnhancerBySpringCGLIB$$f50a48cf.insertOneConcreteMatch(<generated>) ~[classes/:na]
+	at org.jeycode.controllers.ConcreteMatchController.insertOneConcreteMatch(ConcreteMatchController.java:29) ~[classes/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -260,8 +58,8 @@ org.springframework.mail.MailSendException: Failed messages: javax.mail.SendFail
 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.4.jar:5.3.4]
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.4.jar:5.3.4]
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.4.jar:5.3.4]
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
@@ -298,58 +96,17 @@ org.springframework.mail.MailSendException: Failed messages: javax.mail.SendFail
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
 	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
 
-2021-04-21 21:41:59.141 ERROR 8384 --- [http-nio-8080-exec-9] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-21 21:41:59.142 ERROR 8384 --- [http-nio-8080-exec-9] o.j.e.ApiErrorAttributes                 : Status: 500
-2021-04-21 21:41:59.142 ERROR 8384 --- [http-nio-8080-exec-9] o.j.e.ApiErrorAttributes                 : Throwable: org.springframework.web.server.ResponseStatusException: 500 INTERNAL_SERVER_ERROR "Ocurrió un error no identificado al tratar de actualizar las reglas. "
-2021-04-21 21:41:59.143 ERROR 8384 --- [http-nio-8080-exec-9] o.j.e.ApiErrorAttributes                 : Mensaje a devolver: Ocurrió un error no identificado al tratar de actualizar las reglas. 
-2021-04-21 21:41:59.143 ERROR 8384 --- [http-nio-8080-exec-9] o.j.e.ApiErrorAttributes                 : Message: Ocurrió un error no identificado al tratar de actualizar las reglas. 
-2021-04-21 21:44:08.035  INFO 1720 --- [main] org.jeycode.ApplicationRunner            : Starting ApplicationRunner using Java 11.0.6 on LAPTOP-0FVBB724 with PID 1720 (C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI\target\classes started by JAVIER in C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI)
-2021-04-21 21:44:08.039  INFO 1720 --- [main] org.jeycode.ApplicationRunner            : No active profile set, falling back to default profiles: default
-2021-04-21 21:44:09.161  INFO 1720 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-04-21 21:44:09.313  INFO 1720 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 142 ms. Found 5 JPA repository interfaces.
-2021-04-21 21:44:10.272  INFO 1720 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-04-21 21:44:10.285  INFO 1720 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-04-21 21:44:10.285  INFO 1720 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
-2021-04-21 21:44:10.389  INFO 1720 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-04-21 21:44:10.390  INFO 1720 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2298 ms
-2021-04-21 21:44:10.451  INFO 1720 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-04-21 21:44:10.670  INFO 1720 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-04-21 21:44:10.677  INFO 1720 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:165fb85b-5820-4804-84ee-0066ea4ce69b'
-2021-04-21 21:44:10.852  INFO 1720 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-04-21 21:44:10.909  INFO 1720 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
-2021-04-21 21:44:11.063  INFO 1720 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2021-04-21 21:44:11.329  INFO 1720 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2021-04-21 21:44:12.485  INFO 1720 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-04-21 21:44:12.501  INFO 1720 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-04-21 21:44:13.576  INFO 1720 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService
-2021-04-21 21:44:13.583  INFO 1720 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'sendMailServiceTaskExecutor'
-2021-04-21 21:44:13.600  INFO 1720 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2021-04-21 21:44:13.897  INFO 1720 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-04-21 21:44:13.897  INFO 1720 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2021-04-21 21:44:13.928  INFO 1720 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2021-04-21 21:44:13.959  INFO 1720 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2021-04-21 21:44:14.201  INFO 1720 --- [main] org.jeycode.ApplicationRunner            : Started ApplicationRunner in 6.661 seconds (JVM running for 7.134)
-2021-04-21 21:44:19.833  INFO 1720 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-04-21 21:44:19.835  INFO 1720 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-04-21 21:44:19.836  INFO 1720 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-04-21 21:44:19.921  INFO 1720 --- [http-nio-8080-exec-1] o.j.s.g.FileSystemStorageServiceImpl     : extensión del fichero-> pdf
-2021-04-21 21:44:19.922  INFO 1720 --- [http-nio-8080-exec-1] o.j.s.g.FileSystemStorageServiceImpl     : El pdf de reglas es válido, se procede a guardar en el storage secundario.
-2021-04-21 21:44:20.032  INFO 1720 --- [http-nio-8080-exec-1] o.j.s.repositoryservice.RulesService     : Existen correos de usuarios activos, por lo que se les va a enviar notificación.
-2021-04-21 21:44:20.039  INFO 1720 --- [http-nio-8080-exec-1] o.j.s.genericservice.SendMailService     : Se inicia servicio de mail para notificar nuevas reglas establecidas.
-2021-04-21 21:44:21.742 ERROR 1720 --- [http-nio-8080-exec-1] o.j.s.repositoryservice.RulesService     : Ocurrió un error no identificado al tratar de actualizar las reglas. 
+2021-04-25 10:59:28.519 ERROR 8848 --- [http-nio-8080-exec-1] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
+2021-04-25 10:59:28.520 ERROR 8848 --- [http-nio-8080-exec-1] o.j.e.ApiErrorAttributes                 : Status: 400
+2021-04-25 10:59:28.520 ERROR 8848 --- [http-nio-8080-exec-1] o.j.e.ApiErrorAttributes                 : Throwable: org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "asdadad no es un equipo participante, no se pudo crear el partido. "
+2021-04-25 10:59:28.520 ERROR 8848 --- [http-nio-8080-exec-1] o.j.e.ApiErrorAttributes                 : Mensaje a devolver: asdadad no es un equipo participante, no se pudo crear el partido. 
+2021-04-25 10:59:28.520 ERROR 8848 --- [http-nio-8080-exec-1] o.j.e.ApiErrorAttributes                 : Message: asdadad no es un equipo participante, no se pudo crear el partido. 
+2021-04-25 10:59:40.216  INFO 8848 --- [http-nio-8080-exec-4] o.j.s.repositoryservice.TeamService      : Se añadió el equipo correctamente
+2021-04-25 10:59:42.777 ERROR 8848 --- [http-nio-8080-exec-5] o.j.s.repositoryservice.TeamService      : El equipo ya se encontraba guardado en la base de datos, no puede haber dos equipos con el mismo nombre. 
 
-org.springframework.mail.MailSendException: Failed messages: javax.mail.SendFailedException: No recipient addresses
-	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:491) ~[spring-context-support-5.3.4.jar:5.3.4]
-	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:361) ~[spring-context-support-5.3.4.jar:5.3.4]
-	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:356) ~[spring-context-support-5.3.4.jar:5.3.4]
-	at org.jeycode.service.genericservice.SendMailService.sendNewRulesNotificationMail(SendMailService.java:207) ~[classes/:na]
-	at org.jeycode.service.genericservice.SendMailService$$FastClassBySpringCGLIB$$422fcfac.invoke(<generated>) ~[classes/:na]
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.jeycode.service.genericservice.SendMailService$$EnhancerBySpringCGLIB$$6777129e.sendNewRulesNotificationMail(<generated>) ~[classes/:na]
-	at org.jeycode.service.repositoryservice.RulesService.tryToStoreNewPdfAndNotificateAll(RulesService.java:114) ~[classes/:na]
-	at org.jeycode.service.repositoryservice.RulesService.updateToDefaultRules(RulesService.java:72) ~[classes/:na]
-	at org.jeycode.service.repositoryservice.RulesService$$FastClassBySpringCGLIB$$d4e34327.invoke(<generated>) ~[classes/:na]
+org.jeycode.execptionsmanaged.UniqueConstraintException: El equipo ya se encontraba guardado en la base de datos, no puede haber dos equipos con el mismo nombre. 
+	at org.jeycode.service.repositoryservice.TeamService.insertOneTeam(TeamService.java:38) ~[classes/:na]
+	at org.jeycode.service.repositoryservice.TeamService$$FastClassBySpringCGLIB$$781bf70f.invoke(<generated>) ~[classes/:na]
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.4.jar:5.3.4]
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779) ~[spring-aop-5.3.4.jar:5.3.4]
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.4.jar:5.3.4]
@@ -360,8 +117,8 @@ org.springframework.mail.MailSendException: Failed messages: javax.mail.SendFail
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.4.jar:5.3.4]
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.4.jar:5.3.4]
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.jeycode.service.repositoryservice.RulesService$$EnhancerBySpringCGLIB$$ef73416f.updateToDefaultRules(<generated>) ~[classes/:na]
-	at org.jeycode.controllers.RulesController.updateRules(RulesController.java:53) ~[classes/:na]
+	at org.jeycode.service.repositoryservice.TeamService$$EnhancerBySpringCGLIB$$3c9d262.insertOneTeam(<generated>) ~[classes/:na]
+	at org.jeycode.controllers.TeamController.insertOneTeam(TeamController.java:29) ~[classes/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -375,8 +132,8 @@ org.springframework.mail.MailSendException: Failed messages: javax.mail.SendFail
 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.4.jar:5.3.4]
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.4.jar:5.3.4]
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.4.jar:5.3.4]
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
@@ -413,37 +170,22 @@ org.springframework.mail.MailSendException: Failed messages: javax.mail.SendFail
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
 	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
 
-2021-04-21 21:44:21.759 ERROR 1720 --- [http-nio-8080-exec-1] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-21 21:44:21.759 ERROR 1720 --- [http-nio-8080-exec-1] o.j.e.ApiErrorAttributes                 : Status: 500
-2021-04-21 21:44:21.760 ERROR 1720 --- [http-nio-8080-exec-1] o.j.e.ApiErrorAttributes                 : Throwable: org.springframework.web.server.ResponseStatusException: 500 INTERNAL_SERVER_ERROR "Ocurrió un error no identificado al tratar de actualizar las reglas. "
-2021-04-21 21:44:21.760 ERROR 1720 --- [http-nio-8080-exec-1] o.j.e.ApiErrorAttributes                 : Mensaje a devolver: Ocurrió un error no identificado al tratar de actualizar las reglas. 
-2021-04-21 21:44:21.760 ERROR 1720 --- [http-nio-8080-exec-1] o.j.e.ApiErrorAttributes                 : Message: Ocurrió un error no identificado al tratar de actualizar las reglas. 
-2021-04-21 21:44:35.227 ERROR 1720 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-21 21:44:35.228 ERROR 1720 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-04-21 21:44:35.228 ERROR 1720 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-04-21 21:44:35.228 ERROR 1720 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Message: 
-2021-04-21 21:44:35.243 ERROR 1720 --- [http-nio-8080-exec-9] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-21 21:44:35.244 ERROR 1720 --- [http-nio-8080-exec-9] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-04-21 21:44:35.244 ERROR 1720 --- [http-nio-8080-exec-9] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-04-21 21:44:35.244 ERROR 1720 --- [http-nio-8080-exec-9] o.j.e.ApiErrorAttributes                 : Message: 
-2021-04-21 21:44:44.579  INFO 1720 --- [http-nio-8080-exec-10] o.j.s.g.FileSystemStorageServiceImpl     : extensión del fichero-> pdf
-2021-04-21 21:44:44.580  INFO 1720 --- [http-nio-8080-exec-10] o.j.s.g.FileSystemStorageServiceImpl     : El pdf de reglas es válido, se procede a guardar en el storage secundario.
-2021-04-21 21:44:44.583  INFO 1720 --- [http-nio-8080-exec-10] o.j.s.repositoryservice.RulesService     : Existen correos de usuarios activos, por lo que se les va a enviar notificación.
-2021-04-21 21:44:44.584  INFO 1720 --- [http-nio-8080-exec-10] o.j.s.genericservice.SendMailService     : Se inicia servicio de mail para notificar nuevas reglas establecidas.
-2021-04-21 21:44:45.274 ERROR 1720 --- [http-nio-8080-exec-10] o.j.s.repositoryservice.RulesService     : Ocurrió un error no identificado al tratar de actualizar las reglas. 
+2021-04-25 10:59:42.780 ERROR 8848 --- [http-nio-8080-exec-5] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
+2021-04-25 10:59:42.780 ERROR 8848 --- [http-nio-8080-exec-5] o.j.e.ApiErrorAttributes                 : Status: 409
+2021-04-25 10:59:42.781 ERROR 8848 --- [http-nio-8080-exec-5] o.j.e.ApiErrorAttributes                 : Throwable: org.springframework.web.server.ResponseStatusException: 409 CONFLICT "El equipo ya se encontraba guardado en la base de datos, no puede haber dos equipos con el mismo nombre. "
+2021-04-25 10:59:42.781 ERROR 8848 --- [http-nio-8080-exec-5] o.j.e.ApiErrorAttributes                 : Mensaje a devolver: El equipo ya se encontraba guardado en la base de datos, no puede haber dos equipos con el mismo nombre. 
+2021-04-25 10:59:42.781 ERROR 8848 --- [http-nio-8080-exec-5] o.j.e.ApiErrorAttributes                 : Message: El equipo ya se encontraba guardado en la base de datos, no puede haber dos equipos con el mismo nombre. 
+2021-04-25 10:59:47.837  INFO 8848 --- [http-nio-8080-exec-6] o.j.s.repositoryservice.TeamService      : Se han obtenido todos los equipos de la database.
+2021-04-25 10:59:52.177  INFO 8848 --- [http-nio-8080-exec-7] o.j.s.repositoryservice.PlayerService    : Se añadió el jugador correctamente
+2021-04-25 10:59:52.185  INFO 8848 --- [Jey-Code-BCF1] o.j.s.genericservice.SendMailService     : Se inicia servicio de mail para avisar de registro.
+2021-04-25 11:00:04.145  INFO 8848 --- [Jey-Code-BCF1] o.j.s.genericservice.SendMailService     : Se envío mail de registro a asd.
+2021-04-25 11:00:31.813 ERROR 8848 --- [http-nio-8080-exec-8] o.j.s.r.ConcreteMatchService             : Aún no existe ningún partido abierto. 
 
-org.springframework.mail.MailSendException: Failed messages: javax.mail.SendFailedException: No recipient addresses
-	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:491) ~[spring-context-support-5.3.4.jar:5.3.4]
-	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:361) ~[spring-context-support-5.3.4.jar:5.3.4]
-	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:356) ~[spring-context-support-5.3.4.jar:5.3.4]
-	at org.jeycode.service.genericservice.SendMailService.sendNewRulesNotificationMail(SendMailService.java:207) ~[classes/:na]
-	at org.jeycode.service.genericservice.SendMailService$$FastClassBySpringCGLIB$$422fcfac.invoke(<generated>) ~[classes/:na]
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.jeycode.service.genericservice.SendMailService$$EnhancerBySpringCGLIB$$6777129e.sendNewRulesNotificationMail(<generated>) ~[classes/:na]
-	at org.jeycode.service.repositoryservice.RulesService.tryToStoreNewPdfAndNotificateAll(RulesService.java:114) ~[classes/:na]
-	at org.jeycode.service.repositoryservice.RulesService.updateToDefaultRules(RulesService.java:72) ~[classes/:na]
-	at org.jeycode.service.repositoryservice.RulesService$$FastClassBySpringCGLIB$$d4e34327.invoke(<generated>) ~[classes/:na]
+org.jeycode.execptionsmanaged.RequestParamException: Aún no existe ningún partido abierto. 
+	at org.jeycode.service.repositoryservice.ConcreteMatchService.lambda$0(ConcreteMatchService.java:64) ~[classes/:na]
+	at java.base/java.util.Optional.orElseThrow(Optional.java:408) ~[na:na]
+	at org.jeycode.service.repositoryservice.ConcreteMatchService.getOpenMatch(ConcreteMatchService.java:64) ~[classes/:na]
+	at org.jeycode.service.repositoryservice.ConcreteMatchService$$FastClassBySpringCGLIB$$e9b9cbe.invoke(<generated>) ~[classes/:na]
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.4.jar:5.3.4]
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779) ~[spring-aop-5.3.4.jar:5.3.4]
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.4.jar:5.3.4]
@@ -454,8 +196,8 @@ org.springframework.mail.MailSendException: Failed messages: javax.mail.SendFail
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.4.jar:5.3.4]
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.4.jar:5.3.4]
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.jeycode.service.repositoryservice.RulesService$$EnhancerBySpringCGLIB$$ef73416f.updateToDefaultRules(<generated>) ~[classes/:na]
-	at org.jeycode.controllers.RulesController.updateRules(RulesController.java:53) ~[classes/:na]
+	at org.jeycode.service.repositoryservice.ConcreteMatchService$$EnhancerBySpringCGLIB$$f50a48cf.getOpenMatch(<generated>) ~[classes/:na]
+	at org.jeycode.controllers.ConcreteMatchController.getOpenMatch(ConcreteMatchController.java:35) ~[classes/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -469,8 +211,8 @@ org.springframework.mail.MailSendException: Failed messages: javax.mail.SendFail
 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.4.jar:5.3.4]
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.4.jar:5.3.4]
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.4.jar:5.3.4]
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
@@ -507,29 +249,20 @@ org.springframework.mail.MailSendException: Failed messages: javax.mail.SendFail
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
 	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
 
-2021-04-21 21:44:45.287 ERROR 1720 --- [http-nio-8080-exec-10] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-21 21:44:45.288 ERROR 1720 --- [http-nio-8080-exec-10] o.j.e.ApiErrorAttributes                 : Status: 500
-2021-04-21 21:44:45.288 ERROR 1720 --- [http-nio-8080-exec-10] o.j.e.ApiErrorAttributes                 : Throwable: org.springframework.web.server.ResponseStatusException: 500 INTERNAL_SERVER_ERROR "Ocurrió un error no identificado al tratar de actualizar las reglas. "
-2021-04-21 21:44:45.288 ERROR 1720 --- [http-nio-8080-exec-10] o.j.e.ApiErrorAttributes                 : Mensaje a devolver: Ocurrió un error no identificado al tratar de actualizar las reglas. 
-2021-04-21 21:44:45.288 ERROR 1720 --- [http-nio-8080-exec-10] o.j.e.ApiErrorAttributes                 : Message: Ocurrió un error no identificado al tratar de actualizar las reglas. 
-2021-04-21 21:44:48.634  INFO 1720 --- [http-nio-8080-exec-1] o.j.s.g.FileSystemStorageServiceImpl     : extensión del fichero-> pdf
-2021-04-21 21:44:48.635  INFO 1720 --- [http-nio-8080-exec-1] o.j.s.g.FileSystemStorageServiceImpl     : El pdf de reglas es válido, se procede a guardar en el storage secundario.
-2021-04-21 21:44:48.640  INFO 1720 --- [http-nio-8080-exec-1] o.j.s.repositoryservice.RulesService     : Existen correos de usuarios activos, por lo que se les va a enviar notificación.
-2021-04-21 21:44:48.640  INFO 1720 --- [http-nio-8080-exec-1] o.j.s.genericservice.SendMailService     : Se inicia servicio de mail para notificar nuevas reglas establecidas.
-2021-04-21 21:44:49.343 ERROR 1720 --- [http-nio-8080-exec-1] o.j.s.repositoryservice.RulesService     : Ocurrió un error no identificado al tratar de actualizar las reglas. 
+2021-04-25 11:00:31.815 ERROR 8848 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
+2021-04-25 11:00:31.815 ERROR 8848 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Status: 400
+2021-04-25 11:00:31.816 ERROR 8848 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Throwable: org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "Aún no existe ningún partido abierto. "
+2021-04-25 11:00:31.816 ERROR 8848 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Mensaje a devolver: Aún no existe ningún partido abierto. 
+2021-04-25 11:00:31.816 ERROR 8848 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Message: Aún no existe ningún partido abierto. 
+2021-04-25 11:00:37.079 ERROR 8848 --- [http-nio-8080-exec-10] o.j.s.r.FootballDayService               : Imposible agregar una apuesta ya que aún no existe un partido abierto. 
 
-org.springframework.mail.MailSendException: Failed messages: javax.mail.SendFailedException: No recipient addresses
-	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:491) ~[spring-context-support-5.3.4.jar:5.3.4]
-	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:361) ~[spring-context-support-5.3.4.jar:5.3.4]
-	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:356) ~[spring-context-support-5.3.4.jar:5.3.4]
-	at org.jeycode.service.genericservice.SendMailService.sendNewRulesNotificationMail(SendMailService.java:207) ~[classes/:na]
-	at org.jeycode.service.genericservice.SendMailService$$FastClassBySpringCGLIB$$422fcfac.invoke(<generated>) ~[classes/:na]
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.jeycode.service.genericservice.SendMailService$$EnhancerBySpringCGLIB$$6777129e.sendNewRulesNotificationMail(<generated>) ~[classes/:na]
-	at org.jeycode.service.repositoryservice.RulesService.tryToStoreNewPdfAndNotificateAll(RulesService.java:114) ~[classes/:na]
-	at org.jeycode.service.repositoryservice.RulesService.updateToDefaultRules(RulesService.java:72) ~[classes/:na]
-	at org.jeycode.service.repositoryservice.RulesService$$FastClassBySpringCGLIB$$d4e34327.invoke(<generated>) ~[classes/:na]
+org.jeycode.execptionsmanaged.RequestParamException: Imposible agregar una apuesta ya que aún no existe un partido abierto. 
+	at org.jeycode.service.repositoryservice.FootballDayService.lambda$2(FootballDayService.java:181) ~[classes/:na]
+	at java.base/java.util.Optional.orElseThrow(Optional.java:408) ~[na:na]
+	at org.jeycode.service.repositoryservice.FootballDayService.getOpenConcreteMatch(FootballDayService.java:181) ~[classes/:na]
+	at org.jeycode.service.repositoryservice.FootballDayService.tryToSaveResult(FootballDayService.java:139) ~[classes/:na]
+	at org.jeycode.service.repositoryservice.FootballDayService.insertOnePlayerResult(FootballDayService.java:55) ~[classes/:na]
+	at org.jeycode.service.repositoryservice.FootballDayService$$FastClassBySpringCGLIB$$d06ba56f.invoke(<generated>) ~[classes/:na]
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.4.jar:5.3.4]
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779) ~[spring-aop-5.3.4.jar:5.3.4]
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.4.jar:5.3.4]
@@ -540,8 +273,8 @@ org.springframework.mail.MailSendException: Failed messages: javax.mail.SendFail
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.4.jar:5.3.4]
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.4.jar:5.3.4]
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.jeycode.service.repositoryservice.RulesService$$EnhancerBySpringCGLIB$$ef73416f.updateToDefaultRules(<generated>) ~[classes/:na]
-	at org.jeycode.controllers.RulesController.updateRules(RulesController.java:53) ~[classes/:na]
+	at org.jeycode.service.repositoryservice.FootballDayService$$EnhancerBySpringCGLIB$$4748d982.insertOnePlayerResult(<generated>) ~[classes/:na]
+	at org.jeycode.controllers.FootballDayController.insertOnePlayerResult(FootballDayController.java:30) ~[classes/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -555,8 +288,8 @@ org.springframework.mail.MailSendException: Failed messages: javax.mail.SendFail
 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.4.jar:5.3.4]
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.4.jar:5.3.4]
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.4.jar:5.3.4]
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
@@ -593,40 +326,640 @@ org.springframework.mail.MailSendException: Failed messages: javax.mail.SendFail
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
 	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
 
-2021-04-21 21:44:49.345 ERROR 1720 --- [http-nio-8080-exec-1] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-21 21:44:49.345 ERROR 1720 --- [http-nio-8080-exec-1] o.j.e.ApiErrorAttributes                 : Status: 500
-2021-04-21 21:44:49.346 ERROR 1720 --- [http-nio-8080-exec-1] o.j.e.ApiErrorAttributes                 : Throwable: org.springframework.web.server.ResponseStatusException: 500 INTERNAL_SERVER_ERROR "Ocurrió un error no identificado al tratar de actualizar las reglas. "
-2021-04-21 21:44:49.346 ERROR 1720 --- [http-nio-8080-exec-1] o.j.e.ApiErrorAttributes                 : Mensaje a devolver: Ocurrió un error no identificado al tratar de actualizar las reglas. 
-2021-04-21 21:44:49.346 ERROR 1720 --- [http-nio-8080-exec-1] o.j.e.ApiErrorAttributes                 : Message: Ocurrió un error no identificado al tratar de actualizar las reglas. 
-2021-04-21 21:47:28.819  INFO 11928 --- [main] org.jeycode.ApplicationRunner            : Starting ApplicationRunner using Java 11.0.6 on LAPTOP-0FVBB724 with PID 11928 (C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI\target\classes started by JAVIER in C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI)
-2021-04-21 21:47:28.822  INFO 11928 --- [main] org.jeycode.ApplicationRunner            : No active profile set, falling back to default profiles: default
-2021-04-21 21:47:30.191  INFO 11928 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-04-21 21:47:30.364  INFO 11928 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 154 ms. Found 5 JPA repository interfaces.
-2021-04-21 21:47:31.367  INFO 11928 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-04-21 21:47:31.388  INFO 11928 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-04-21 21:47:31.389  INFO 11928 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
-2021-04-21 21:47:31.557  INFO 11928 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-04-21 21:47:31.558  INFO 11928 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2678 ms
-2021-04-21 21:47:31.618  INFO 11928 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-04-21 21:47:31.844  INFO 11928 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-04-21 21:47:31.852  INFO 11928 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:1474c96d-490c-401e-be23-4a5c06f06c59'
-2021-04-21 21:47:32.038  INFO 11928 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-04-21 21:47:32.088  INFO 11928 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
-2021-04-21 21:47:32.366  INFO 11928 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2021-04-21 21:47:32.741  INFO 11928 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2021-04-21 21:47:33.759  INFO 11928 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-04-21 21:47:33.768  INFO 11928 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-04-21 21:47:34.850  INFO 11928 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService
-2021-04-21 21:47:34.851  INFO 11928 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'sendMailServiceTaskExecutor'
-2021-04-21 21:47:34.885  INFO 11928 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2021-04-21 21:47:35.215  INFO 11928 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-04-21 21:47:35.217  INFO 11928 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2021-04-21 21:47:35.255  INFO 11928 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2021-04-21 21:47:35.297  INFO 11928 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2021-04-21 21:47:35.314  INFO 11928 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-04-21 21:47:35.315  INFO 11928 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-04-21 21:47:35.317  INFO 11928 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2021-04-21 21:47:35.408  INFO 11928 --- [http-nio-8080-exec-1] o.j.s.g.FileSystemStorageServiceImpl     : extensión del fichero-> pdf
-2021-04-21 21:47:35.408  INFO 11928 --- [http-nio-8080-exec-1] o.j.s.g.FileSystemStorageServiceImpl     : El pdf de reglas es válido, se procede a guardar en el storage secundario.
-2021-04-21 21:47:35.511  INFO 11928 --- [http-nio-8080-exec-1] o.j.s.repositoryservice.RulesService     : Las reglas ya se encontraban con los valores por defecto
-2021-04-21 21:47:35.551  INFO 11928 --- [main] org.jeycode.ApplicationRunner            : Started ApplicationRunner in 7.233 seconds (JVM running for 7.758)
+2021-04-25 11:00:37.081 ERROR 8848 --- [http-nio-8080-exec-10] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
+2021-04-25 11:00:37.082 ERROR 8848 --- [http-nio-8080-exec-10] o.j.e.ApiErrorAttributes                 : Status: 400
+2021-04-25 11:00:37.082 ERROR 8848 --- [http-nio-8080-exec-10] o.j.e.ApiErrorAttributes                 : Throwable: org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "Imposible agregar una apuesta ya que aún no existe un partido abierto. "
+2021-04-25 11:00:37.082 ERROR 8848 --- [http-nio-8080-exec-10] o.j.e.ApiErrorAttributes                 : Mensaje a devolver: Imposible agregar una apuesta ya que aún no existe un partido abierto. 
+2021-04-25 11:00:37.082 ERROR 8848 --- [http-nio-8080-exec-10] o.j.e.ApiErrorAttributes                 : Message: Imposible agregar una apuesta ya que aún no existe un partido abierto. 
+2021-04-25 11:00:50.585  INFO 8848 --- [http-nio-8080-exec-1] o.j.s.repositoryservice.PlayerService    : Se han obtenido todos los jugadores de la database.
+2021-04-25 11:01:12.241  INFO 8848 --- [http-nio-8080-exec-4] o.j.s.r.ConcreteMatchService             : Se creo el partido correctamente
+2021-04-25 11:01:12.271  INFO 8848 --- [Jey-Code-BCF1] o.j.s.genericservice.SendMailService     : Se inicia nueva jornada, se envía aviso a todos los jugadores.
+2021-04-25 11:01:19.837  INFO 8848 --- [http-nio-8080-exec-5] o.j.s.r.FootballDayService               : Se ha añadido la porra correctamente
+2021-04-25 11:01:23.197  INFO 8848 --- [Jey-Code-BCF1] o.j.s.genericservice.SendMailService     : Se envío mail de aviso a todos los usuarios.
+2021-04-25 11:01:53.657 ERROR 8848 --- [http-nio-8080-exec-6] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
+2021-04-25 11:01:53.658 ERROR 8848 --- [http-nio-8080-exec-6] o.j.e.ApiErrorAttributes                 : Status: 404
+2021-04-25 11:01:53.658 ERROR 8848 --- [http-nio-8080-exec-6] o.j.e.ApiErrorAttributes                 : Throwable: null
+2021-04-25 11:01:53.658 ERROR 8848 --- [http-nio-8080-exec-6] o.j.e.ApiErrorAttributes                 : Message: 
+2021-04-25 11:02:15.733  INFO 8848 --- [ForkJoinPool.commonPool-worker-3] o.j.s.g.FileSystemStorageServiceImpl     : error_logs.log es uno de los ficheros de logs a enviar.
+2021-04-25 11:02:15.733  INFO 8848 --- [ForkJoinPool.commonPool-worker-3] o.j.s.g.FileSystemStorageServiceImpl     : error_logs.log.2021-04-22.0.gz es uno de los ficheros de logs a enviar.
+2021-04-25 11:02:15.733  INFO 8848 --- [ForkJoinPool.commonPool-worker-3] o.j.s.g.FileSystemStorageServiceImpl     : error_logs.log.2021-04-21.1.gz es uno de los ficheros de logs a enviar.
+2021-04-25 11:02:15.733  INFO 8848 --- [ForkJoinPool.commonPool-worker-3] o.j.s.g.FileSystemStorageServiceImpl     : error_logs.log.2021-04-21.0.gz es uno de los ficheros de logs a enviar.
+2021-04-25 11:02:15.733  INFO 8848 --- [ForkJoinPool.commonPool-worker-3] o.j.s.g.FileSystemStorageServiceImpl     : error_logs.log.2021-04-20.0.gz es uno de los ficheros de logs a enviar.
+2021-04-25 11:02:15.733  INFO 8848 --- [ForkJoinPool.commonPool-worker-3] o.j.s.g.FileSystemStorageServiceImpl     : Se han recuperado todos los ficheros de logs a enviar.
+2021-04-25 11:02:15.735  INFO 8848 --- [ForkJoinPool.commonPool-worker-3] o.j.s.g.FileSystemStorageServiceImpl     : Se ha creado el directorio temporal: src\main\resources\system_files\tempdir\Logs-Support
+2021-04-25 11:02:15.738  INFO 8848 --- [ForkJoinPool.commonPool-worker-3] o.j.s.g.FileSystemStorageServiceImpl     : Se copió un fichero de logs en el directorio: //Logs-Support
+2021-04-25 11:02:15.740  INFO 8848 --- [ForkJoinPool.commonPool-worker-3] o.j.s.g.FileSystemStorageServiceImpl     : Se copió un fichero de logs en el directorio: //Logs-Support
+2021-04-25 11:02:15.750  INFO 8848 --- [ForkJoinPool.commonPool-worker-3] o.j.s.g.FileSystemStorageServiceImpl     : Se copió un fichero de logs en el directorio: //Logs-Support
+2021-04-25 11:02:15.752  INFO 8848 --- [ForkJoinPool.commonPool-worker-3] o.j.s.g.FileSystemStorageServiceImpl     : Se copió un fichero de logs en el directorio: //Logs-Support
+2021-04-25 11:02:15.753  INFO 8848 --- [ForkJoinPool.commonPool-worker-3] o.j.s.g.FileSystemStorageServiceImpl     : Se copió un fichero de logs en el directorio: //Logs-Support
+2021-04-25 11:02:15.753  INFO 8848 --- [ForkJoinPool.commonPool-worker-3] o.j.s.g.FileSystemStorageServiceImpl     : Se cargaron todos los logs a comprimir en el directorio: //Logs-Support
+2021-04-25 11:02:15.778  INFO 8848 --- [ForkJoinPool.commonPool-worker-3] o.j.s.components.ZipFileComponentImpl    : Se ha comprimido con éxito el fichero.
+2021-04-25 11:02:15.779  INFO 8848 --- [ForkJoinPool.commonPool-worker-3] o.j.s.g.FileSystemStorageServiceImpl     : Se comprimieron los archivos de log.
+2021-04-25 11:02:15.780  INFO 8848 --- [ForkJoinPool.commonPool-worker-3] o.j.s.genericservice.SendMailService     : Se inicia servicio de mail para enviar los logs a soporte.
+2021-04-25 11:02:15.781  INFO 8848 --- [ForkJoinPool.commonPool-worker-3] o.j.s.genericservice.SendMailService     : Se añade al correo de soporte los files comprimidos en: src\main\resources\system_files\tempdir\Logs-Temp.zip
+2021-04-25 11:02:21.235  INFO 8848 --- [http-nio-8080-exec-8] o.j.s.c.PointCalculationComponent        : Se calcularon los puntos de cada jugador
+2021-04-25 11:02:21.237  INFO 8848 --- [http-nio-8080-exec-8] o.j.s.r.FootballDayService               : Se han finalizado el partido y actualizado todos los puntos
+2021-04-25 11:02:26.981  INFO 8848 --- [ForkJoinPool.commonPool-worker-3] o.j.s.genericservice.SendMailService     : Se envió el correo con los logs a soporte.
+2021-04-25 11:02:26.982  INFO 8848 --- [Jey-Code-BCF1] o.j.s.genericservice.SendMailService     : Se inicia servicio de mail para notificar el fin de la jornada.
+2021-04-25 11:02:26.982  INFO 8848 --- [ForkJoinPool.commonPool-worker-3] o.j.s.g.SendLogsToSupportService         : Se envió el correo a soporte correctamente.
+2021-04-25 11:02:26.986  INFO 8848 --- [ForkJoinPool.commonPool-worker-3] o.j.s.g.SendLogsToSupportService         : Se borraron los directorios temporales para los logs.
+2021-04-25 11:02:37.905  INFO 8848 --- [Jey-Code-BCF1] o.j.s.genericservice.SendMailService     : Se enviaron los mails de notificación, fin de jornada.
+2021-04-25 11:03:03.152 ERROR 8848 --- [http-nio-8080-exec-9] o.j.s.r.ConcreteMatchService             : Aún no existe ningún partido abierto. 
+
+org.jeycode.execptionsmanaged.RequestParamException: Aún no existe ningún partido abierto. 
+	at org.jeycode.service.repositoryservice.ConcreteMatchService.lambda$0(ConcreteMatchService.java:64) ~[classes/:na]
+	at java.base/java.util.Optional.orElseThrow(Optional.java:408) ~[na:na]
+	at org.jeycode.service.repositoryservice.ConcreteMatchService.getOpenMatch(ConcreteMatchService.java:64) ~[classes/:na]
+	at org.jeycode.service.repositoryservice.ConcreteMatchService$$FastClassBySpringCGLIB$$e9b9cbe.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.4.jar:5.3.4]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.4.jar:5.3.4]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.jeycode.service.repositoryservice.ConcreteMatchService$$EnhancerBySpringCGLIB$$f50a48cf.getOpenMatch(<generated>) ~[classes/:na]
+	at org.jeycode.controllers.ConcreteMatchController.getOpenMatch(ConcreteMatchController.java:35) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-04-25 11:03:03.154 ERROR 8848 --- [http-nio-8080-exec-9] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
+2021-04-25 11:03:03.154 ERROR 8848 --- [http-nio-8080-exec-9] o.j.e.ApiErrorAttributes                 : Status: 400
+2021-04-25 11:03:03.155 ERROR 8848 --- [http-nio-8080-exec-9] o.j.e.ApiErrorAttributes                 : Throwable: org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "Aún no existe ningún partido abierto. "
+2021-04-25 11:03:03.155 ERROR 8848 --- [http-nio-8080-exec-9] o.j.e.ApiErrorAttributes                 : Mensaje a devolver: Aún no existe ningún partido abierto. 
+2021-04-25 11:03:03.155 ERROR 8848 --- [http-nio-8080-exec-9] o.j.e.ApiErrorAttributes                 : Message: Aún no existe ningún partido abierto. 
+2021-04-25 11:20:08.115  INFO 6084 --- [main] org.jeycode.ApplicationRunner            : Starting ApplicationRunner using Java 11.0.6 on LAPTOP-0FVBB724 with PID 6084 (C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI\target\classes started by JAVIER in C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI)
+2021-04-25 11:20:08.119  INFO 6084 --- [main] org.jeycode.ApplicationRunner            : No active profile set, falling back to default profiles: default
+2021-04-25 11:20:09.292  INFO 6084 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-25 11:20:09.433  INFO 6084 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 129 ms. Found 5 JPA repository interfaces.
+2021-04-25 11:20:10.398  INFO 6084 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-25 11:20:10.404  INFO 6084 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-25 11:20:10.404  INFO 6084 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-25 11:20:10.520  INFO 6084 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-25 11:20:10.520  INFO 6084 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2336 ms
+2021-04-25 11:20:10.580  INFO 6084 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-25 11:20:10.792  INFO 6084 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-25 11:20:10.799  INFO 6084 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:efff2a3c-04ce-4d5d-aac5-250471c45699'
+2021-04-25 11:20:10.964  INFO 6084 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-25 11:20:11.011  INFO 6084 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-04-25 11:20:11.158  INFO 6084 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-25 11:20:11.301  INFO 6084 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-04-25 11:20:12.006  INFO 6084 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-25 11:20:12.013  INFO 6084 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-25 11:20:13.110  INFO 6084 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService
+2021-04-25 11:20:13.118  INFO 6084 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'sendMailServiceTaskExecutor'
+2021-04-25 11:20:13.134  INFO 6084 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-25 11:20:13.664  INFO 6084 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-25 11:20:13.667  INFO 6084 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-25 11:20:13.711  INFO 6084 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-04-25 11:20:13.776  INFO 6084 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-25 11:20:14.215  INFO 6084 --- [main] org.jeycode.ApplicationRunner            : Started ApplicationRunner in 6.661 seconds (JVM running for 7.132)
+2021-04-25 11:20:20.846  INFO 6084 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-25 11:20:20.847  INFO 6084 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-25 11:20:20.849  INFO 6084 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-25 11:29:49.255  INFO 5900 --- [main] org.jeycode.ApplicationRunner            : Starting ApplicationRunner using Java 11.0.6 on LAPTOP-0FVBB724 with PID 5900 (C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI\target\classes started by JAVIER in C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI)
+2021-04-25 11:29:49.261  INFO 5900 --- [main] org.jeycode.ApplicationRunner            : No active profile set, falling back to default profiles: default
+2021-04-25 11:29:50.372  INFO 5900 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-25 11:29:50.520  INFO 5900 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 137 ms. Found 5 JPA repository interfaces.
+2021-04-25 11:29:51.462  INFO 5900 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-25 11:29:51.475  INFO 5900 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-25 11:29:51.475  INFO 5900 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-25 11:29:51.604  INFO 5900 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-25 11:29:51.604  INFO 5900 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2287 ms
+2021-04-25 11:29:51.650  INFO 5900 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-25 11:29:51.843  INFO 5900 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-25 11:29:51.859  INFO 5900 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:00506e78-4415-4db9-93c6-4b6a2ab60d47'
+2021-04-25 11:29:52.021  INFO 5900 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-25 11:29:52.068  INFO 5900 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-04-25 11:29:52.185  INFO 5900 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-25 11:29:52.310  INFO 5900 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-04-25 11:29:53.044  INFO 5900 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-25 11:29:53.044  INFO 5900 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-25 11:29:54.010  INFO 5900 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService
+2021-04-25 11:29:54.010  INFO 5900 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'sendMailServiceTaskExecutor'
+2021-04-25 11:29:54.041  INFO 5900 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-25 11:29:54.456  INFO 5900 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-25 11:29:54.459  INFO 5900 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-25 11:29:54.490  INFO 5900 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-04-25 11:29:54.535  INFO 5900 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-25 11:29:54.824  INFO 5900 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-25 11:29:54.827  INFO 5900 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-25 11:29:54.830  INFO 5900 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2021-04-25 11:29:54.875  INFO 5900 --- [main] org.jeycode.ApplicationRunner            : Started ApplicationRunner in 6.099 seconds (JVM running for 6.562)
+2021-04-25 11:29:54.917 ERROR 5900 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.http.InvalidMediaTypeException: Invalid mime type "C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI\LICENSE": does not contain '/'] with root cause
+
+org.springframework.util.InvalidMimeTypeException: Invalid mime type "C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI\LICENSE": does not contain '/'
+	at org.springframework.util.MimeTypeUtils.parseMimeTypeInternal(MimeTypeUtils.java:211) ~[spring-core-5.3.4.jar:5.3.4]
+	at org.springframework.util.ConcurrentLruCache.get(ConcurrentLruCache.java:107) ~[spring-core-5.3.4.jar:5.3.4]
+	at org.springframework.util.MimeTypeUtils.parseMimeType(MimeTypeUtils.java:195) ~[spring-core-5.3.4.jar:5.3.4]
+	at org.springframework.http.MediaType.parseMediaType(MediaType.java:617) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.jeycode.service.genericservice.FileSystemStorageServiceImpl.serveApplicationLicenseFile(FileSystemStorageServiceImpl.java:170) ~[classes/:na]
+	at org.jeycode.service.genericservice.FileSystemStorageServiceImpl$$FastClassBySpringCGLIB$$4d8478f.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.jeycode.service.genericservice.FileSystemStorageServiceImpl$$EnhancerBySpringCGLIB$$264b335b.serveApplicationLicenseFile(<generated>) ~[classes/:na]
+	at org.jeycode.controllers.LicenseController.serveApplicationLicense(LicenseController.java:23) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-04-25 11:29:54.936 ERROR 5900 --- [http-nio-8080-exec-1] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
+2021-04-25 11:29:54.936 ERROR 5900 --- [http-nio-8080-exec-1] o.j.e.ApiErrorAttributes                 : Status: 500
+2021-04-25 11:29:54.937 ERROR 5900 --- [http-nio-8080-exec-1] o.j.e.ApiErrorAttributes                 : Throwable: org.springframework.http.InvalidMediaTypeException: Invalid mime type "C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI\LICENSE": does not contain '/'
+2021-04-25 11:29:54.939 ERROR 5900 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] threw exception
+
+java.lang.NullPointerException: null
+	at org.jeycode.utilities.ErrorMessageManager.getErrorMessage(ErrorMessageManager.java:21) ~[classes/:na]
+	at org.jeycode.execptionsmanaged.ApiErrorAttributes.getMessage(ApiErrorAttributes.java:40) ~[classes/:na]
+	at org.jeycode.execptionsmanaged.ApiErrorAttributes.getErrorAttributes(ApiErrorAttributes.java:28) ~[classes/:na]
+	at org.springframework.boot.autoconfigure.web.servlet.error.AbstractErrorController.getErrorAttributes(AbstractErrorController.java:89) ~[spring-boot-autoconfigure-2.4.3.jar:2.4.3]
+	at org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(BasicErrorController.java:106) ~[spring-boot-autoconfigure-2.4.3.jar:2.4.3]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:710) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:398) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:257) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:352) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:177) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-04-25 11:29:54.942 ERROR 5900 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost]           : Exception Processing ErrorPage[errorCode=0, location=/error]
+
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:710) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:398) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:257) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:352) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:177) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.lang.NullPointerException: null
+	at org.jeycode.utilities.ErrorMessageManager.getErrorMessage(ErrorMessageManager.java:21) ~[classes/:na]
+	at org.jeycode.execptionsmanaged.ApiErrorAttributes.getMessage(ApiErrorAttributes.java:40) ~[classes/:na]
+	at org.jeycode.execptionsmanaged.ApiErrorAttributes.getErrorAttributes(ApiErrorAttributes.java:28) ~[classes/:na]
+	at org.springframework.boot.autoconfigure.web.servlet.error.AbstractErrorController.getErrorAttributes(AbstractErrorController.java:89) ~[spring-boot-autoconfigure-2.4.3.jar:2.4.3]
+	at org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(BasicErrorController.java:106) ~[spring-boot-autoconfigure-2.4.3.jar:2.4.3]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	... 36 common frames omitted
+
+2021-04-25 11:29:57.013 ERROR 5900 --- [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.http.InvalidMediaTypeException: Invalid mime type "C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI\LICENSE": does not contain '/'] with root cause
+
+org.springframework.util.InvalidMimeTypeException: Invalid mime type "C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI\LICENSE": does not contain '/'
+	at org.springframework.util.MimeTypeUtils.parseMimeTypeInternal(MimeTypeUtils.java:211) ~[spring-core-5.3.4.jar:5.3.4]
+	at org.springframework.util.ConcurrentLruCache.get(ConcurrentLruCache.java:107) ~[spring-core-5.3.4.jar:5.3.4]
+	at org.springframework.util.MimeTypeUtils.parseMimeType(MimeTypeUtils.java:195) ~[spring-core-5.3.4.jar:5.3.4]
+	at org.springframework.http.MediaType.parseMediaType(MediaType.java:617) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.jeycode.service.genericservice.FileSystemStorageServiceImpl.serveApplicationLicenseFile(FileSystemStorageServiceImpl.java:170) ~[classes/:na]
+	at org.jeycode.service.genericservice.FileSystemStorageServiceImpl$$FastClassBySpringCGLIB$$4d8478f.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.jeycode.service.genericservice.FileSystemStorageServiceImpl$$EnhancerBySpringCGLIB$$264b335b.serveApplicationLicenseFile(<generated>) ~[classes/:na]
+	at org.jeycode.controllers.LicenseController.serveApplicationLicense(LicenseController.java:23) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-04-25 11:29:57.014 ERROR 5900 --- [http-nio-8080-exec-4] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
+2021-04-25 11:29:57.014 ERROR 5900 --- [http-nio-8080-exec-4] o.j.e.ApiErrorAttributes                 : Status: 500
+2021-04-25 11:29:57.014 ERROR 5900 --- [http-nio-8080-exec-4] o.j.e.ApiErrorAttributes                 : Throwable: org.springframework.http.InvalidMediaTypeException: Invalid mime type "C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI\LICENSE": does not contain '/'
+2021-04-25 11:29:57.015 ERROR 5900 --- [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] threw exception
+
+java.lang.NullPointerException: null
+	at org.jeycode.utilities.ErrorMessageManager.getErrorMessage(ErrorMessageManager.java:21) ~[classes/:na]
+	at org.jeycode.execptionsmanaged.ApiErrorAttributes.getMessage(ApiErrorAttributes.java:40) ~[classes/:na]
+	at org.jeycode.execptionsmanaged.ApiErrorAttributes.getErrorAttributes(ApiErrorAttributes.java:28) ~[classes/:na]
+	at org.springframework.boot.autoconfigure.web.servlet.error.AbstractErrorController.getErrorAttributes(AbstractErrorController.java:89) ~[spring-boot-autoconfigure-2.4.3.jar:2.4.3]
+	at org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(BasicErrorController.java:106) ~[spring-boot-autoconfigure-2.4.3.jar:2.4.3]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:710) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:398) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:257) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:352) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:177) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-04-25 11:29:57.016 ERROR 5900 --- [http-nio-8080-exec-4] o.a.c.c.C.[Tomcat].[localhost]           : Exception Processing ErrorPage[errorCode=0, location=/error]
+
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:710) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:398) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:257) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:352) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:177) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.lang.NullPointerException: null
+	at org.jeycode.utilities.ErrorMessageManager.getErrorMessage(ErrorMessageManager.java:21) ~[classes/:na]
+	at org.jeycode.execptionsmanaged.ApiErrorAttributes.getMessage(ApiErrorAttributes.java:40) ~[classes/:na]
+	at org.jeycode.execptionsmanaged.ApiErrorAttributes.getErrorAttributes(ApiErrorAttributes.java:28) ~[classes/:na]
+	at org.springframework.boot.autoconfigure.web.servlet.error.AbstractErrorController.getErrorAttributes(AbstractErrorController.java:89) ~[spring-boot-autoconfigure-2.4.3.jar:2.4.3]
+	at org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(BasicErrorController.java:106) ~[spring-boot-autoconfigure-2.4.3.jar:2.4.3]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	... 36 common frames omitted
+
+2021-04-25 11:36:45.802  INFO 11600 --- [main] org.jeycode.ApplicationRunner            : Starting ApplicationRunner using Java 11.0.6 on LAPTOP-0FVBB724 with PID 11600 (C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI\target\classes started by JAVIER in C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI)
+2021-04-25 11:36:45.802  INFO 11600 --- [main] org.jeycode.ApplicationRunner            : No active profile set, falling back to default profiles: default
+2021-04-25 11:36:46.925  INFO 11600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-25 11:36:47.057  INFO 11600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 126 ms. Found 5 JPA repository interfaces.
+2021-04-25 11:36:47.848  INFO 11600 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-25 11:36:47.848  INFO 11600 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-25 11:36:47.848  INFO 11600 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-25 11:36:47.971  INFO 11600 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-25 11:36:47.977  INFO 11600 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2124 ms
+2021-04-25 11:36:48.026  INFO 11600 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-25 11:36:48.235  INFO 11600 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-25 11:36:48.250  INFO 11600 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:86810004-4a23-49d6-8786-ed40b22c1355'
+2021-04-25 11:36:48.421  INFO 11600 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-25 11:36:48.478  INFO 11600 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-04-25 11:36:48.618  INFO 11600 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-25 11:36:48.732  INFO 11600 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-04-25 11:36:49.554  INFO 11600 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-25 11:36:49.554  INFO 11600 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-25 11:36:50.534  INFO 11600 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService
+2021-04-25 11:36:50.548  INFO 11600 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'sendMailServiceTaskExecutor'
+2021-04-25 11:36:50.564  INFO 11600 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-25 11:36:50.877  INFO 11600 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-25 11:36:50.877  INFO 11600 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-25 11:36:50.924  INFO 11600 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-04-25 11:36:50.971  INFO 11600 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-25 11:36:51.377  INFO 11600 --- [main] org.jeycode.ApplicationRunner            : Started ApplicationRunner in 6.021 seconds (JVM running for 6.443)
+2021-04-25 11:36:54.207  INFO 11600 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-25 11:36:54.208  INFO 11600 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-25 11:36:54.210  INFO 11600 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-25 11:36:54.250 ERROR 11600 --- [http-nio-8080-exec-1] o.j.s.g.FileSystemStorageServiceImpl     : No se ha encontrado el archivo de la licencia de la aplicación.
+
+org.jeycode.execptionsmanaged.StorageFileNotFoundException: No se ha encontrado el archivo de la licencia de la aplicación.
+	at org.jeycode.service.genericservice.FileSystemStorageServiceImpl.serveApplicationLicenseFile(FileSystemStorageServiceImpl.java:156) ~[classes/:na]
+	at org.jeycode.service.genericservice.FileSystemStorageServiceImpl$$FastClassBySpringCGLIB$$4d8478f.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.jeycode.service.genericservice.FileSystemStorageServiceImpl$$EnhancerBySpringCGLIB$$3fe9486f.serveApplicationLicenseFile(<generated>) ~[classes/:na]
+	at org.jeycode.controllers.LicenseController.serveApplicationLicense(LicenseController.java:25) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-04-25 11:36:54.267 ERROR 11600 --- [http-nio-8080-exec-1] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
+2021-04-25 11:36:54.267 ERROR 11600 --- [http-nio-8080-exec-1] o.j.e.ApiErrorAttributes                 : Status: 500
+2021-04-25 11:36:54.268 ERROR 11600 --- [http-nio-8080-exec-1] o.j.e.ApiErrorAttributes                 : Throwable: org.springframework.web.server.ResponseStatusException: 500 INTERNAL_SERVER_ERROR "No se ha encontrado el archivo de la licencia de la aplicación."
+2021-04-25 11:36:54.268 ERROR 11600 --- [http-nio-8080-exec-1] o.j.e.ApiErrorAttributes                 : Mensaje a devolver: No se ha encontrado el archivo de la licencia de la aplicación.
+2021-04-25 11:36:54.268 ERROR 11600 --- [http-nio-8080-exec-1] o.j.e.ApiErrorAttributes                 : Message: No se ha encontrado el archivo de la licencia de la aplicación.

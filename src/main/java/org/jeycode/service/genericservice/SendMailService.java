@@ -80,7 +80,6 @@ public class SendMailService implements RestServiceUtils
                                      true);
                         mail.setTo(allPlayerMail);
                         addMailFormat(mail);
-
                         mailSender.send(message);
                         log.info("Se envío mail de aviso a todos los usuarios.");
                   }

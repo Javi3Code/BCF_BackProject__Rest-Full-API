@@ -147,6 +147,13 @@ public interface ApplicationConstants
       String DIR_TO_MOVE = "//Logs-Temp.zip";
       String LOGS_GZIP_NAME = "Logs-Support-";
 
+      /*
+       * License filesevice
+       */
+      String LICENSE_NOT_FOUND = "application/octet-stream";
+
+      String LICENSE_PATH = "LICENSE";
+
       class RowCountHelper
       {
 
