@@ -39,7 +39,7 @@ public class SwaggerConf implements SwaggerStrings
                                        .contact(new Contact(AUTHOR,AUTHOR_URL_YT,AUTHOR_MAIL))
                                        .license(LICENSE_NAME)
                                        .licenseUrl(LICENSE_URL)
-                                       .termsOfServiceUrl(LICENSE_TERMS)
+                                       .termsOfServiceUrl(LICENSE_URL)
                                        .build();
       }
 

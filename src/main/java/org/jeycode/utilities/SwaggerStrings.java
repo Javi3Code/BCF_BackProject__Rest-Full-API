@@ -3,7 +3,6 @@ package org.jeycode.utilities;
 public interface SwaggerStrings
 {
 
-      String LICENSE_TERMS = "Incluidos en el Proyecto, para más información consultar la licencia.";
       String LICENSE_URL = "http://localhost:8080/license";
       String LICENSE_NAME = "GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007";
       String API_REST_VERSION = "1.0";

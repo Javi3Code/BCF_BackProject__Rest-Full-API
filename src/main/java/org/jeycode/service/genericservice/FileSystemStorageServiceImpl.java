@@ -148,7 +148,7 @@ public class FileSystemStorageServiceImpl implements FilesStorageService
       {
             try
             {
-                  Path filePath = Path.of(".");
+                  Path filePath = Path.of(LICENSE_PATH);
                   var file = new UrlResource(filePath.toUri());
                   if (!file.exists() || !file.isReadable())
                   {
