@@ -26,8 +26,12 @@ public interface ApplicationConstants
       String MARTES = "martes";
       String LUNES = "lunes";
 
+      String HOURS = "hora/s";
+      String MINUTES = "minuto/s";
+
       String EMPTY_STRING = "";
       String BURGOS_CF = "Burgos C.F.";
+      String SPACE = " ";
 
       String RESULT_DELIMITER = "-";
       String VERSUS = " vs ";
@@ -89,9 +93,9 @@ public interface ApplicationConstants
       String MAIL_INIT_NEW_FB_DAY_SUBJECT = "Se ha iniciado una nueva jornada.";
       String MAIL_INIT_NEW_FB_DAY_HEADER = "<html><h2 align=\"center\">Ha dado comienzo una nueva jornada, hagan sus apuestas!!</h2>";
       String MAIL_INIT_NEW_FB_DAY_BODY_HEADER = "<body align=\"center\"><div><p style=\"font-size:15px;\">El partido ";
-      String MAIL_INIT_NEW_FB_DAY_BODY_PREDICATE1 = " ha sido abierto hoy, ";
+      String MAIL_INIT_NEW_FB_DAY_BODY_PREDICATE1 = " ha sido abierto hoy ";
       String MAIL_INIT_NEW_FB_DAY_BODY_PREDICATE1_1 = ", a las ";
-      String MAIL_INIT_NEW_FB_DAY_BODY_PREDICATE2 = ", piense bien su apuesta. Desde Porras Burgos C.F. Application le deseamos lo mejor.<br></p></div>";
+      String MAIL_INIT_NEW_FB_DAY_BODY_PREDICATE2 = ", piense bien su apuesta.<br>Desde Porras Burgos C.F. Application le deseamos lo mejor.<br></p></div>";
 
       String MAIL_END_SEASON_SUBJECT = "Ha finalizado la temporada.";
       String MAIL_END_SEASON_HEADER = "<html><h2 align=\"center\">Ha finalizado la temporada y se han restablecido los valores predeterminados.</h2>";
