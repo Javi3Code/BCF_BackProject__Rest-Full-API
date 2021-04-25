@@ -4,6 +4,7 @@ import javax.validation.Valid;
 
 import org.jeycode.dtos.rulesdto.RulesDto;
 import org.jeycode.service.repositoryservice.RulesService;
+import org.jeycode.utilities.ControllerUrl;
 import org.jeycode.utilities.SwaggerStrings;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -24,7 +25,7 @@ import lombok.RequiredArgsConstructor;
 @Api(tags = {SwaggerStrings.RULES_CONTROLLER_TAG})
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/rules")
+@RequestMapping(ControllerUrl.RULES_URL)
 public class RulesController implements SwaggerStrings
 {
 
@@ -41,7 +42,8 @@ public class RulesController implements SwaggerStrings
 
       @ApiOperation(value = "", notes = "", code = CODE_200, consumes = Json + COMMA + MultipartFile, produces = Json,
             response = RulesDto.class)
-      @ApiResponses(value = {@ApiResponse(code = CODE_200, message = "", response = RulesDto.class, reference = "RulesDto"),
+      @ApiResponses(value = {@ApiResponse(code = CODE_200, message = UPDATE_OK_MSG, response = RulesDto.class, reference = RULES_DTO),
+                             @ApiResponse(code = CODE_400, message = ERR_400 + DEFAULT_ERROR_JSON_RESPONSE),
                              @ApiResponse(code = CODE_500, message = ERR_500 + DEFAULT_ERROR_JSON_RESPONSE)})
       @PutMapping(consumes = {MediaType.MULTIPART_FORM_DATA_VALUE})
       public ResponseEntity<?> updateRules(@ApiParam(allowMultiple = false, required = true,

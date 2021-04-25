@@ -26,6 +26,7 @@ public class SwaggerConf implements SwaggerStrings
                                                           .apis(RequestHandlerSelectors.basePackage("org.jeycode"))
                                                           .paths(PathSelectors.any())
                                                           .build()
+                                                          .useDefaultResponseMessages(false)
                                                           .apiInfo(apiInfo);
       }
 

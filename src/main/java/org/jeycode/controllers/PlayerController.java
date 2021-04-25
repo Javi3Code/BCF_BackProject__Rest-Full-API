@@ -5,6 +5,7 @@ import javax.validation.Valid;
 import org.jeycode.dtos.playerdto.PlayerDtoToCreate;
 import org.jeycode.dtos.playerdto.PlayerDtoToUpdate;
 import org.jeycode.service.repositoryservice.PlayerService;
+import org.jeycode.utilities.ControllerUrl;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,7 +20,7 @@ import lombok.RequiredArgsConstructor;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/players")
+@RequestMapping(ControllerUrl.PLAYERS_URL)
 public class PlayerController
 {
 

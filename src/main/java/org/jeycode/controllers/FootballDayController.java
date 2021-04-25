@@ -5,6 +5,7 @@ import javax.validation.Valid;
 import org.jeycode.dtos.concretematchdto.ConcreteMatchDtoToUpdate;
 import org.jeycode.dtos.playerfootballmatchdto.PlayerFootballmatchDtoToCreate;
 import org.jeycode.service.repositoryservice.FootballDayService;
+import org.jeycode.utilities.ControllerUrl;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -18,14 +19,15 @@ import lombok.RequiredArgsConstructor;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/bets")
+@RequestMapping(ControllerUrl.FOOTBALLDAY_URL)
 public class FootballDayController
 {
 
       private final FootballDayService footballDayService;
 
       @PostMapping
-      public ResponseEntity<?> insertOnePlayerResult(@Valid @RequestBody PlayerFootballmatchDtoToCreate plfmDto)
+      public ResponseEntity<?> insertOnePlayerResult(@Valid
+      @RequestBody PlayerFootballmatchDtoToCreate plfmDto)
       {
             return footballDayService.insertOnePlayerResult(plfmDto);
       }
@@ -37,7 +39,8 @@ public class FootballDayController
       }
 
       @PutMapping
-      public ResponseEntity<?> endTheFootballDay(@Valid @RequestBody ConcreteMatchDtoToUpdate concreteMatch)
+      public ResponseEntity<?> endTheFootballDay(@Valid
+      @RequestBody ConcreteMatchDtoToUpdate concreteMatch)
       {
             return footballDayService.endTheFootballDay(concreteMatch);
       }

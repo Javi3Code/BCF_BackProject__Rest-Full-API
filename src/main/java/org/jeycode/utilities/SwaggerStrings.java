@@ -18,7 +18,29 @@ public interface SwaggerStrings
        */
 
       int CODE_200 = 200;
+      int CODE_400 = 400;
       int CODE_500 = 500;
+
+      /*
+       * **********************Generic Response Message*************************
+       */
+
+      String UPDATE_OK_MSG = "La request con un resultado positivo devuelve un json con los datos del objeto actualizado.";
+
+      /*
+       * ************Error responses*************
+       */
+
+      String DEFAULT_ERROR_JSON_RESPONSE = " - Resultado inesperado - Json con mensaje de error, fecha más estado de error.";
+
+      String ERR_500 = "Error en el Servidor";
+      String ERR_400 = "Petición mal realizada";
+
+      /*
+       * ***************** Dto Names ***********++
+       */
+
+      String RULES_DTO = "RulesDto";
 
       /*
        * ****************************Type of Produces or Consumes***************+
@@ -37,13 +59,5 @@ public interface SwaggerStrings
       String GET_RULES_SET = "Obtener las Reglas de puntuación actuales";
       String GET_RULES_SET_NOTE = "Request de tipo GET, no requiere de ningún parámetro. A través de RulesService retornamos los datos de las puntuaciones establecidas actualmente.";
       String RULES_GET_RULES_SET_OK = "Resultado esperado - Json con los datos de las reglas establecidas actualmente.";
-
-      /*
-       * ************Error responses*************
-       */
-
-      String DEFAULT_ERROR_JSON_RESPONSE = "Resultado inesperado - Json con mensaje de error, fecha más estado de error.";
-
-      String ERR_500 = "Error en el Servidor - ";
 
 }

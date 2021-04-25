@@ -4,6 +4,7 @@ import javax.validation.Valid;
 
 import org.jeycode.dtos.teamsdto.TeamDto;
 import org.jeycode.service.repositoryservice.TeamService;
+import org.jeycode.utilities.ControllerUrl;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,7 +18,7 @@ import lombok.RequiredArgsConstructor;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/teams")
+@RequestMapping(ControllerUrl.TEAMS_URL)
 public class TeamController
 {
 
