@@ -2,7 +2,7 @@ package org.jeycode.controllers;
 
 import org.jeycode.service.genericservice.SendLogsToSupportService;
 import org.jeycode.utilities.ApplicationExceptionUtils;
-import org.jeycode.utilities.ControllerUrl;
+import org.jeycode.utilities.ControllerUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,7 +13,7 @@ import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
 @Controller
-@RequestMapping(ControllerUrl.LOGS_URL)
+@RequestMapping(ControllerUtils.LOGS_URL)
 public class LogsController implements ApplicationExceptionUtils
 {
 

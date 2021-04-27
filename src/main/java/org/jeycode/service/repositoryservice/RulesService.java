@@ -34,9 +34,9 @@ public class RulesService implements RestServiceUtils
 
       public ResponseEntity<?> updateRules(MultipartFile rulesPdf,RulesDto rulesDto)
       {
+            tryToStoreNewPdfAndNotificateAll(rulesPdf);
             try
             {
-                  tryToStoreNewPdfAndNotificateAll(rulesPdf);
                   var resultPoints = rulesDto.getResultPoints();
                   var bcfGoalsPoints = rulesDto.getGoalsBCFPoints();
                   var signPoints = rulesDto.getSignPoints();
@@ -66,10 +66,9 @@ public class RulesService implements RestServiceUtils
 
       public ResponseEntity<?> updateToDefaultRules(MultipartFile rulesPdf)
       {
-
+            tryToStoreNewPdfAndNotificateAll(rulesPdf);
             try
             {
-                  tryToStoreNewPdfAndNotificateAll(rulesPdf);
                   String logMsg = null;
                   var defaultRules = getDefaultRulesObj();
 

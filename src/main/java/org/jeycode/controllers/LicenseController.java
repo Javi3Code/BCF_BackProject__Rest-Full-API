@@ -3,7 +3,7 @@ package org.jeycode.controllers;
 import javax.servlet.http.HttpServletRequest;
 
 import org.jeycode.service.genericservice.FilesStorageService;
-import org.jeycode.utilities.ControllerUrl;
+import org.jeycode.utilities.ControllerUtils;
 import org.springframework.core.io.Resource;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -14,7 +14,7 @@ import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
 @Controller
-@RequestMapping(ControllerUrl.LICENSE_URL)
+@RequestMapping(ControllerUtils.LICENSE_URL)
 public class LicenseController
 {
 

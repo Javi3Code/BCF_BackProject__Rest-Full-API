@@ -4,7 +4,7 @@ import javax.validation.Valid;
 
 import org.jeycode.dtos.concretematchdto.ConcreteMatchDtoToCreate;
 import org.jeycode.service.repositoryservice.ConcreteMatchService;
-import org.jeycode.utilities.ControllerUrl;
+import org.jeycode.utilities.ControllerUtils;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,7 +18,7 @@ import lombok.RequiredArgsConstructor;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping(ControllerUrl.CONCRETEMATCHS_URL)
+@RequestMapping(ControllerUtils.CONCRETEMATCHS_URL)
 public class ConcreteMatchController
 {
 

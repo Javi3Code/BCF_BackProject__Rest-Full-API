@@ -14,7 +14,6 @@ import java.util.stream.Collectors;
 
 import javax.servlet.http.HttpServletRequest;
 
-import org.jeycode.execptionsmanaged.GenericBackendException;
 import org.jeycode.execptionsmanaged.RequestParamException;
 import org.jeycode.execptionsmanaged.StorageException;
 import org.jeycode.execptionsmanaged.StorageFileNotFoundException;
@@ -81,7 +80,7 @@ public class FileSystemStorageServiceImpl implements FilesStorageService
             {
                   var erroMessage = ex.getMessage();
                   log.error(erroMessage,ex);
-                  HttpStatus status = ex instanceof GenericBackendException ? ((GenericBackendException)ex).getStatus() :
+                  HttpStatus status = ex instanceof RequestParamException ? ((RequestParamException)ex).getStatus() :
                         HttpStatus.INTERNAL_SERVER_ERROR;
                   throw new ResponseStatusException(status,erroMessage);
             }
