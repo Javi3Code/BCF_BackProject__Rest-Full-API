@@ -41,16 +41,86 @@ public interface SwaggerStrings
       String ERR_415 = "Petición mal realizada - Media_Type pasado no soportado";
 
       /*
-       * ***************** Dto Names ***********++
+       * ***************** PARAM Names ***********++
        */
 
       String RULES_DTO = "RulesDto";
+
+      String LOGS_REQUEST_DEFAULT_MSG_NAME = "";
 
       /*
        * ****************************Type of Produces or Consumes***************+
        */
 
       String COMMA = ", ";
+
+      /*
+       * ********** License Controller *******
+       */
+
+      String LICENSE_CONTROLLER_TAG = "";
+      String GET_LICENSE = "";
+      String GET_LICENSE_NOTES = "";
+      String GET_LICENSE_OK = "";
+      
+
+      /*
+       * ************ Logs Controller **************
+       */
+
+      String LOGS_CONTROLLER_TAG = "";
+      String GET_SEND_LOGS = "";
+      String GET_SEND_LOGS_NOTES = "";
+      String GET_SEND_LOGS_OK = "";
+      String GET_SEND_LOGS_DESC = "";
+      /*
+       * ******************* concreteMatch Controller ************
+       */
+
+      String POST_CONCRETEMATCH_IN = "";
+      String POST_CONCRETEMATCH_IN_NOTES = "";
+      String POST_CONCRETEMATCH_IN_OK = "";
+      String CONCRETEMATCH_ADD_DESC = "";
+      String CONCRETEMATCH_ADD_DTO = "Partido concreto";
+
+      String GET_CONCRETEMATCH = "";
+      String GET_CONCRETEMATCH_NOTES = "";
+      String GET_CONCRETEMATCH_OK = "";
+
+      String DELETE_CONCRETEMATCH_IN = "";
+      String DELETE_CONCRETEMATCH_IN_NOTES = "";
+      String DELETE_CONCRETEMATCH_IN_OK = "";
+      String CONCRETEMATCH_DEL_DESC = "";
+
+      /*
+       * ******************* players Controller ************
+       */
+
+      String PLAYER_CONTROLLER_TAG = "";
+
+      String POST_PLAYER_IN = "";
+      String POST_PLAYER_IN_NOTES = "";
+      String POST_PLAYER_IN_OK = "";
+      String PLAYER_ADD_DESC = "";
+
+      String PUT_PLAYER_UP = "";
+      String PUT_PLAYER_UP_NOTES = "";
+      String PUT_PLAYER_UP_OK = "";
+      String PLAYER_UP_DESC = "";
+
+      String GET_PLAYERS = "";
+      String GET_PLAYERS_NOTES = "";
+      String GET_PLAYERS_OK_0 = "";
+      String GET_PLAYERS_OK_1 = "";
+      String GET_PLAYERS_OK_2 = "";
+      String PLAYERS_GET_DESC = "";
+      String PLAYER_LEVEL_DATA_NAME = "Nivel de datos";
+      String PLAYERS_GET_ALOWABLES_VALUES = "0,1,2";
+
+      String DELETE_PLAYER_IN = "";
+      String DELETE_PLAYER_IN_NOTES = "";
+      String DELETE_PLAYER_IN_OK = "";
+      String PLAYER_DEL_DESC = "";
 
       /*
        * ********************* teams Controller *****************++

@@ -20,27 +20,26 @@ import lombok.RequiredArgsConstructor;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping(ControllerUtils.FOOTBALLDAY_URL)
-public class FootballDayController
+public class FootballDayController implements ControllerUtils
 {
 
       private final FootballDayService footballDayService;
 
       @PostMapping
-      public ResponseEntity<?> insertOnePlayerResult(@Valid
-      @RequestBody PlayerFootballmatchDtoToCreate plfmDto)
+      public ResponseEntity<?> insertOnePlayerResult(@Valid @RequestBody PlayerFootballmatchDtoToCreate plfmDto)
       {
             return footballDayService.insertOnePlayerResult(plfmDto);
       }
 
       @GetMapping
-      public ResponseEntity<?> getFootballDayData(@RequestParam(name = "typeOfData", required = false, defaultValue = "0") int typeOfData)
+      public ResponseEntity<?> getFootballDayData(@RequestParam(name = FT_DAY_TYPE_OF_DATA_PARAM, required = false,
+            defaultValue = ZERO_DFLT_VALUE) int typeOfData)
       {
             return footballDayService.getFootballDayData(typeOfData);
       }
 
       @PutMapping
-      public ResponseEntity<?> endTheFootballDay(@Valid
-      @RequestBody ConcreteMatchDtoToUpdate concreteMatch)
+      public ResponseEntity<?> endTheFootballDay(@Valid @RequestBody ConcreteMatchDtoToUpdate concreteMatch)
       {
             return footballDayService.endTheFootballDay(concreteMatch);
       }

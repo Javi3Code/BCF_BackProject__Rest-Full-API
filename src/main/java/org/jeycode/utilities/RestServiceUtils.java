@@ -62,7 +62,7 @@ public interface RestServiceUtils extends ApplicationExceptionUtils,ApplicationC
       {
             return localGoals > visitorGoals ? LOCAL_WINNER : localGoals == visitorGoals ? TIE : VISITOR_WINNER;
       }
-      
+
       default short getBcfGoals(ConcreteMatch openConcreteMatch,short localGoals,short visitorGoals)
       {
             var bcfIsTheLocalTeam = openConcreteMatch.getLocalTeam()

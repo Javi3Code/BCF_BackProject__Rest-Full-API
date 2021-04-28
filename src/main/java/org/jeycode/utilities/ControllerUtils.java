@@ -16,10 +16,25 @@ public interface ControllerUtils extends SwaggerStrings
       String LICENSE_URL = "/license";
 
       /*
+       * 
+       */
+
+      String ZERO_DFLT_VALUE = "0";
+
+      /*
        * ****************** Strings ***************************
        */
+
       String FALSE = "false";
       String LIST_CONTAINER = "List";
+
+      String LOGS_REQUEST_DEFAULT_MSG = "Error en la aplicación, revisar los logs. ";
+
+      /*
+       * ******* Players *****
+       */
+
+      String PLAYER_LEVEL_NAME = "level";
 
       /*
        * *********** Teams *************
@@ -33,5 +48,11 @@ public interface ControllerUtils extends SwaggerStrings
 
       String RULES_PDF_PART_NAME = "rulesPdf";
       String RULES_DTO_PART_NAME = "rules";
+
+      /*
+       * ************ footballday******
+       */
+
+      String FT_DAY_TYPE_OF_DATA_PARAM = "typeOfData";
 
 }
