@@ -86,8 +86,7 @@ public class ConcreteMatchService implements RestServiceUtils
                   {
                         concreteMatchRepository.deleteAll();
                         log.info("Se han borrado todos los partidos de la temporada.");
-                        return ResponseEntity.ok()
-                                             .build();
+                        return ResponseEntity.ok(true);
                   }
                   if (!(concreteMatchRepository.deleteByResultOfConcreteMatchIsNull() > 0))
                   {
@@ -95,8 +94,7 @@ public class ConcreteMatchService implements RestServiceUtils
                   }
 
                   log.info("Se ha borrado el partido abierto");
-                  return ResponseEntity.ok()
-                                       .build();
+                  return ResponseEntity.ok(true);
             }
             catch (GenericBackendException ex)
             {

@@ -98,8 +98,7 @@ public class SendMailService implements RestServiceUtils
       public void sendSeasonRestartInfoMail(String[] allPlayerMail,String playerWinnerNick)
       {
 
-            if (allPlayerMail.length != 0)
-            {
+            
                   try
                   {
                         log.info("Se resetea la temporada, se envía aviso a todos los jugadores.");
@@ -120,11 +119,6 @@ public class SendMailService implements RestServiceUtils
                   {
                         log.error("Error al crear el mail de reseteo de temporada.",ex);
                   }
-            }
-            else
-            {
-                  log.info("Aún no existen usuarios a los que avisar.");
-            }
       }
 
       @Async(EXECUTOR_SEND_MAIL)

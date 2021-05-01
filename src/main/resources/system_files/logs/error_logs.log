@@ -1,184 +1,25 @@
-2021-04-28 19:48:36.421  INFO 16332 --- [main] org.jeycode.ApplicationRunner            : Starting ApplicationRunner using Java 11.0.6 on LAPTOP-0FVBB724 with PID 16332 (C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI\target\classes started by JAVIER in C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI)
-2021-04-28 19:48:36.435  INFO 16332 --- [main] org.jeycode.ApplicationRunner            : No active profile set, falling back to default profiles: default
-2021-04-28 19:48:37.956  INFO 16332 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-04-28 19:48:38.144  INFO 16332 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 170 ms. Found 5 JPA repository interfaces.
-2021-04-28 19:48:39.138  INFO 16332 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-04-28 19:48:39.146  INFO 16332 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-04-28 19:48:39.146  INFO 16332 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
-2021-04-28 19:48:39.253  INFO 16332 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-04-28 19:48:39.253  INFO 16332 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2740 ms
-2021-04-28 19:48:39.304  INFO 16332 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-04-28 19:48:39.534  INFO 16332 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-04-28 19:48:39.550  INFO 16332 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:62f04863-bc71-49bf-952a-bf80776b6504'
-2021-04-28 19:48:39.754  INFO 16332 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-04-28 19:48:39.810  INFO 16332 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
-2021-04-28 19:48:39.935  INFO 16332 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2021-04-28 19:48:40.078  INFO 16332 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2021-04-28 19:48:40.879  INFO 16332 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-04-28 19:48:40.889  INFO 16332 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-04-28 19:48:41.864  INFO 16332 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService
-2021-04-28 19:48:41.877  INFO 16332 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'sendMailServiceTaskExecutor'
-2021-04-28 19:48:41.894  INFO 16332 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2021-04-28 19:48:42.194  INFO 16332 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-04-28 19:48:42.194  INFO 16332 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2021-04-28 19:48:42.225  INFO 16332 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2021-04-28 19:48:42.256  INFO 16332 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2021-04-28 19:48:42.534  INFO 16332 --- [main] org.jeycode.ApplicationRunner            : Started ApplicationRunner in 6.74 seconds (JVM running for 7.295)
-2021-04-28 19:48:43.332  INFO 16332 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-04-28 19:48:43.333  INFO 16332 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-04-28 19:48:43.335  INFO 16332 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-04-28 19:48:43.398 ERROR 16332 --- [http-nio-8080-exec-1] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-28 19:48:43.399 ERROR 16332 --- [http-nio-8080-exec-1] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-04-28 19:48:43.399 ERROR 16332 --- [http-nio-8080-exec-1] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-04-28 19:48:43.399 ERROR 16332 --- [http-nio-8080-exec-1] o.j.e.ApiErrorAttributes                 : Message: 
-2021-04-28 19:48:43.471 ERROR 16332 --- [http-nio-8080-exec-2] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-28 19:48:43.472 ERROR 16332 --- [http-nio-8080-exec-2] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-04-28 19:48:43.472 ERROR 16332 --- [http-nio-8080-exec-2] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-04-28 19:48:43.472 ERROR 16332 --- [http-nio-8080-exec-2] o.j.e.ApiErrorAttributes                 : Message: 
-2021-04-28 19:48:43.485 ERROR 16332 --- [http-nio-8080-exec-3] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-28 19:48:43.485 ERROR 16332 --- [http-nio-8080-exec-3] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-04-28 19:48:43.485 ERROR 16332 --- [http-nio-8080-exec-3] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-04-28 19:48:43.485 ERROR 16332 --- [http-nio-8080-exec-3] o.j.e.ApiErrorAttributes                 : Message: 
-2021-04-28 19:50:29.282 ERROR 16332 --- [http-nio-8080-exec-5] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-28 19:50:29.283 ERROR 16332 --- [http-nio-8080-exec-5] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-04-28 19:50:29.284 ERROR 16332 --- [http-nio-8080-exec-5] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-04-28 19:50:29.284 ERROR 16332 --- [http-nio-8080-exec-5] o.j.e.ApiErrorAttributes                 : Message: 
-2021-04-28 19:50:29.291 ERROR 16332 --- [http-nio-8080-exec-6] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-28 19:50:29.291 ERROR 16332 --- [http-nio-8080-exec-6] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-04-28 19:50:29.291 ERROR 16332 --- [http-nio-8080-exec-6] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-04-28 19:50:29.291 ERROR 16332 --- [http-nio-8080-exec-6] o.j.e.ApiErrorAttributes                 : Message: 
-2021-04-28 19:50:29.297 ERROR 16332 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-28 19:50:29.297 ERROR 16332 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-04-28 19:50:29.297 ERROR 16332 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-04-28 19:50:29.297 ERROR 16332 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Message: 
-2021-04-28 19:50:30.671 ERROR 16332 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-28 19:50:30.674 ERROR 16332 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-04-28 19:50:30.676 ERROR 16332 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-04-28 19:50:30.677 ERROR 16332 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Message: 
-2021-04-28 19:50:30.686 ERROR 16332 --- [http-nio-8080-exec-9] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-28 19:50:30.686 ERROR 16332 --- [http-nio-8080-exec-9] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-04-28 19:50:30.686 ERROR 16332 --- [http-nio-8080-exec-9] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-04-28 19:50:30.686 ERROR 16332 --- [http-nio-8080-exec-9] o.j.e.ApiErrorAttributes                 : Message: 
-2021-04-28 19:50:30.693 ERROR 16332 --- [http-nio-8080-exec-10] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-28 19:50:30.693 ERROR 16332 --- [http-nio-8080-exec-10] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-04-28 19:50:30.693 ERROR 16332 --- [http-nio-8080-exec-10] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-04-28 19:50:30.693 ERROR 16332 --- [http-nio-8080-exec-10] o.j.e.ApiErrorAttributes                 : Message: 
-2021-04-28 19:50:46.561 ERROR 16332 --- [http-nio-8080-exec-1] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-28 19:50:46.561 ERROR 16332 --- [http-nio-8080-exec-1] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-04-28 19:50:46.561 ERROR 16332 --- [http-nio-8080-exec-1] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-04-28 19:50:46.561 ERROR 16332 --- [http-nio-8080-exec-1] o.j.e.ApiErrorAttributes                 : Message: 
-2021-04-28 19:50:46.569 ERROR 16332 --- [http-nio-8080-exec-2] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-28 19:50:46.569 ERROR 16332 --- [http-nio-8080-exec-2] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-04-28 19:50:46.569 ERROR 16332 --- [http-nio-8080-exec-2] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-04-28 19:50:46.569 ERROR 16332 --- [http-nio-8080-exec-2] o.j.e.ApiErrorAttributes                 : Message: 
-2021-04-28 19:50:46.575 ERROR 16332 --- [http-nio-8080-exec-3] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-28 19:50:46.575 ERROR 16332 --- [http-nio-8080-exec-3] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-04-28 19:50:46.575 ERROR 16332 --- [http-nio-8080-exec-3] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-04-28 19:50:46.575 ERROR 16332 --- [http-nio-8080-exec-3] o.j.e.ApiErrorAttributes                 : Message: 
-2021-04-28 19:50:48.024 ERROR 16332 --- [http-nio-8080-exec-4] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-28 19:50:48.025 ERROR 16332 --- [http-nio-8080-exec-4] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-04-28 19:50:48.025 ERROR 16332 --- [http-nio-8080-exec-4] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-04-28 19:50:48.025 ERROR 16332 --- [http-nio-8080-exec-4] o.j.e.ApiErrorAttributes                 : Message: 
-2021-04-28 19:50:48.034 ERROR 16332 --- [http-nio-8080-exec-5] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-28 19:50:48.034 ERROR 16332 --- [http-nio-8080-exec-5] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-04-28 19:50:48.034 ERROR 16332 --- [http-nio-8080-exec-5] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-04-28 19:50:48.034 ERROR 16332 --- [http-nio-8080-exec-5] o.j.e.ApiErrorAttributes                 : Message: 
-2021-04-28 19:50:48.041 ERROR 16332 --- [http-nio-8080-exec-6] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-28 19:50:48.041 ERROR 16332 --- [http-nio-8080-exec-6] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-04-28 19:50:48.041 ERROR 16332 --- [http-nio-8080-exec-6] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-04-28 19:50:48.041 ERROR 16332 --- [http-nio-8080-exec-6] o.j.e.ApiErrorAttributes                 : Message: 
-2021-04-28 19:50:49.063 ERROR 16332 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-28 19:50:49.063 ERROR 16332 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-04-28 19:50:49.063 ERROR 16332 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-04-28 19:50:49.063 ERROR 16332 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Message: 
-2021-04-28 19:50:49.070 ERROR 16332 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-28 19:50:49.070 ERROR 16332 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-04-28 19:50:49.070 ERROR 16332 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-04-28 19:50:49.070 ERROR 16332 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Message: 
-2021-04-28 19:50:49.075 ERROR 16332 --- [http-nio-8080-exec-9] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-28 19:50:49.075 ERROR 16332 --- [http-nio-8080-exec-9] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-04-28 19:50:49.075 ERROR 16332 --- [http-nio-8080-exec-9] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-04-28 19:50:49.075 ERROR 16332 --- [http-nio-8080-exec-9] o.j.e.ApiErrorAttributes                 : Message: 
-2021-04-28 19:50:55.282 ERROR 16332 --- [http-nio-8080-exec-10] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-28 19:50:55.283 ERROR 16332 --- [http-nio-8080-exec-10] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-04-28 19:50:55.283 ERROR 16332 --- [http-nio-8080-exec-10] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-04-28 19:50:55.283 ERROR 16332 --- [http-nio-8080-exec-10] o.j.e.ApiErrorAttributes                 : Message: 
-2021-04-28 19:50:55.292 ERROR 16332 --- [http-nio-8080-exec-1] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-28 19:50:55.293 ERROR 16332 --- [http-nio-8080-exec-1] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-04-28 19:50:55.293 ERROR 16332 --- [http-nio-8080-exec-1] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-04-28 19:50:55.293 ERROR 16332 --- [http-nio-8080-exec-1] o.j.e.ApiErrorAttributes                 : Message: 
-2021-04-28 19:50:55.300 ERROR 16332 --- [http-nio-8080-exec-2] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-28 19:50:55.300 ERROR 16332 --- [http-nio-8080-exec-2] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-04-28 19:50:55.300 ERROR 16332 --- [http-nio-8080-exec-2] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-04-28 19:50:55.300 ERROR 16332 --- [http-nio-8080-exec-2] o.j.e.ApiErrorAttributes                 : Message: 
-2021-04-28 19:50:55.888 ERROR 16332 --- [http-nio-8080-exec-3] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-28 19:50:55.888 ERROR 16332 --- [http-nio-8080-exec-3] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-04-28 19:50:55.888 ERROR 16332 --- [http-nio-8080-exec-3] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-04-28 19:50:55.888 ERROR 16332 --- [http-nio-8080-exec-3] o.j.e.ApiErrorAttributes                 : Message: 
-2021-04-28 19:50:55.892 ERROR 16332 --- [http-nio-8080-exec-4] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-28 19:50:55.892 ERROR 16332 --- [http-nio-8080-exec-4] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-04-28 19:50:55.892 ERROR 16332 --- [http-nio-8080-exec-4] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-04-28 19:50:55.892 ERROR 16332 --- [http-nio-8080-exec-4] o.j.e.ApiErrorAttributes                 : Message: 
-2021-04-28 19:50:55.898 ERROR 16332 --- [http-nio-8080-exec-5] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-28 19:50:55.898 ERROR 16332 --- [http-nio-8080-exec-5] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-04-28 19:50:55.898 ERROR 16332 --- [http-nio-8080-exec-5] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-04-28 19:50:55.898 ERROR 16332 --- [http-nio-8080-exec-5] o.j.e.ApiErrorAttributes                 : Message: 
-2021-04-28 19:50:58.280 ERROR 16332 --- [http-nio-8080-exec-6] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-28 19:50:58.281 ERROR 16332 --- [http-nio-8080-exec-6] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-04-28 19:50:58.281 ERROR 16332 --- [http-nio-8080-exec-6] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-04-28 19:50:58.281 ERROR 16332 --- [http-nio-8080-exec-6] o.j.e.ApiErrorAttributes                 : Message: 
-2021-04-28 19:50:58.287 ERROR 16332 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-28 19:50:58.287 ERROR 16332 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-04-28 19:50:58.287 ERROR 16332 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-04-28 19:50:58.287 ERROR 16332 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Message: 
-2021-04-28 19:50:58.292 ERROR 16332 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-28 19:50:58.292 ERROR 16332 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-04-28 19:50:58.292 ERROR 16332 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-04-28 19:50:58.292 ERROR 16332 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Message: 
-2021-04-28 19:51:05.882 ERROR 16332 --- [http-nio-8080-exec-4] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-28 19:51:05.882 ERROR 16332 --- [http-nio-8080-exec-4] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-04-28 19:51:05.882 ERROR 16332 --- [http-nio-8080-exec-4] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-04-28 19:51:05.882 ERROR 16332 --- [http-nio-8080-exec-4] o.j.e.ApiErrorAttributes                 : Message: 
-2021-04-28 19:51:05.915 ERROR 16332 --- [http-nio-8080-exec-5] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-28 19:51:05.915 ERROR 16332 --- [http-nio-8080-exec-5] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-04-28 19:51:05.915 ERROR 16332 --- [http-nio-8080-exec-5] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-04-28 19:51:05.915 ERROR 16332 --- [http-nio-8080-exec-5] o.j.e.ApiErrorAttributes                 : Message: 
-2021-04-28 19:51:05.968  WARN 16332 --- [http-nio-8080-exec-3] i.s.m.p.AbstractSerializableParameter    : Illegal DefaultValue 0 for parameter type integer
+2021-05-01 12:42:20.262 ERROR 4516 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Throwable: org.springframework.web.server.ResponseStatusException: 409 CONFLICT "El equipo ya se encontraba guardado en la base de datos, no puede haber dos equipos con el mismo nombre. "
+2021-05-01 12:42:20.276 ERROR 4516 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Mensaje a devolver: El equipo ya se encontraba guardado en la base de datos, no puede haber dos equipos con el mismo nombre. 
+2021-05-01 12:42:20.276 ERROR 4516 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Message: El equipo ya se encontraba guardado en la base de datos, no puede haber dos equipos con el mismo nombre. 
+2021-05-01 12:42:20.299  INFO 4516 --- [http-nio-8080-exec-10] o.j.s.repositoryservice.TeamService      : Se han obtenido todos los equipos de la database.
+2021-05-01 12:42:20.305 ERROR 4516 --- [http-nio-8080-exec-8] o.j.s.repositoryservice.TeamService      : El equipo a borrar no puede ser nulo. 
 
-java.lang.NumberFormatException: For input string: ""
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[na:na]
-	at java.base/java.lang.Long.parseLong(Long.java:702) ~[na:na]
-	at java.base/java.lang.Long.valueOf(Long.java:1144) ~[na:na]
-	at io.swagger.models.parameters.AbstractSerializableParameter.getExample(AbstractSerializableParameter.java:412) ~[swagger-models-1.5.20.jar:1.5.20]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
-	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:689) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:755) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serializeContents(IndexedListSerializer.java:119) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serialize(IndexedListSerializer.java:79) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serialize(IndexedListSerializer.java:18) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:728) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:755) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:728) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:755) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.std.MapSerializer.serializeFields(MapSerializer.java:726) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.std.MapSerializer.serializeWithoutTypeInfo(MapSerializer.java:681) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.std.MapSerializer.serialize(MapSerializer.java:637) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.std.MapSerializer.serialize(MapSerializer.java:33) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:728) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:755) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:480) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:319) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ObjectMapper._writeValueAndClose(ObjectMapper.java:4409) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ObjectMapper.writeValueAsString(ObjectMapper.java:3663) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at springfox.documentation.spring.web.json.JsonSerializer.toJson(JsonSerializer.java:38) ~[springfox-spring-web-2.9.2.jar:null]
-	at springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(Swagger2Controller.java:105) ~[springfox-swagger2-2.9.2.jar:null]
+org.jeycode.execptionsmanaged.RequestParamException: El equipo a borrar no puede ser nulo. 
+	at org.jeycode.service.repositoryservice.TeamService.deleteOneOrMoreTeams(TeamService.java:122) ~[classes/:na]
+	at org.jeycode.service.repositoryservice.TeamService.tryToDeleteOneOrMoreTeams(TeamService.java:83) ~[classes/:na]
+	at org.jeycode.service.repositoryservice.TeamService$$FastClassBySpringCGLIB$$781bf70f.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.4.jar:5.3.4]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.4.jar:5.3.4]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.jeycode.service.repositoryservice.TeamService$$EnhancerBySpringCGLIB$$21990e27.tryToDeleteOneOrMoreTeams(<generated>) ~[classes/:na]
+	at org.jeycode.controllers.TeamController.deleteOneOrMoreTeams(TeamController.java:67) ~[classes/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -192,8 +33,8 @@ java.lang.NumberFormatException: For input string: ""
 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.4.jar:5.3.4]
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.4.jar:5.3.4]
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:931) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.4.jar:5.3.4]
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
@@ -230,79 +71,28 @@ java.lang.NumberFormatException: For input string: ""
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
 	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
 
-2021-04-28 19:55:30.729  INFO 7792 --- [main] org.jeycode.ApplicationRunner            : Starting ApplicationRunner using Java 11.0.6 on LAPTOP-0FVBB724 with PID 7792 (C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI\target\classes started by JAVIER in C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI)
-2021-04-28 19:55:30.733  INFO 7792 --- [main] org.jeycode.ApplicationRunner            : No active profile set, falling back to default profiles: default
-2021-04-28 19:55:31.771  INFO 7792 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-04-28 19:55:31.899  INFO 7792 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 115 ms. Found 5 JPA repository interfaces.
-2021-04-28 19:55:32.748  INFO 7792 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-04-28 19:55:32.764  INFO 7792 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-04-28 19:55:32.764  INFO 7792 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
-2021-04-28 19:55:32.877  INFO 7792 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-04-28 19:55:32.879  INFO 7792 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2092 ms
-2021-04-28 19:55:32.912  INFO 7792 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-04-28 19:55:33.087  INFO 7792 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-04-28 19:55:33.087  INFO 7792 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:e6c8ddb4-c4bd-4012-bab6-3b55adff786f'
-2021-04-28 19:55:33.251  INFO 7792 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-04-28 19:55:33.298  INFO 7792 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
-2021-04-28 19:55:33.412  INFO 7792 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2021-04-28 19:55:33.537  INFO 7792 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2021-04-28 19:55:34.359  INFO 7792 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-04-28 19:55:34.375  INFO 7792 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-04-28 19:55:35.386  INFO 7792 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService
-2021-04-28 19:55:35.393  INFO 7792 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'sendMailServiceTaskExecutor'
-2021-04-28 19:55:35.425  INFO 7792 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2021-04-28 19:55:35.753  INFO 7792 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-04-28 19:55:35.753  INFO 7792 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2021-04-28 19:55:35.784  INFO 7792 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2021-04-28 19:55:35.815  INFO 7792 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2021-04-28 19:55:36.073  INFO 7792 --- [main] org.jeycode.ApplicationRunner            : Started ApplicationRunner in 5.81 seconds (JVM running for 6.358)
-2021-04-28 19:55:39.375  INFO 7792 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-04-28 19:55:39.378  INFO 7792 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-04-28 19:55:39.379  INFO 7792 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-04-28 19:55:39.690 ERROR 7792 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-28 19:55:39.691 ERROR 7792 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-04-28 19:55:39.691 ERROR 7792 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-04-28 19:55:39.693 ERROR 7792 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Message: 
-2021-04-28 19:55:39.718 ERROR 7792 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-28 19:55:39.718 ERROR 7792 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-04-28 19:55:39.718 ERROR 7792 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-04-28 19:55:39.719 ERROR 7792 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Message: 
-2021-04-28 19:55:39.786  WARN 7792 --- [http-nio-8080-exec-6] i.s.m.p.AbstractSerializableParameter    : Illegal DefaultValue 0 for parameter type integer
+2021-05-01 12:42:20.306 ERROR 4516 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
+2021-05-01 12:42:20.306 ERROR 4516 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Status: 400
+2021-05-01 12:42:20.306 ERROR 4516 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Throwable: org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "El equipo a borrar no puede ser nulo. "
+2021-05-01 12:42:20.306 ERROR 4516 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Mensaje a devolver: El equipo a borrar no puede ser nulo. 
+2021-05-01 12:42:20.306 ERROR 4516 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Message: El equipo a borrar no puede ser nulo. 
+2021-05-01 12:45:03.105 ERROR 4516 --- [http-nio-8080-exec-9] o.j.s.repositoryservice.TeamService      : El equipo ya se encontraba guardado en la base de datos, no puede haber dos equipos con el mismo nombre. 
 
-java.lang.NumberFormatException: For input string: ""
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[na:na]
-	at java.base/java.lang.Long.parseLong(Long.java:702) ~[na:na]
-	at java.base/java.lang.Long.valueOf(Long.java:1144) ~[na:na]
-	at io.swagger.models.parameters.AbstractSerializableParameter.getExample(AbstractSerializableParameter.java:412) ~[swagger-models-1.5.20.jar:1.5.20]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
-	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:689) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:755) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serializeContents(IndexedListSerializer.java:119) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serialize(IndexedListSerializer.java:79) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serialize(IndexedListSerializer.java:18) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:728) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:755) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:728) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:755) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.std.MapSerializer.serializeFields(MapSerializer.java:726) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.std.MapSerializer.serializeWithoutTypeInfo(MapSerializer.java:681) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.std.MapSerializer.serialize(MapSerializer.java:637) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.std.MapSerializer.serialize(MapSerializer.java:33) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:728) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:755) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:480) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:319) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ObjectMapper._writeValueAndClose(ObjectMapper.java:4409) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ObjectMapper.writeValueAsString(ObjectMapper.java:3663) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at springfox.documentation.spring.web.json.JsonSerializer.toJson(JsonSerializer.java:38) ~[springfox-spring-web-2.9.2.jar:null]
-	at springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(Swagger2Controller.java:105) ~[springfox-swagger2-2.9.2.jar:null]
+org.jeycode.execptionsmanaged.UniqueConstraintException: El equipo ya se encontraba guardado en la base de datos, no puede haber dos equipos con el mismo nombre. 
+	at org.jeycode.service.repositoryservice.TeamService.insertOneTeam(TeamService.java:38) ~[classes/:na]
+	at org.jeycode.service.repositoryservice.TeamService$$FastClassBySpringCGLIB$$781bf70f.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.4.jar:5.3.4]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.4.jar:5.3.4]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.jeycode.service.repositoryservice.TeamService$$EnhancerBySpringCGLIB$$21990e27.insertOneTeam(<generated>) ~[classes/:na]
+	at org.jeycode.controllers.TeamController.insertOneTeam(TeamController.java:42) ~[classes/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -316,8 +106,8 @@ java.lang.NumberFormatException: For input string: ""
 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.4.jar:5.3.4]
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.4.jar:5.3.4]
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.4.jar:5.3.4]
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
@@ -354,79 +144,29 @@ java.lang.NumberFormatException: For input string: ""
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
 	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
 
-2021-04-28 20:16:55.661  INFO 1240 --- [main] org.jeycode.ApplicationRunner            : Starting ApplicationRunner using Java 11.0.6 on LAPTOP-0FVBB724 with PID 1240 (C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI\target\classes started by JAVIER in C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI)
-2021-04-28 20:16:55.678  INFO 1240 --- [main] org.jeycode.ApplicationRunner            : No active profile set, falling back to default profiles: default
-2021-04-28 20:16:56.903  INFO 1240 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-04-28 20:16:57.065  INFO 1240 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 144 ms. Found 5 JPA repository interfaces.
-2021-04-28 20:16:57.954  INFO 1240 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-04-28 20:16:57.960  INFO 1240 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-04-28 20:16:57.960  INFO 1240 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
-2021-04-28 20:16:58.122  INFO 1240 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-04-28 20:16:58.123  INFO 1240 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2346 ms
-2021-04-28 20:16:58.188  INFO 1240 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-04-28 20:16:58.417  INFO 1240 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-04-28 20:16:58.423  INFO 1240 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:db2e8569-bbb5-4e07-8287-e68d05ed9b63'
-2021-04-28 20:16:58.591  INFO 1240 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-04-28 20:16:58.646  INFO 1240 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
-2021-04-28 20:16:58.772  INFO 1240 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2021-04-28 20:16:58.909  INFO 1240 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2021-04-28 20:16:59.680  INFO 1240 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-04-28 20:16:59.712  INFO 1240 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-04-28 20:17:00.675  INFO 1240 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService
-2021-04-28 20:17:00.680  INFO 1240 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'sendMailServiceTaskExecutor'
-2021-04-28 20:17:00.696  INFO 1240 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2021-04-28 20:17:00.979  INFO 1240 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-04-28 20:17:00.979  INFO 1240 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2021-04-28 20:17:00.994  INFO 1240 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2021-04-28 20:17:01.026  INFO 1240 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2021-04-28 20:17:01.260  INFO 1240 --- [main] org.jeycode.ApplicationRunner            : Started ApplicationRunner in 6.13 seconds (JVM running for 6.689)
-2021-04-28 20:17:13.439  INFO 1240 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-04-28 20:17:13.441  INFO 1240 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-04-28 20:17:13.443  INFO 1240 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-04-28 20:17:13.805 ERROR 1240 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-28 20:17:13.807 ERROR 1240 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-04-28 20:17:13.807 ERROR 1240 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-04-28 20:17:13.808 ERROR 1240 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Message: 
-2021-04-28 20:17:13.827 ERROR 1240 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-28 20:17:13.828 ERROR 1240 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-04-28 20:17:13.828 ERROR 1240 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-04-28 20:17:13.828 ERROR 1240 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Message: 
-2021-04-28 20:17:13.894  WARN 1240 --- [http-nio-8080-exec-6] i.s.m.p.AbstractSerializableParameter    : Illegal DefaultValue 0 for parameter type integer
+2021-05-01 12:45:03.106 ERROR 4516 --- [http-nio-8080-exec-9] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
+2021-05-01 12:45:03.107 ERROR 4516 --- [http-nio-8080-exec-9] o.j.e.ApiErrorAttributes                 : Status: 409
+2021-05-01 12:45:03.107 ERROR 4516 --- [http-nio-8080-exec-9] o.j.e.ApiErrorAttributes                 : Throwable: org.springframework.web.server.ResponseStatusException: 409 CONFLICT "El equipo ya se encontraba guardado en la base de datos, no puede haber dos equipos con el mismo nombre. "
+2021-05-01 12:45:03.107 ERROR 4516 --- [http-nio-8080-exec-9] o.j.e.ApiErrorAttributes                 : Mensaje a devolver: El equipo ya se encontraba guardado en la base de datos, no puede haber dos equipos con el mismo nombre. 
+2021-05-01 12:45:03.107 ERROR 4516 --- [http-nio-8080-exec-9] o.j.e.ApiErrorAttributes                 : Message: El equipo ya se encontraba guardado en la base de datos, no puede haber dos equipos con el mismo nombre. 
+2021-05-01 12:45:03.163  INFO 4516 --- [http-nio-8080-exec-1] o.j.s.repositoryservice.TeamService      : Se han obtenido todos los equipos de la database.
+2021-05-01 12:47:43.454 ERROR 4516 --- [http-nio-8080-exec-3] o.j.s.repositoryservice.TeamService      : El equipo ya se encontraba guardado en la base de datos, no puede haber dos equipos con el mismo nombre. 
 
-java.lang.NumberFormatException: For input string: ""
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[na:na]
-	at java.base/java.lang.Long.parseLong(Long.java:702) ~[na:na]
-	at java.base/java.lang.Long.valueOf(Long.java:1144) ~[na:na]
-	at io.swagger.models.parameters.AbstractSerializableParameter.getExample(AbstractSerializableParameter.java:412) ~[swagger-models-1.5.20.jar:1.5.20]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
-	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:689) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:755) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serializeContents(IndexedListSerializer.java:119) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serialize(IndexedListSerializer.java:79) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serialize(IndexedListSerializer.java:18) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:728) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:755) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:728) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:755) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.std.MapSerializer.serializeFields(MapSerializer.java:726) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.std.MapSerializer.serializeWithoutTypeInfo(MapSerializer.java:681) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.std.MapSerializer.serialize(MapSerializer.java:637) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.std.MapSerializer.serialize(MapSerializer.java:33) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:728) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:755) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:480) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:319) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ObjectMapper._writeValueAndClose(ObjectMapper.java:4409) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ObjectMapper.writeValueAsString(ObjectMapper.java:3663) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at springfox.documentation.spring.web.json.JsonSerializer.toJson(JsonSerializer.java:38) ~[springfox-spring-web-2.9.2.jar:null]
-	at springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(Swagger2Controller.java:105) ~[springfox-swagger2-2.9.2.jar:null]
+org.jeycode.execptionsmanaged.UniqueConstraintException: El equipo ya se encontraba guardado en la base de datos, no puede haber dos equipos con el mismo nombre. 
+	at org.jeycode.service.repositoryservice.TeamService.insertOneTeam(TeamService.java:38) ~[classes/:na]
+	at org.jeycode.service.repositoryservice.TeamService$$FastClassBySpringCGLIB$$781bf70f.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.4.jar:5.3.4]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.4.jar:5.3.4]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.jeycode.service.repositoryservice.TeamService$$EnhancerBySpringCGLIB$$21990e27.insertOneTeam(<generated>) ~[classes/:na]
+	at org.jeycode.controllers.TeamController.insertOneTeam(TeamController.java:42) ~[classes/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -440,8 +180,8 @@ java.lang.NumberFormatException: For input string: ""
 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.4.jar:5.3.4]
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.4.jar:5.3.4]
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.4.jar:5.3.4]
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
@@ -478,81 +218,66 @@ java.lang.NumberFormatException: For input string: ""
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
 	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
 
-2021-04-28 20:17:35.569  INFO 1240 --- [http-nio-8080-exec-9] o.j.s.repositoryservice.PlayerService    : Se han obtenido todos los jugadores de la database.
-2021-04-28 20:18:13.735  INFO 1240 --- [http-nio-8080-exec-10] o.j.s.repositoryservice.PlayerService    : Se han obtenido todos los jugadores de la database.
-2021-04-28 20:26:35.667  INFO 8900 --- [main] org.jeycode.ApplicationRunner            : Starting ApplicationRunner using Java 11.0.6 on LAPTOP-0FVBB724 with PID 8900 (C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI\target\classes started by JAVIER in C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI)
-2021-04-28 20:26:35.676  INFO 8900 --- [main] org.jeycode.ApplicationRunner            : No active profile set, falling back to default profiles: default
-2021-04-28 20:26:36.868  INFO 8900 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-04-28 20:26:37.004  INFO 8900 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 125 ms. Found 5 JPA repository interfaces.
-2021-04-28 20:26:37.918  INFO 8900 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-04-28 20:26:37.934  INFO 8900 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-04-28 20:26:37.934  INFO 8900 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
-2021-04-28 20:26:38.048  INFO 8900 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-04-28 20:26:38.048  INFO 8900 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2303 ms
-2021-04-28 20:26:38.095  INFO 8900 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-04-28 20:26:38.272  INFO 8900 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-04-28 20:26:38.272  INFO 8900 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:eebb7790-a64c-4418-bd16-4a6fd0cc6d08'
-2021-04-28 20:26:38.444  INFO 8900 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-04-28 20:26:38.491  INFO 8900 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
-2021-04-28 20:26:38.608  INFO 8900 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2021-04-28 20:26:38.733  INFO 8900 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2021-04-28 20:26:39.508  INFO 8900 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-04-28 20:26:39.524  INFO 8900 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-04-28 20:26:40.506  INFO 8900 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService
-2021-04-28 20:26:40.508  INFO 8900 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'sendMailServiceTaskExecutor'
-2021-04-28 20:26:40.510  INFO 8900 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2021-04-28 20:26:40.787  INFO 8900 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-04-28 20:26:40.787  INFO 8900 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2021-04-28 20:26:40.818  INFO 8900 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2021-04-28 20:26:40.850  INFO 8900 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2021-04-28 20:26:41.068  INFO 8900 --- [main] org.jeycode.ApplicationRunner            : Started ApplicationRunner in 5.898 seconds (JVM running for 6.415)
-2021-04-28 20:26:53.448  INFO 8900 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-04-28 20:26:53.450  INFO 8900 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-04-28 20:26:53.452  INFO 8900 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-04-28 20:26:53.834 ERROR 8900 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-28 20:26:53.835 ERROR 8900 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-04-28 20:26:53.835 ERROR 8900 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-04-28 20:26:53.835 ERROR 8900 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Message: 
-2021-04-28 20:26:53.853 ERROR 8900 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-28 20:26:53.853 ERROR 8900 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-04-28 20:26:53.853 ERROR 8900 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-04-28 20:26:53.853 ERROR 8900 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Message: 
-2021-04-28 20:26:53.939  WARN 8900 --- [http-nio-8080-exec-6] i.s.m.p.AbstractSerializableParameter    : Illegal DefaultValue 0 for parameter type integer
+2021-05-01 12:47:43.460 ERROR 4516 --- [http-nio-8080-exec-3] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
+2021-05-01 12:47:43.460 ERROR 4516 --- [http-nio-8080-exec-3] o.j.e.ApiErrorAttributes                 : Status: 409
+2021-05-01 12:47:43.461 ERROR 4516 --- [http-nio-8080-exec-3] o.j.e.ApiErrorAttributes                 : Throwable: org.springframework.web.server.ResponseStatusException: 409 CONFLICT "El equipo ya se encontraba guardado en la base de datos, no puede haber dos equipos con el mismo nombre. "
+2021-05-01 12:47:43.461 ERROR 4516 --- [http-nio-8080-exec-3] o.j.e.ApiErrorAttributes                 : Mensaje a devolver: El equipo ya se encontraba guardado en la base de datos, no puede haber dos equipos con el mismo nombre. 
+2021-05-01 12:47:43.462 ERROR 4516 --- [http-nio-8080-exec-3] o.j.e.ApiErrorAttributes                 : Message: El equipo ya se encontraba guardado en la base de datos, no puede haber dos equipos con el mismo nombre. 
+2021-05-01 12:47:43.527  INFO 4516 --- [http-nio-8080-exec-4] o.j.s.repositoryservice.TeamService      : Se han obtenido todos los equipos de la database.
+2021-05-01 12:47:43.587  INFO 4516 --- [http-nio-8080-exec-5] o.j.s.repositoryservice.TeamService      : Se borró el equipo correctamente.
+2021-05-01 12:48:04.501  INFO 4516 --- [http-nio-8080-exec-7] o.j.s.repositoryservice.TeamService      : Se añadió el equipo correctamente
+2021-05-01 12:48:04.535  INFO 4516 --- [http-nio-8080-exec-10] o.j.s.repositoryservice.TeamService      : Se han obtenido todos los equipos de la database.
+2021-05-01 12:48:04.599  INFO 4516 --- [http-nio-8080-exec-8] o.j.s.repositoryservice.TeamService      : Se borró el equipo correctamente.
+2021-05-01 12:48:53.053  INFO 4516 --- [http-nio-8080-exec-1] o.j.s.repositoryservice.TeamService      : Se añadió el equipo correctamente
+2021-05-01 12:48:53.086  INFO 4516 --- [http-nio-8080-exec-2] o.j.s.repositoryservice.TeamService      : Se han obtenido todos los equipos de la database.
+2021-05-01 12:48:53.131  INFO 4516 --- [http-nio-8080-exec-3] o.j.s.repositoryservice.TeamService      : Se borró el equipo correctamente.
+2021-05-01 13:06:53.487  INFO 12676 --- [main] org.jeycode.ApplicationRunner            : Starting ApplicationRunner using Java 11.0.6 on LAPTOP-0FVBB724 with PID 12676 (C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI\target\classes started by JAVIER in C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI)
+2021-05-01 13:06:53.490  INFO 12676 --- [main] org.jeycode.ApplicationRunner            : No active profile set, falling back to default profiles: default
+2021-05-01 13:06:54.626  INFO 12676 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-01 13:06:54.823  INFO 12676 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 166 ms. Found 5 JPA repository interfaces.
+2021-05-01 13:06:55.772  INFO 12676 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-01 13:06:55.790  INFO 12676 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-01 13:06:55.790  INFO 12676 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-05-01 13:06:55.903  INFO 12676 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-01 13:06:55.904  INFO 12676 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2356 ms
+2021-05-01 13:06:55.950  INFO 12676 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-01 13:06:56.169  INFO 12676 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-01 13:06:56.177  INFO 12676 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:1ee38505-48be-4833-b777-f27869afe2fa'
+2021-05-01 13:06:56.352  INFO 12676 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-01 13:06:56.410  INFO 12676 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-05-01 13:06:56.553  INFO 12676 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-01 13:06:56.684  INFO 12676 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-05-01 13:06:57.459  INFO 12676 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-01 13:06:57.469  INFO 12676 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-01 13:06:58.512  INFO 12676 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService
+2021-05-01 13:06:58.514  INFO 12676 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'sendMailServiceTaskExecutor'
+2021-05-01 13:06:58.534  INFO 12676 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-01 13:06:58.831  INFO 12676 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-01 13:06:58.832  INFO 12676 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-01 13:06:58.859  INFO 12676 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-01 13:06:58.900  INFO 12676 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-01 13:06:59.171  INFO 12676 --- [main] org.jeycode.ApplicationRunner            : Started ApplicationRunner in 6.149 seconds (JVM running for 6.605)
+2021-05-01 13:11:12.162  INFO 12676 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-01 13:11:12.163  INFO 12676 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-01 13:11:12.166  INFO 12676 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-05-01 13:11:12.559  INFO 12676 --- [http-nio-8080-exec-1] o.j.s.repositoryservice.TeamService      : Se añadió el equipo correctamente
+2021-05-01 13:12:48.715 ERROR 12676 --- [http-nio-8080-exec-3] o.j.s.repositoryservice.TeamService      : El equipo ya se encontraba guardado en la base de datos, no puede haber dos equipos con el mismo nombre. 
 
-java.lang.NumberFormatException: For input string: ""
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[na:na]
-	at java.base/java.lang.Long.parseLong(Long.java:702) ~[na:na]
-	at java.base/java.lang.Long.valueOf(Long.java:1144) ~[na:na]
-	at io.swagger.models.parameters.AbstractSerializableParameter.getExample(AbstractSerializableParameter.java:412) ~[swagger-models-1.5.20.jar:1.5.20]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
-	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:689) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:755) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serializeContents(IndexedListSerializer.java:119) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serialize(IndexedListSerializer.java:79) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serialize(IndexedListSerializer.java:18) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:728) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:755) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:728) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:755) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.std.MapSerializer.serializeFields(MapSerializer.java:726) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.std.MapSerializer.serializeWithoutTypeInfo(MapSerializer.java:681) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.std.MapSerializer.serialize(MapSerializer.java:637) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.std.MapSerializer.serialize(MapSerializer.java:33) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:728) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:755) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:480) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:319) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ObjectMapper._writeValueAndClose(ObjectMapper.java:4409) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at com.fasterxml.jackson.databind.ObjectMapper.writeValueAsString(ObjectMapper.java:3663) ~[jackson-databind-2.11.4.jar:2.11.4]
-	at springfox.documentation.spring.web.json.JsonSerializer.toJson(JsonSerializer.java:38) ~[springfox-spring-web-2.9.2.jar:null]
-	at springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(Swagger2Controller.java:105) ~[springfox-swagger2-2.9.2.jar:null]
+org.jeycode.execptionsmanaged.UniqueConstraintException: El equipo ya se encontraba guardado en la base de datos, no puede haber dos equipos con el mismo nombre. 
+	at org.jeycode.service.repositoryservice.TeamService.insertOneTeam(TeamService.java:38) ~[classes/:na]
+	at org.jeycode.service.repositoryservice.TeamService$$FastClassBySpringCGLIB$$781bf70f.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.4.jar:5.3.4]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.4.jar:5.3.4]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.jeycode.service.repositoryservice.TeamService$$EnhancerBySpringCGLIB$$3ff2f7c.insertOneTeam(<generated>) ~[classes/:na]
+	at org.jeycode.controllers.TeamController.insertOneTeam(TeamController.java:42) ~[classes/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -566,8 +291,8 @@ java.lang.NumberFormatException: For input string: ""
 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.4.jar:5.3.4]
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.4.jar:5.3.4]
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.4.jar:5.3.4]
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
@@ -604,41 +329,278 @@ java.lang.NumberFormatException: For input string: ""
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
 	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
 
-2021-04-28 20:28:32.826  INFO 1344 --- [main] org.jeycode.ApplicationRunner            : Starting ApplicationRunner using Java 11.0.6 on LAPTOP-0FVBB724 with PID 1344 (C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI\target\classes started by JAVIER in C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI)
-2021-04-28 20:28:32.830  INFO 1344 --- [main] org.jeycode.ApplicationRunner            : No active profile set, falling back to default profiles: default
-2021-04-28 20:28:34.019  INFO 1344 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-04-28 20:28:34.150  INFO 1344 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 121 ms. Found 5 JPA repository interfaces.
-2021-04-28 20:28:35.073  INFO 1344 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-04-28 20:28:35.086  INFO 1344 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-04-28 20:28:35.088  INFO 1344 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
-2021-04-28 20:28:35.193  INFO 1344 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-04-28 20:28:35.193  INFO 1344 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2302 ms
-2021-04-28 20:28:35.242  INFO 1344 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-04-28 20:28:35.456  INFO 1344 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-04-28 20:28:35.463  INFO 1344 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:133baa1d-6691-4a65-8115-a100f0dff5d0'
-2021-04-28 20:28:35.619  INFO 1344 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-04-28 20:28:35.666  INFO 1344 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
-2021-04-28 20:28:35.807  INFO 1344 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2021-04-28 20:28:35.945  INFO 1344 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2021-04-28 20:28:36.698  INFO 1344 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-04-28 20:28:36.698  INFO 1344 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-04-28 20:28:38.071  INFO 1344 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService
-2021-04-28 20:28:38.073  INFO 1344 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'sendMailServiceTaskExecutor'
-2021-04-28 20:28:38.103  INFO 1344 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2021-04-28 20:28:38.514  INFO 1344 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-04-28 20:28:38.515  INFO 1344 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2021-04-28 20:28:38.534  INFO 1344 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2021-04-28 20:28:38.578  INFO 1344 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2021-04-28 20:28:38.649  INFO 1344 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-04-28 20:28:38.650  INFO 1344 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-04-28 20:28:38.653  INFO 1344 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2021-04-28 20:28:38.921  INFO 1344 --- [main] org.jeycode.ApplicationRunner            : Started ApplicationRunner in 6.615 seconds (JVM running for 7.087)
-2021-04-28 20:28:39.059 ERROR 1344 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-28 20:28:39.059 ERROR 1344 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-04-28 20:28:39.059 ERROR 1344 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-04-28 20:28:39.059 ERROR 1344 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Message: 
-2021-04-28 20:28:39.091 ERROR 1344 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-04-28 20:28:39.091 ERROR 1344 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-04-28 20:28:39.092 ERROR 1344 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-04-28 20:28:39.092 ERROR 1344 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Message: 
-2021-04-28 20:29:14.001  INFO 1344 --- [http-nio-8080-exec-9] o.j.s.repositoryservice.PlayerService    : Se han obtenido todos los jugadores de la database.
+2021-05-01 13:12:48.727 ERROR 12676 --- [http-nio-8080-exec-3] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
+2021-05-01 13:12:48.728 ERROR 12676 --- [http-nio-8080-exec-3] o.j.e.ApiErrorAttributes                 : Status: 409
+2021-05-01 13:12:48.728 ERROR 12676 --- [http-nio-8080-exec-3] o.j.e.ApiErrorAttributes                 : Throwable: org.springframework.web.server.ResponseStatusException: 409 CONFLICT "El equipo ya se encontraba guardado en la base de datos, no puede haber dos equipos con el mismo nombre. "
+2021-05-01 13:12:48.728 ERROR 12676 --- [http-nio-8080-exec-3] o.j.e.ApiErrorAttributes                 : Mensaje a devolver: El equipo ya se encontraba guardado en la base de datos, no puede haber dos equipos con el mismo nombre. 
+2021-05-01 13:12:48.728 ERROR 12676 --- [http-nio-8080-exec-3] o.j.e.ApiErrorAttributes                 : Message: El equipo ya se encontraba guardado en la base de datos, no puede haber dos equipos con el mismo nombre. 
+2021-05-01 13:12:48.809  INFO 12676 --- [http-nio-8080-exec-4] o.j.s.repositoryservice.TeamService      : Se borraron todos los equipos correctamente.
+2021-05-01 13:12:48.856  INFO 12676 --- [http-nio-8080-exec-4] o.j.s.repositoryservice.PlayerService    : Se han reseteado los puntos de todos los jugadores
+2021-05-01 13:12:48.870  INFO 12676 --- [http-nio-8080-exec-4] o.j.s.r.ConcreteMatchService             : Se han borrado todos los partidos de la temporada.
+2021-05-01 13:12:48.889 ERROR 12676 --- [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+
+java.lang.NullPointerException: null
+	at org.jeycode.service.repositoryservice.PlayerService.getPlayerWinnerNick(PlayerService.java:147) ~[classes/:na]
+	at org.jeycode.service.repositoryservice.PlayerService$$FastClassBySpringCGLIB$$ff1e404b.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.4.jar:5.3.4]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.4.jar:5.3.4]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.jeycode.service.repositoryservice.PlayerService$$EnhancerBySpringCGLIB$$fcafb0b0.getPlayerWinnerNick(<generated>) ~[classes/:na]
+	at org.jeycode.service.repositoryservice.SeasonService.tryToResetSeason(SeasonService.java:26) ~[classes/:na]
+	at org.jeycode.service.repositoryservice.SeasonService$$FastClassBySpringCGLIB$$63aca09.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.4.jar:5.3.4]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.4.jar:5.3.4]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.jeycode.service.repositoryservice.SeasonService$$EnhancerBySpringCGLIB$$2d1254aa.tryToResetSeason(<generated>) ~[classes/:na]
+	at org.jeycode.controllers.SeasonStartController.resetSeason(SeasonStartController.java:32) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-05-01 13:12:48.891 ERROR 12676 --- [http-nio-8080-exec-4] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
+2021-05-01 13:12:48.892 ERROR 12676 --- [http-nio-8080-exec-4] o.j.e.ApiErrorAttributes                 : Status: 500
+2021-05-01 13:12:48.892 ERROR 12676 --- [http-nio-8080-exec-4] o.j.e.ApiErrorAttributes                 : Throwable: java.lang.NullPointerException
+2021-05-01 13:12:48.892 ERROR 12676 --- [http-nio-8080-exec-4] o.j.e.ApiErrorAttributes                 : Mensaje a devolver: Se deben pasar los parámetros requeridos.
+2021-05-01 13:12:48.892 ERROR 12676 --- [http-nio-8080-exec-4] o.j.e.ApiErrorAttributes                 : Message: Se deben pasar los parámetros requeridos.
+2021-05-01 13:14:31.309  INFO 12676 --- [http-nio-8080-exec-6] o.j.s.repositoryservice.TeamService      : Se borraron todos los equipos correctamente.
+2021-05-01 13:14:31.311  INFO 12676 --- [http-nio-8080-exec-6] o.j.s.repositoryservice.PlayerService    : Se han reseteado los puntos de todos los jugadores
+2021-05-01 13:14:31.312  INFO 12676 --- [http-nio-8080-exec-6] o.j.s.r.ConcreteMatchService             : Se han borrado todos los partidos de la temporada.
+2021-05-01 13:14:31.318 ERROR 12676 --- [http-nio-8080-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+
+java.lang.NullPointerException: null
+	at org.jeycode.service.repositoryservice.PlayerService.getPlayerWinnerNick(PlayerService.java:147) ~[classes/:na]
+	at org.jeycode.service.repositoryservice.PlayerService$$FastClassBySpringCGLIB$$ff1e404b.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.4.jar:5.3.4]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.4.jar:5.3.4]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.jeycode.service.repositoryservice.PlayerService$$EnhancerBySpringCGLIB$$fcafb0b0.getPlayerWinnerNick(<generated>) ~[classes/:na]
+	at org.jeycode.service.repositoryservice.SeasonService.tryToResetSeason(SeasonService.java:26) ~[classes/:na]
+	at org.jeycode.service.repositoryservice.SeasonService$$FastClassBySpringCGLIB$$63aca09.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.4.jar:5.3.4]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.4.jar:5.3.4]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.3.4.jar:5.3.4]
+	at org.jeycode.service.repositoryservice.SeasonService$$EnhancerBySpringCGLIB$$2d1254aa.tryToResetSeason(<generated>) ~[classes/:na]
+	at org.jeycode.controllers.SeasonStartController.resetSeason(SeasonStartController.java:32) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-05-01 13:14:31.319 ERROR 12676 --- [http-nio-8080-exec-6] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
+2021-05-01 13:14:31.319 ERROR 12676 --- [http-nio-8080-exec-6] o.j.e.ApiErrorAttributes                 : Status: 500
+2021-05-01 13:14:31.319 ERROR 12676 --- [http-nio-8080-exec-6] o.j.e.ApiErrorAttributes                 : Throwable: java.lang.NullPointerException
+2021-05-01 13:14:31.319 ERROR 12676 --- [http-nio-8080-exec-6] o.j.e.ApiErrorAttributes                 : Mensaje a devolver: Se deben pasar los parámetros requeridos.
+2021-05-01 13:14:31.319 ERROR 12676 --- [http-nio-8080-exec-6] o.j.e.ApiErrorAttributes                 : Message: Se deben pasar los parámetros requeridos.
+2021-05-01 13:21:30.517  INFO 23432 --- [main] org.jeycode.ApplicationRunner            : Starting ApplicationRunner using Java 11.0.6 on LAPTOP-0FVBB724 with PID 23432 (C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI\target\classes started by JAVIER in C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI)
+2021-05-01 13:21:30.520  INFO 23432 --- [main] org.jeycode.ApplicationRunner            : No active profile set, falling back to default profiles: default
+2021-05-01 13:21:31.727  INFO 23432 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-01 13:21:31.870  INFO 23432 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 131 ms. Found 5 JPA repository interfaces.
+2021-05-01 13:21:32.893  INFO 23432 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-01 13:21:32.905  INFO 23432 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-01 13:21:32.906  INFO 23432 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-05-01 13:21:33.009  INFO 23432 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-01 13:21:33.009  INFO 23432 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2428 ms
+2021-05-01 13:21:33.067  INFO 23432 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-01 13:21:33.259  INFO 23432 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-01 13:21:33.267  INFO 23432 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:a356e855-7004-47d9-a185-634890df58af'
+2021-05-01 13:21:33.467  INFO 23432 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-01 13:21:33.522  INFO 23432 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-05-01 13:21:33.647  INFO 23432 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-01 13:21:33.769  INFO 23432 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-05-01 13:21:34.522  INFO 23432 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-01 13:21:34.530  INFO 23432 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-01 13:21:35.927  INFO 23432 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService
+2021-05-01 13:21:35.930  INFO 23432 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'sendMailServiceTaskExecutor'
+2021-05-01 13:21:35.976  INFO 23432 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-01 13:21:36.364  INFO 23432 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-01 13:21:36.365  INFO 23432 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-01 13:21:36.385  INFO 23432 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-01 13:21:36.418  INFO 23432 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-01 13:21:36.676  INFO 23432 --- [main] org.jeycode.ApplicationRunner            : Started ApplicationRunner in 6.701 seconds (JVM running for 7.241)
+2021-05-01 13:21:44.999  INFO 23432 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-01 13:21:45.000  INFO 23432 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-01 13:21:45.002  INFO 23432 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-05-01 13:21:45.412  INFO 23432 --- [http-nio-8080-exec-1] o.j.s.repositoryservice.TeamService      : Se añadió el equipo correctamente
+2021-05-01 13:21:45.607  INFO 23432 --- [http-nio-8080-exec-2] o.j.s.repositoryservice.TeamService      : Se borraron todos los equipos correctamente.
+2021-05-01 13:21:45.700  INFO 23432 --- [http-nio-8080-exec-2] o.j.s.repositoryservice.PlayerService    : Se han reseteado los puntos de todos los jugadores
+2021-05-01 13:21:45.719  INFO 23432 --- [http-nio-8080-exec-2] o.j.s.r.ConcreteMatchService             : Se han borrado todos los partidos de la temporada.
+2021-05-01 13:21:45.761  INFO 23432 --- [Jey-Code-BCF1] o.j.s.genericservice.SendMailService     : Aún no existen usuarios a los que avisar.
+2021-05-01 13:26:16.731  INFO 19852 --- [main] org.jeycode.ApplicationRunner            : Starting ApplicationRunner using Java 11.0.6 on LAPTOP-0FVBB724 with PID 19852 (C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI\target\classes started by JAVIER in C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI)
+2021-05-01 13:26:16.735  INFO 19852 --- [main] org.jeycode.ApplicationRunner            : No active profile set, falling back to default profiles: default
+2021-05-01 13:26:17.911  INFO 19852 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-01 13:26:18.055  INFO 19852 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 115 ms. Found 5 JPA repository interfaces.
+2021-05-01 13:26:18.974  INFO 19852 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-01 13:26:19.011  INFO 19852 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-01 13:26:19.012  INFO 19852 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-05-01 13:26:19.162  INFO 19852 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-01 13:26:19.162  INFO 19852 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2380 ms
+2021-05-01 13:26:19.219  INFO 19852 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-01 13:26:19.436  INFO 19852 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-01 13:26:19.443  INFO 19852 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:4a2a723a-0d97-436e-8869-1e819b9844e1'
+2021-05-01 13:26:19.622  INFO 19852 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-01 13:26:19.676  INFO 19852 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-05-01 13:26:19.808  INFO 19852 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-01 13:26:19.935  INFO 19852 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-05-01 13:26:20.745  INFO 19852 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-01 13:26:20.753  INFO 19852 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-01 13:26:21.985  INFO 19852 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService
+2021-05-01 13:26:21.987  INFO 19852 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'sendMailServiceTaskExecutor'
+2021-05-01 13:26:22.021  INFO 19852 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-01 13:26:22.503  INFO 19852 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-01 13:26:22.505  INFO 19852 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-01 13:26:22.560  INFO 19852 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-01 13:26:22.680  INFO 19852 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-01 13:26:23.432  INFO 19852 --- [main] org.jeycode.ApplicationRunner            : Started ApplicationRunner in 7.175 seconds (JVM running for 7.736)
+2021-05-01 13:26:24.140  INFO 19852 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-01 13:26:24.141  INFO 19852 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-01 13:26:24.143  INFO 19852 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-05-01 13:26:24.468  INFO 19852 --- [http-nio-8080-exec-1] o.j.s.repositoryservice.TeamService      : Se añadió el equipo correctamente
+2021-05-01 13:26:24.586  INFO 19852 --- [http-nio-8080-exec-2] o.j.s.repositoryservice.TeamService      : Se borraron todos los equipos correctamente.
+2021-05-01 13:26:24.629  INFO 19852 --- [http-nio-8080-exec-2] o.j.s.repositoryservice.PlayerService    : Se han reseteado los puntos de todos los jugadores
+2021-05-01 13:26:24.644  INFO 19852 --- [http-nio-8080-exec-2] o.j.s.r.ConcreteMatchService             : Se han borrado todos los partidos de la temporada.
+2021-05-01 13:26:24.651  INFO 19852 --- [http-nio-8080-exec-2] o.j.s.repositoryservice.SeasonService    : Aún no existen usuarios a los que avisar.
+2021-05-01 14:00:25.912  WARN 19852 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m35s920ms128µs).
+2021-05-01 16:49:51.452  INFO 4972 --- [main] org.jeycode.ApplicationRunner            : Starting ApplicationRunner using Java 11.0.6 on LAPTOP-0FVBB724 with PID 4972 (C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI\target\classes started by JAVIER in C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI)
+2021-05-01 16:49:51.456  INFO 4972 --- [main] org.jeycode.ApplicationRunner            : No active profile set, falling back to default profiles: default
+2021-05-01 16:49:52.794  INFO 4972 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-01 16:49:52.964  INFO 4972 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 156 ms. Found 5 JPA repository interfaces.
+2021-05-01 16:49:54.315  INFO 4972 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-01 16:49:54.333  INFO 4972 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-01 16:49:54.333  INFO 4972 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-05-01 16:49:54.493  INFO 4972 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-01 16:49:54.494  INFO 4972 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2981 ms
+2021-05-01 16:49:54.582  INFO 4972 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-01 16:49:54.877  INFO 4972 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-01 16:49:54.887  INFO 4972 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:044b5b5e-cf81-4413-8502-b6d77ba57e62'
+2021-05-01 16:49:55.123  INFO 4972 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-01 16:49:55.198  INFO 4972 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-05-01 16:49:55.387  INFO 4972 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-01 16:49:55.564  INFO 4972 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-05-01 16:49:56.882  INFO 4972 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-01 16:49:56.893  INFO 4972 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-01 16:49:58.448  INFO 4972 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService
+2021-05-01 16:49:58.450  INFO 4972 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'sendMailServiceTaskExecutor'
+2021-05-01 16:49:58.480  INFO 4972 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-01 16:49:58.907  INFO 4972 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-01 16:49:58.908  INFO 4972 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed

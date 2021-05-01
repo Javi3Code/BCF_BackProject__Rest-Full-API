@@ -115,8 +115,7 @@ public class TeamService implements RestServiceUtils
             {
                   teamRepository.deleteByTeamNameNot(BURGOS_CF);
                   log.info("Se borraron todos los equipos correctamente.");
-                  return ResponseEntity.ok()
-                                       .build();
+                  return ResponseEntity.ok(true);
             }
             if (teamDto == null)
             {
@@ -134,8 +133,7 @@ public class TeamService implements RestServiceUtils
             }
             teamRepository.delete(team);
             log.info("Se borró el equipo correctamente.");
-            return ResponseEntity.ok()
-                                 .build();
+            return ResponseEntity.ok(true);
       }
 
 }

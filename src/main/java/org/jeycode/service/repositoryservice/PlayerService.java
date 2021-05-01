@@ -105,8 +105,7 @@ public class PlayerService implements RestServiceUtils
                   }
                   playerRepository.deleteById(playerId);
                   log.info("Se borró el jugador correctamente");
-                  return ResponseEntity.ok()
-                                       .build();
+                  return ResponseEntity.ok(true);
             }
             catch (GenericBackendException ex)
             {

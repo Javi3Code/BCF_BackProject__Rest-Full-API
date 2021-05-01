@@ -5,7 +5,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 @Service
 @RequiredArgsConstructor
 @Transactional
@@ -23,7 +25,13 @@ public class SeasonService
             teamService.tryToDeleteOneOrMoreTeams(ALL,null);
             playerService.resetOfPlayerStateToInitial();
             concreteMatchService.deleteConcreteMatch(ALL);
-            sendMailService.sendSeasonRestartInfoMail(playerService.allPlayerMail(),playerService.getPlayerWinnerNick());
+            var allPlayerMail = playerService.allPlayerMail();
+            if (allPlayerMail.length != 0)
+            {
+                  sendMailService.sendSeasonRestartInfoMail(allPlayerMail,playerService.getPlayerWinnerNick());
+                  log.info("Éxisten usuarios a los que avisar.");
+            }
+            log.info("Aún no existen usuarios a los que avisar.");
             return ALL;
       }
 
