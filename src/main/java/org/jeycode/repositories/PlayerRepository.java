@@ -30,4 +30,7 @@ public interface PlayerRepository extends JpaRepository<Player,Long>
 
       List<Player> findAllByPlayerIdNotIn(List<Long> ids);
 
+      @Query(value = "Select player_nick from player where player_totalpoints = ?", nativeQuery = true)
+      List<String> findAllPlayerNickByPlayerTotalPoints(int winnerTotalPoints);
+
 }

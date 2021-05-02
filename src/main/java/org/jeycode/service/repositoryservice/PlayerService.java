@@ -143,8 +143,19 @@ public class PlayerService implements RestServiceUtils
 
       public String getPlayerWinnerNick()
       {
-            return playerRepository.findFirstByOrderByPlayerTotalPointsDesc()
-                                   .getPlayerNick();
+            var firstPlayer = playerRepository.findFirstByOrderByPlayerTotalPointsDesc();
+            var winnerTotalPoints = firstPlayer.getPlayerTotalPoints();
+
+            log.info("Se obtiene el mayor número de puntos conseguidos.");
+
+            List<String> lstOfPlayerWinner = playerRepository.findAllPlayerNickByPlayerTotalPoints(winnerTotalPoints);
+            if (lstOfPlayerWinner.size() > 1)
+            {
+                  return lstOfPlayerWinner.stream()
+                                          .collect(Collectors.joining(", "));
+            }
+
+            return firstPlayer.getPlayerNick();
       }
 
       /*
