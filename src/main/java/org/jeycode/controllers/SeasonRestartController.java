@@ -17,7 +17,7 @@ import lombok.RequiredArgsConstructor;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping(ControllerUtils.SEASONS_URL)
-public class SeasonStartController implements ControllerUtils
+public class SeasonRestartController implements ControllerUtils
 {
 
       private final SeasonService seasonStartService;
