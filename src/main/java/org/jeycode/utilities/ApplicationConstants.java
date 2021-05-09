@@ -45,7 +45,7 @@ public interface ApplicationConstants
       /*
        * ApiError
        */
-      String MSG_ERRS_DELIMITER = ":err:";
+      String MSG_ERRS_DELIMITER = "?";
       String MESSAGE = "message";
       String DATE = "date";
       String STATUS = "status";
