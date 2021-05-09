@@ -16,8 +16,8 @@ import lombok.experimental.SuperBuilder;
 public class PlayerFootballMatchDtoToUpdate extends PlayerFootballmatchDtoToCreate
 {
 
-      @NotNull(message = NON_VALID_ID)
-      @Positive(message = NON_VALID_ID)
+      @NotNull(message = NON_VALID_ID_NULL)
+      @Positive(message = NON_VALID_ID_VALUE)
       private long playerFootBallMatchId;
 
       @NotNull(message = PFMSIGN_CANT_BE_NULL)

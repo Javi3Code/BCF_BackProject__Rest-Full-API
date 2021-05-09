@@ -17,7 +17,7 @@ import lombok.experimental.SuperBuilder;
 public class PlayerDtoToUpdate extends PlayerDtoToCreate
 {
 
-      @NotNull(message = NON_VALID_ID)
-      @Positive(message = NON_VALID_ID)
+      @NotNull(message = NON_VALID_ID_NULL)
+      @Positive(message = NON_VALID_ID_VALUE)
       protected long playerId;
 }

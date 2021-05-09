@@ -67,6 +67,7 @@ public interface ApplicationExceptionUtils
       String GET_PLFM_DATA_FORBIDDEN = "Imposible obtener los datos de la jornada ya que aún no existe un partido abierto. ";
       String GET_PLFM_SERV_UNKNOWN_ERROR = "Ocurrió un error no identificado al intentar obtener los datos. ";
       String UPDATE_FOOTBALLDAY_CM_NOT_VALID = "El partido a actualizar no coincide con el único partido abierto. ";
+      String END_FOOTBALLDAY_CM_NOT_VALID = "Para dar por finalizada la jornada deben agregarse todas las apuestas. ";
       String UPDATE_FOOTBALLDAY_SERV_UNKNOWN_ERROR = "Ocurrió un error no identificado al intentar finalizar la jornada. ";
 
       /*
@@ -76,7 +77,8 @@ public interface ApplicationExceptionUtils
 
       // Generic Message
       String NONE_CAN_BE_NULL = "Ninguno de los valores pasados puede ser null.";
-      String NON_VALID_ID = "La id recibida no puede ser un valor negativo.";
+      String NON_VALID_ID_NULL = "La id recibida no puede ser nula";
+      String NON_VALID_ID_VALUE = "La id recibida no puede ser un valor negativo o 0.";
       String MAIL_REGEXP = "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*";
       String MATCH_RESULT_REGEXP = "^((20)|20|((1\\d|[0-9])(1\\d{1,2})?))\\-+((20)|20|((1\\d|[0-9])(1\\d{1,2})?))$";
 
@@ -84,14 +86,21 @@ public interface ApplicationExceptionUtils
 
       String RULES_POINTS_NON_VALID = "El mínimo a puntuar por categoría es de 0 puntos.";
 
-      String TEAMNAME_NON_VALID = "El nombre del equipo no puede ser nulo o estar en blanco. Sólo se aceptan 60 caracteres máximo para el nombre de un equipo, mínimo 3 para identificarlo.";
+      String TEAMNAME_NON_NULL = "El nombre del equipo no puede ser nulo.";
+      String TEAMNAME_NON_BLANK = "El nombre del equipo no puede estar en blanco.";
+      String TEAMNAME_NON_VALID_SIZE = "Sólo se aceptan 60 caracteres máximo para el nombre de un equipo, mínimo 3 para identificarlo.";
 
-      String PLAYERNAME_NON_VALID = "El nombre del jugador no puede ser nulo o estar en blanco, tampoco se aceptan nicks repetidos. Sólo se aceptan 20 caracteres máximo para el nick de un jugador, mínimo 1 para identificarlo.";
-      String PLAYERMAIL_NON_VALID = "El email del jugador no puede ser nulo o estar en blanco y debe tener un formato de email válido. El mail puede contener 50 caracteres máximo.";
+      String PLAYERNAME_NON_NULL = "El nick del jugador no puede ser nulo";
+      String PLAYERNAME_NON_BLANK = "El nick del jugador no estar en blanco.";
+      String PLAYERNAME_NON_VALID_SIZE = "Sólo se aceptan 20 caracteres máximo para el nick de un jugador, mínimo 1 para identificarlo.";
+      String PLAYERMAIL_NON_NULL = "El email del jugador no puede ser nulo.";
+      String PLAYERMAIL_NON_BLANK = "El email del jugador estar en blanco.";
+      String PLAYERMAIL_NON_VALID_PATTERN = "El email del jugador no puede ser nulo o estar en blanco y debe tener un formato de email válido.";
+      String PLAYERMAIL_NON_VALID_SIZE = " El mail puede contener 50 caracteres máximo.";
 
       String MATCHRESULT_NON_NULL = "El resultado a actualizar no puede ser nulo.";
       String MATCHRESULT_NON_BLANK = "El resultado a actualizar no puede estar en blanco";
-      String MATCHRESULT_NON_VALID = "El formato válido para incluir el resultado debe ser [goles(0-20)][-][goles(0-20)].";
+      String MATCHRESULT_NON_VALID_PATTERN = "El formato válido para incluir el resultado debe ser [goles(0-20)][-][goles(0-20)].";
 
       String PFM_PLAYERNICK_CANT_BE_NULL = "El nick del jugador no puede ser nulo.";
       String PFM_PLAYERNICK_CANT_BE_BLANK = "El nick del jugador no puede estar en blanco y debe ser un nick valido.";

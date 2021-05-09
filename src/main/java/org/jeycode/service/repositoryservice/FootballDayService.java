@@ -111,6 +111,10 @@ public class FootballDayService implements RestServiceUtils
                   {
                         throw new RequestParamException(UPDATE_FOOTBALLDAY_CM_NOT_VALID);
                   }
+                  if (!getDataPlayersWithoutResult(openConcreteMatch).isEmpty())
+                  {
+                        throw new RequestParamException(END_FOOTBALLDAY_CM_NOT_VALID);
+                  }
                   var lstOfPlayerFootBallMatch = openConcreteMatch.getLstOfPlayerFootBallMatch();
                   pointCalculationService.calculatePoints(lstOfPlayerFootBallMatch,openConcreteMatch);
                   var concreteMatchUpdated = concreteMatchService.save(openConcreteMatch);

@@ -1,14 +1,70 @@
-2021-05-05 20:39:00.203 ERROR 18828 --- [http-nio-8080-exec-3] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-05-05 20:39:00.208 ERROR 18828 --- [http-nio-8080-exec-3] o.j.e.ApiErrorAttributes                 : Status: 400
-2021-05-05 20:39:00.208 ERROR 18828 --- [http-nio-8080-exec-3] o.j.e.ApiErrorAttributes                 : Throwable: org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. "
-2021-05-05 20:39:00.208 ERROR 18828 --- [http-nio-8080-exec-3] o.j.e.ApiErrorAttributes                 : Mensaje a devolver: Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. 
-2021-05-05 20:39:00.208 ERROR 18828 --- [http-nio-8080-exec-3] o.j.e.ApiErrorAttributes                 : Message: Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. 
-2021-05-05 20:39:00.479  INFO 18828 --- [http-nio-8080-exec-6] o.j.s.genericservice.SendMailService     : Se enviaron los mails de notificación, nuevas reglas.
-2021-05-05 20:39:00.480 ERROR 18828 --- [http-nio-8080-exec-6] o.j.s.repositoryservice.RulesService     : Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. 
+2021-05-09 12:25:43.331  INFO 13272 --- [main] org.jeycode.ApplicationRunner            : Starting ApplicationRunner using Java 11.0.6 on LAPTOP-0FVBB724 with PID 13272 (C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI\target\classes started by JAVIER in C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI)
+2021-05-09 12:25:43.370  INFO 13272 --- [main] org.jeycode.ApplicationRunner            : No active profile set, falling back to default profiles: default
+2021-05-09 12:25:46.430  INFO 13272 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-09 12:25:46.703  INFO 13272 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 253 ms. Found 5 JPA repository interfaces.
+2021-05-09 12:25:48.216  INFO 13272 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-09 12:25:48.238  INFO 13272 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-09 12:25:48.239  INFO 13272 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-05-09 12:25:48.466  INFO 13272 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-09 12:25:48.467  INFO 13272 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4847 ms
+2021-05-09 12:25:48.593  INFO 13272 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-09 12:25:49.051  INFO 13272 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-09 12:25:49.066  INFO 13272 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:0c227318-c7c2-420d-999d-91a59a9b47b5'
+2021-05-09 12:25:49.480  INFO 13272 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-09 12:25:49.621  INFO 13272 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-05-09 12:25:49.986  INFO 13272 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-09 12:25:50.282  INFO 13272 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-05-09 12:25:51.773  INFO 13272 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-09 12:25:51.789  INFO 13272 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-09 12:25:53.589  INFO 13272 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService
+2021-05-09 12:25:53.591  INFO 13272 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'sendMailServiceTaskExecutor'
+2021-05-09 12:25:53.621  INFO 13272 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-09 12:25:54.101  INFO 13272 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-09 12:25:54.103  INFO 13272 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-09 12:25:54.151  INFO 13272 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-09 12:25:54.240  INFO 13272 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-09 12:25:54.388  INFO 13272 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-09 12:25:54.390  INFO 13272 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-09 12:25:54.392  INFO 13272 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-05-09 12:25:54.820  INFO 13272 --- [main] org.jeycode.ApplicationRunner            : Started ApplicationRunner in 12.19 seconds (JVM running for 12.779)
+2021-05-09 12:27:31.710  INFO 13272 --- [http-nio-8080-exec-4] o.j.s.repositoryservice.TeamService      : Se han obtenido todos los equipos de la database.
+2021-05-09 12:37:37.343  INFO 5996 --- [main] org.jeycode.ApplicationRunner            : Starting ApplicationRunner using Java 11.0.6 on LAPTOP-0FVBB724 with PID 5996 (C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI\target\classes started by JAVIER in C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI)
+2021-05-09 12:37:37.346  INFO 5996 --- [main] org.jeycode.ApplicationRunner            : No active profile set, falling back to default profiles: default
+2021-05-09 12:37:39.014  INFO 5996 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-09 12:37:39.340  INFO 5996 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 304 ms. Found 5 JPA repository interfaces.
+2021-05-09 12:37:40.768  INFO 5996 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-09 12:37:40.793  INFO 5996 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-09 12:37:40.794  INFO 5996 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-05-09 12:37:41.039  INFO 5996 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-09 12:37:41.040  INFO 5996 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3641 ms
+2021-05-09 12:37:41.166  INFO 5996 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-09 12:37:41.648  INFO 5996 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-09 12:37:41.665  INFO 5996 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:53b66916-f793-4ba8-a8ee-0c7b6dc4a688'
+2021-05-09 12:37:41.956  INFO 5996 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-09 12:37:42.028  INFO 5996 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-05-09 12:37:42.202  INFO 5996 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-09 12:37:42.367  INFO 5996 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-05-09 12:37:43.464  INFO 5996 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-09 12:37:43.500  INFO 5996 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-09 12:37:45.825  INFO 5996 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService
+2021-05-09 12:37:45.839  INFO 5996 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'sendMailServiceTaskExecutor'
+2021-05-09 12:37:45.906  INFO 5996 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-09 12:37:46.923  INFO 5996 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-09 12:37:46.926  INFO 5996 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-09 12:37:46.996  INFO 5996 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-09 12:37:47.055  INFO 5996 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-09 12:37:47.416  INFO 5996 --- [main] org.jeycode.ApplicationRunner            : Started ApplicationRunner in 10.603 seconds (JVM running for 11.159)
+2021-05-09 12:38:14.838  INFO 5996 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-09 12:38:14.840  INFO 5996 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-09 12:38:14.851  INFO 5996 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2021-05-09 12:38:15.195 ERROR 5996 --- [http-nio-8080-exec-1] o.j.s.r.FootballDayService               : Imposible obtener los datos de la jornada ya que aún no existe un partido abierto. 
 
-org.jeycode.execptionsmanaged.RequestParamException: Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. 
-	at org.jeycode.service.repositoryservice.RulesService.updateRules(RulesService.java:46) ~[classes/:na]
-	at org.jeycode.service.repositoryservice.RulesService$$FastClassBySpringCGLIB$$d4e34327.invoke(<generated>) ~[classes/:na]
+org.jeycode.execptionsmanaged.RequestParamException: Imposible obtener los datos de la jornada ya que aún no existe un partido abierto. 
+	at org.jeycode.service.repositoryservice.FootballDayService.lambda$2(FootballDayService.java:185) ~[classes/:na]
+	at java.base/java.util.Optional.orElseThrow(Optional.java:408) ~[na:na]
+	at org.jeycode.service.repositoryservice.FootballDayService.getOpenConcreteMatch(FootballDayService.java:185) ~[classes/:na]
+	at org.jeycode.service.repositoryservice.FootballDayService.endTheFootballDay(FootballDayService.java:107) ~[classes/:na]
+	at org.jeycode.service.repositoryservice.FootballDayService$$FastClassBySpringCGLIB$$d06ba56f.invoke(<generated>) ~[classes/:na]
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.4.jar:5.3.4]
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779) ~[spring-aop-5.3.4.jar:5.3.4]
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.4.jar:5.3.4]
@@ -19,8 +75,8 @@ org.jeycode.execptionsmanaged.RequestParamException: Estas reglas no se pueden e
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.4.jar:5.3.4]
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.4.jar:5.3.4]
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.jeycode.service.repositoryservice.RulesService$$EnhancerBySpringCGLIB$$ca4a15e7.updateRules(<generated>) ~[classes/:na]
-	at org.jeycode.controllers.RulesController.updateRules(RulesController.java:57) ~[classes/:na]
+	at org.jeycode.service.repositoryservice.FootballDayService$$EnhancerBySpringCGLIB$$71fdf201.endTheFootballDay(<generated>) ~[classes/:na]
+	at org.jeycode.controllers.FootballDayController.endTheFootballDay(FootballDayController.java:44) ~[classes/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -72,784 +128,14 @@ org.jeycode.execptionsmanaged.RequestParamException: Estas reglas no se pueden e
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
 	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
 
-2021-05-05 20:39:00.485 ERROR 18828 --- [http-nio-8080-exec-6] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-05-05 20:39:00.485 ERROR 18828 --- [http-nio-8080-exec-6] o.j.e.ApiErrorAttributes                 : Status: 400
-2021-05-05 20:39:00.485 ERROR 18828 --- [http-nio-8080-exec-6] o.j.e.ApiErrorAttributes                 : Throwable: org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. "
-2021-05-05 20:39:00.485 ERROR 18828 --- [http-nio-8080-exec-6] o.j.e.ApiErrorAttributes                 : Mensaje a devolver: Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. 
-2021-05-05 20:39:00.485 ERROR 18828 --- [http-nio-8080-exec-6] o.j.e.ApiErrorAttributes                 : Message: Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. 
-2021-05-05 20:39:01.122  INFO 18828 --- [http-nio-8080-exec-7] o.j.s.genericservice.SendMailService     : Se enviaron los mails de notificación, nuevas reglas.
-2021-05-05 20:39:01.124 ERROR 18828 --- [http-nio-8080-exec-7] o.j.s.repositoryservice.RulesService     : Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. 
-
-org.jeycode.execptionsmanaged.RequestParamException: Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. 
-	at org.jeycode.service.repositoryservice.RulesService.updateRules(RulesService.java:46) ~[classes/:na]
-	at org.jeycode.service.repositoryservice.RulesService$$FastClassBySpringCGLIB$$d4e34327.invoke(<generated>) ~[classes/:na]
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.4.jar:5.3.4]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.4.jar:5.3.4]
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.jeycode.service.repositoryservice.RulesService$$EnhancerBySpringCGLIB$$ca4a15e7.updateRules(<generated>) ~[classes/:na]
-	at org.jeycode.controllers.RulesController.updateRules(RulesController.java:57) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
-
-2021-05-05 20:39:01.127 ERROR 18828 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-05-05 20:39:01.128 ERROR 18828 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Status: 400
-2021-05-05 20:39:01.128 ERROR 18828 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Throwable: org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. "
-2021-05-05 20:39:01.128 ERROR 18828 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Mensaje a devolver: Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. 
-2021-05-05 20:39:01.128 ERROR 18828 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Message: Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. 
-2021-05-05 20:39:02.709  INFO 18828 --- [http-nio-8080-exec-5] o.j.s.genericservice.SendMailService     : Se enviaron los mails de notificación, nuevas reglas.
-2021-05-05 20:39:02.710 ERROR 18828 --- [http-nio-8080-exec-5] o.j.s.repositoryservice.RulesService     : Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. 
-
-org.jeycode.execptionsmanaged.RequestParamException: Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. 
-	at org.jeycode.service.repositoryservice.RulesService.updateRules(RulesService.java:46) ~[classes/:na]
-	at org.jeycode.service.repositoryservice.RulesService$$FastClassBySpringCGLIB$$d4e34327.invoke(<generated>) ~[classes/:na]
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.4.jar:5.3.4]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.4.jar:5.3.4]
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.jeycode.service.repositoryservice.RulesService$$EnhancerBySpringCGLIB$$ca4a15e7.updateRules(<generated>) ~[classes/:na]
-	at org.jeycode.controllers.RulesController.updateRules(RulesController.java:57) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
-
-2021-05-05 20:39:02.733 ERROR 18828 --- [http-nio-8080-exec-5] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-05-05 20:39:02.733 ERROR 18828 --- [http-nio-8080-exec-5] o.j.e.ApiErrorAttributes                 : Status: 400
-2021-05-05 20:39:02.733 ERROR 18828 --- [http-nio-8080-exec-5] o.j.e.ApiErrorAttributes                 : Throwable: org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. "
-2021-05-05 20:39:02.733 ERROR 18828 --- [http-nio-8080-exec-5] o.j.e.ApiErrorAttributes                 : Mensaje a devolver: Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. 
-2021-05-05 20:39:02.733 ERROR 18828 --- [http-nio-8080-exec-5] o.j.e.ApiErrorAttributes                 : Message: Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. 
-2021-05-05 20:39:03.503  INFO 18828 --- [http-nio-8080-exec-8] o.j.s.genericservice.SendMailService     : Se enviaron los mails de notificación, nuevas reglas.
-2021-05-05 20:39:03.503 ERROR 18828 --- [http-nio-8080-exec-8] o.j.s.repositoryservice.RulesService     : Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. 
-
-org.jeycode.execptionsmanaged.RequestParamException: Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. 
-	at org.jeycode.service.repositoryservice.RulesService.updateRules(RulesService.java:46) ~[classes/:na]
-	at org.jeycode.service.repositoryservice.RulesService$$FastClassBySpringCGLIB$$d4e34327.invoke(<generated>) ~[classes/:na]
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.4.jar:5.3.4]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.4.jar:5.3.4]
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.jeycode.service.repositoryservice.RulesService$$EnhancerBySpringCGLIB$$ca4a15e7.updateRules(<generated>) ~[classes/:na]
-	at org.jeycode.controllers.RulesController.updateRules(RulesController.java:57) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
-
-2021-05-05 20:39:03.506 ERROR 18828 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-05-05 20:39:03.506 ERROR 18828 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Status: 400
-2021-05-05 20:39:03.506 ERROR 18828 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Throwable: org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. "
-2021-05-05 20:39:03.506 ERROR 18828 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Mensaje a devolver: Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. 
-2021-05-05 20:39:03.507 ERROR 18828 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Message: Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. 
-2021-05-05 20:39:03.775  INFO 18828 --- [http-nio-8080-exec-2] o.j.s.genericservice.SendMailService     : Se enviaron los mails de notificación, nuevas reglas.
-2021-05-05 20:39:03.776 ERROR 18828 --- [http-nio-8080-exec-2] o.j.s.repositoryservice.RulesService     : Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. 
-
-org.jeycode.execptionsmanaged.RequestParamException: Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. 
-	at org.jeycode.service.repositoryservice.RulesService.updateRules(RulesService.java:46) ~[classes/:na]
-	at org.jeycode.service.repositoryservice.RulesService$$FastClassBySpringCGLIB$$d4e34327.invoke(<generated>) ~[classes/:na]
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.4.jar:5.3.4]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.4.jar:5.3.4]
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.jeycode.service.repositoryservice.RulesService$$EnhancerBySpringCGLIB$$ca4a15e7.updateRules(<generated>) ~[classes/:na]
-	at org.jeycode.controllers.RulesController.updateRules(RulesController.java:57) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
-
-2021-05-05 20:39:03.779 ERROR 18828 --- [http-nio-8080-exec-2] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-05-05 20:39:03.779 ERROR 18828 --- [http-nio-8080-exec-2] o.j.e.ApiErrorAttributes                 : Status: 400
-2021-05-05 20:39:03.779 ERROR 18828 --- [http-nio-8080-exec-2] o.j.e.ApiErrorAttributes                 : Throwable: org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. "
-2021-05-05 20:39:03.780 ERROR 18828 --- [http-nio-8080-exec-2] o.j.e.ApiErrorAttributes                 : Mensaje a devolver: Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. 
-2021-05-05 20:39:03.780 ERROR 18828 --- [http-nio-8080-exec-2] o.j.e.ApiErrorAttributes                 : Message: Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. 
-2021-05-05 20:39:04.026  INFO 18828 --- [http-nio-8080-exec-9] o.j.s.genericservice.SendMailService     : Se enviaron los mails de notificación, nuevas reglas.
-2021-05-05 20:39:04.027 ERROR 18828 --- [http-nio-8080-exec-9] o.j.s.repositoryservice.RulesService     : Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. 
-
-org.jeycode.execptionsmanaged.RequestParamException: Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. 
-	at org.jeycode.service.repositoryservice.RulesService.updateRules(RulesService.java:46) ~[classes/:na]
-	at org.jeycode.service.repositoryservice.RulesService$$FastClassBySpringCGLIB$$d4e34327.invoke(<generated>) ~[classes/:na]
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.4.jar:5.3.4]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.4.jar:5.3.4]
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.jeycode.service.repositoryservice.RulesService$$EnhancerBySpringCGLIB$$ca4a15e7.updateRules(<generated>) ~[classes/:na]
-	at org.jeycode.controllers.RulesController.updateRules(RulesController.java:57) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
-
-2021-05-05 20:39:04.031 ERROR 18828 --- [http-nio-8080-exec-9] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-05-05 20:39:04.031 ERROR 18828 --- [http-nio-8080-exec-9] o.j.e.ApiErrorAttributes                 : Status: 400
-2021-05-05 20:39:04.031 ERROR 18828 --- [http-nio-8080-exec-9] o.j.e.ApiErrorAttributes                 : Throwable: org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. "
-2021-05-05 20:39:04.031 ERROR 18828 --- [http-nio-8080-exec-9] o.j.e.ApiErrorAttributes                 : Mensaje a devolver: Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. 
-2021-05-05 20:39:04.031 ERROR 18828 --- [http-nio-8080-exec-9] o.j.e.ApiErrorAttributes                 : Message: Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. 
-2021-05-05 20:39:05.694  INFO 18828 --- [http-nio-8080-exec-10] o.j.s.genericservice.SendMailService     : Se enviaron los mails de notificación, nuevas reglas.
-2021-05-05 20:39:05.695 ERROR 18828 --- [http-nio-8080-exec-10] o.j.s.repositoryservice.RulesService     : Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. 
-
-org.jeycode.execptionsmanaged.RequestParamException: Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. 
-	at org.jeycode.service.repositoryservice.RulesService.updateRules(RulesService.java:46) ~[classes/:na]
-	at org.jeycode.service.repositoryservice.RulesService$$FastClassBySpringCGLIB$$d4e34327.invoke(<generated>) ~[classes/:na]
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.4.jar:5.3.4]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.4.jar:5.3.4]
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.jeycode.service.repositoryservice.RulesService$$EnhancerBySpringCGLIB$$ca4a15e7.updateRules(<generated>) ~[classes/:na]
-	at org.jeycode.controllers.RulesController.updateRules(RulesController.java:57) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
-
-2021-05-05 20:39:05.698 ERROR 18828 --- [http-nio-8080-exec-10] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-05-05 20:39:05.699 ERROR 18828 --- [http-nio-8080-exec-10] o.j.e.ApiErrorAttributes                 : Status: 400
-2021-05-05 20:39:05.699 ERROR 18828 --- [http-nio-8080-exec-10] o.j.e.ApiErrorAttributes                 : Throwable: org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. "
-2021-05-05 20:39:05.699 ERROR 18828 --- [http-nio-8080-exec-10] o.j.e.ApiErrorAttributes                 : Mensaje a devolver: Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. 
-2021-05-05 20:39:05.699 ERROR 18828 --- [http-nio-8080-exec-10] o.j.e.ApiErrorAttributes                 : Message: Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. 
-2021-05-05 20:39:08.153  INFO 18828 --- [http-nio-8080-exec-1] o.j.s.genericservice.SendMailService     : Se enviaron los mails de notificación, nuevas reglas.
-2021-05-05 20:39:08.156  INFO 18828 --- [http-nio-8080-exec-1] o.j.s.repositoryservice.RulesService     : Las reglas ya se encontraban con los valores por defecto
-2021-05-05 20:39:18.194  INFO 18828 --- [http-nio-8080-exec-4] o.j.s.g.FileSystemStorageServiceImpl     : extensión del fichero-> pdf
-2021-05-05 20:39:18.194  INFO 18828 --- [http-nio-8080-exec-4] o.j.s.g.FileSystemStorageServiceImpl     : El pdf de reglas es válido, se procede a guardar en el storage secundario.
-2021-05-05 20:39:18.198  INFO 18828 --- [http-nio-8080-exec-4] o.j.s.repositoryservice.RulesService     : Existen correos de usuarios activos, por lo que se les va a enviar notificación.
-2021-05-05 20:39:18.199  INFO 18828 --- [http-nio-8080-exec-4] o.j.s.genericservice.SendMailService     : Se inicia servicio de mail para notificar nuevas reglas establecidas.
-2021-05-05 20:39:29.206  INFO 18828 --- [http-nio-8080-exec-4] o.j.s.genericservice.SendMailService     : Se enviaron los mails de notificación, nuevas reglas.
-2021-05-05 20:39:29.207 ERROR 18828 --- [http-nio-8080-exec-4] o.j.s.repositoryservice.RulesService     : Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. 
-
-org.jeycode.execptionsmanaged.RequestParamException: Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. 
-	at org.jeycode.service.repositoryservice.RulesService.updateRules(RulesService.java:46) ~[classes/:na]
-	at org.jeycode.service.repositoryservice.RulesService$$FastClassBySpringCGLIB$$d4e34327.invoke(<generated>) ~[classes/:na]
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.4.jar:5.3.4]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.4.jar:5.3.4]
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.jeycode.service.repositoryservice.RulesService$$EnhancerBySpringCGLIB$$ca4a15e7.updateRules(<generated>) ~[classes/:na]
-	at org.jeycode.controllers.RulesController.updateRules(RulesController.java:57) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
-
-2021-05-05 20:39:29.210 ERROR 18828 --- [http-nio-8080-exec-4] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-05-05 20:39:29.210 ERROR 18828 --- [http-nio-8080-exec-4] o.j.e.ApiErrorAttributes                 : Status: 400
-2021-05-05 20:39:29.210 ERROR 18828 --- [http-nio-8080-exec-4] o.j.e.ApiErrorAttributes                 : Throwable: org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. "
-2021-05-05 20:39:29.210 ERROR 18828 --- [http-nio-8080-exec-4] o.j.e.ApiErrorAttributes                 : Mensaje a devolver: Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. 
-2021-05-05 20:39:29.210 ERROR 18828 --- [http-nio-8080-exec-4] o.j.e.ApiErrorAttributes                 : Message: Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. 
-2021-05-05 20:44:22.302  INFO 18828 --- [http-nio-8080-exec-6] o.j.s.g.FileSystemStorageServiceImpl     : extensión del fichero-> pdf
-2021-05-05 20:44:22.302  INFO 18828 --- [http-nio-8080-exec-6] o.j.s.g.FileSystemStorageServiceImpl     : El pdf de reglas es válido, se procede a guardar en el storage secundario.
-2021-05-05 20:44:22.306  INFO 18828 --- [http-nio-8080-exec-6] o.j.s.repositoryservice.RulesService     : Existen correos de usuarios activos, por lo que se les va a enviar notificación.
-2021-05-05 20:44:22.306  INFO 18828 --- [http-nio-8080-exec-6] o.j.s.genericservice.SendMailService     : Se inicia servicio de mail para notificar nuevas reglas establecidas.
-2021-05-05 20:44:34.296  INFO 18828 --- [http-nio-8080-exec-6] o.j.s.genericservice.SendMailService     : Se enviaron los mails de notificación, nuevas reglas.
-2021-05-05 20:44:34.298  INFO 18828 --- [http-nio-8080-exec-6] o.j.s.repositoryservice.RulesService     : Las reglas ya se encontraban con los valores por defecto
-2021-05-05 21:00:12.996  INFO 18828 --- [http-nio-8080-exec-8] o.j.s.g.FileSystemStorageServiceImpl     : extensión del fichero-> pdf
-2021-05-05 21:00:12.996  INFO 18828 --- [http-nio-8080-exec-8] o.j.s.g.FileSystemStorageServiceImpl     : El pdf de reglas es válido, se procede a guardar en el storage secundario.
-2021-05-05 21:00:13.001  INFO 18828 --- [http-nio-8080-exec-8] o.j.s.repositoryservice.RulesService     : Existen correos de usuarios activos, por lo que se les va a enviar notificación.
-2021-05-05 21:00:13.001  INFO 18828 --- [http-nio-8080-exec-8] o.j.s.genericservice.SendMailService     : Se inicia servicio de mail para notificar nuevas reglas establecidas.
-2021-05-05 21:00:24.442  INFO 18828 --- [http-nio-8080-exec-8] o.j.s.genericservice.SendMailService     : Se enviaron los mails de notificación, nuevas reglas.
-2021-05-05 21:00:24.443 ERROR 18828 --- [http-nio-8080-exec-8] o.j.s.repositoryservice.RulesService     : Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. 
-
-org.jeycode.execptionsmanaged.RequestParamException: Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. 
-	at org.jeycode.service.repositoryservice.RulesService.updateRules(RulesService.java:46) ~[classes/:na]
-	at org.jeycode.service.repositoryservice.RulesService$$FastClassBySpringCGLIB$$d4e34327.invoke(<generated>) ~[classes/:na]
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.4.jar:5.3.4]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.4.jar:5.3.4]
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.jeycode.service.repositoryservice.RulesService$$EnhancerBySpringCGLIB$$ca4a15e7.updateRules(<generated>) ~[classes/:na]
-	at org.jeycode.controllers.RulesController.updateRules(RulesController.java:57) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
-
-2021-05-05 21:00:24.446 ERROR 18828 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-05-05 21:00:24.447 ERROR 18828 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Status: 400
-2021-05-05 21:00:24.448 ERROR 18828 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Throwable: org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. "
-2021-05-05 21:00:24.448 ERROR 18828 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Mensaje a devolver: Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. 
-2021-05-05 21:00:24.448 ERROR 18828 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Message: Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. 
-2021-05-05 21:06:08.334  INFO 18828 --- [http-nio-8080-exec-3] o.j.s.repositoryservice.PlayerService    : Se han obtenido todos los jugadores de la database.
-2021-05-05 21:06:13.957  INFO 18828 --- [http-nio-8080-exec-6] o.j.s.repositoryservice.PlayerService    : Se borró el jugador correctamente
-2021-05-05 21:06:13.972  INFO 18828 --- [http-nio-8080-exec-7] o.j.s.repositoryservice.PlayerService    : Se han obtenido todos los jugadores de la database.
-2021-05-05 21:06:18.374  INFO 18828 --- [http-nio-8080-exec-5] o.j.s.repositoryservice.PlayerService    : Se han obtenido todos los jugadores de la database.
-2021-05-05 21:08:49.983  INFO 18828 --- [http-nio-8080-exec-4] o.j.s.g.FileSystemStorageServiceImpl     : extensión del fichero-> pdf
-2021-05-05 21:08:49.983  INFO 18828 --- [http-nio-8080-exec-4] o.j.s.g.FileSystemStorageServiceImpl     : El pdf de reglas es válido, se procede a guardar en el storage secundario.
-2021-05-05 21:08:49.989  INFO 18828 --- [http-nio-8080-exec-4] o.j.s.repositoryservice.RulesService     : Las reglas ya se encontraban con los valores por defecto
-2021-05-05 21:09:46.889  INFO 18828 --- [http-nio-8080-exec-3] o.j.s.g.FileSystemStorageServiceImpl     : extensión del fichero-> pdf
-2021-05-05 21:09:46.890  INFO 18828 --- [http-nio-8080-exec-3] o.j.s.g.FileSystemStorageServiceImpl     : El pdf de reglas es válido, se procede a guardar en el storage secundario.
-2021-05-05 21:09:46.894 ERROR 18828 --- [http-nio-8080-exec-3] o.j.s.repositoryservice.RulesService     : Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. 
-
-org.jeycode.execptionsmanaged.RequestParamException: Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. 
-	at org.jeycode.service.repositoryservice.RulesService.updateRules(RulesService.java:46) ~[classes/:na]
-	at org.jeycode.service.repositoryservice.RulesService$$FastClassBySpringCGLIB$$d4e34327.invoke(<generated>) ~[classes/:na]
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.4.jar:5.3.4]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.4.jar:5.3.4]
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.jeycode.service.repositoryservice.RulesService$$EnhancerBySpringCGLIB$$ca4a15e7.updateRules(<generated>) ~[classes/:na]
-	at org.jeycode.controllers.RulesController.updateRules(RulesController.java:57) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
-
-2021-05-05 21:09:46.898 ERROR 18828 --- [http-nio-8080-exec-3] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-05-05 21:09:46.899 ERROR 18828 --- [http-nio-8080-exec-3] o.j.e.ApiErrorAttributes                 : Status: 400
-2021-05-05 21:09:46.899 ERROR 18828 --- [http-nio-8080-exec-3] o.j.e.ApiErrorAttributes                 : Throwable: org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. "
-2021-05-05 21:09:46.899 ERROR 18828 --- [http-nio-8080-exec-3] o.j.e.ApiErrorAttributes                 : Mensaje a devolver: Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. 
-2021-05-05 21:09:46.899 ERROR 18828 --- [http-nio-8080-exec-3] o.j.e.ApiErrorAttributes                 : Message: Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. 
-2021-05-05 21:10:08.198  INFO 18828 --- [http-nio-8080-exec-6] o.j.s.g.FileSystemStorageServiceImpl     : extensión del fichero-> pdf
-2021-05-05 21:10:08.198  INFO 18828 --- [http-nio-8080-exec-6] o.j.s.g.FileSystemStorageServiceImpl     : El pdf de reglas es válido, se procede a guardar en el storage secundario.
-2021-05-05 21:10:08.203  INFO 18828 --- [http-nio-8080-exec-6] o.j.s.repositoryservice.RulesService     : Las reglas ya se encontraban con los valores por defecto
-2021-05-05 21:10:15.625  INFO 18828 --- [http-nio-8080-exec-7] o.j.s.g.FileSystemStorageServiceImpl     : extensión del fichero-> pdf
-2021-05-05 21:10:15.626  INFO 18828 --- [http-nio-8080-exec-7] o.j.s.g.FileSystemStorageServiceImpl     : El pdf de reglas es válido, se procede a guardar en el storage secundario.
-2021-05-05 21:10:15.633  INFO 18828 --- [http-nio-8080-exec-7] o.j.s.repositoryservice.RulesService     : Las reglas ya se encontraban con los valores por defecto
-2021-05-05 21:10:33.263  INFO 18828 --- [http-nio-8080-exec-5] o.j.s.g.FileSystemStorageServiceImpl     : extensión del fichero-> pdf
-2021-05-05 21:10:33.263  INFO 18828 --- [http-nio-8080-exec-5] o.j.s.g.FileSystemStorageServiceImpl     : El pdf de reglas es válido, se procede a guardar en el storage secundario.
-2021-05-05 21:10:33.269  INFO 18828 --- [http-nio-8080-exec-5] o.j.s.repositoryservice.RulesService     : Las reglas ya se encontraban con los valores por defecto
-2021-05-05 21:12:27.673  INFO 18828 --- [http-nio-8080-exec-9] o.j.s.g.FileSystemStorageServiceImpl     : extensión del fichero-> pdf
-2021-05-05 21:12:27.673  INFO 18828 --- [http-nio-8080-exec-9] o.j.s.g.FileSystemStorageServiceImpl     : El pdf de reglas es válido, se procede a guardar en el storage secundario.
-2021-05-05 21:12:27.679 ERROR 18828 --- [http-nio-8080-exec-9] o.j.s.repositoryservice.RulesService     : Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. 
-
-org.jeycode.execptionsmanaged.RequestParamException: Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. 
-	at org.jeycode.service.repositoryservice.RulesService.updateRules(RulesService.java:46) ~[classes/:na]
-	at org.jeycode.service.repositoryservice.RulesService$$FastClassBySpringCGLIB$$d4e34327.invoke(<generated>) ~[classes/:na]
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.4.jar:5.3.4]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.4.jar:5.3.4]
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.3.4.jar:5.3.4]
-	at org.jeycode.service.repositoryservice.RulesService$$EnhancerBySpringCGLIB$$ca4a15e7.updateRules(<generated>) ~[classes/:na]
-	at org.jeycode.controllers.RulesController.updateRules(RulesController.java:57) ~[classes/:na]
-	at jdk.internal.reflect.GeneratedMethodAccessor83.invoke(Unknown Source) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.4.jar:5.3.4]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
-
-2021-05-05 21:12:27.682 ERROR 18828 --- [http-nio-8080-exec-9] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-05-05 21:12:27.682 ERROR 18828 --- [http-nio-8080-exec-9] o.j.e.ApiErrorAttributes                 : Status: 400
-2021-05-05 21:12:27.683 ERROR 18828 --- [http-nio-8080-exec-9] o.j.e.ApiErrorAttributes                 : Throwable: org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. "
-2021-05-05 21:12:27.683 ERROR 18828 --- [http-nio-8080-exec-9] o.j.e.ApiErrorAttributes                 : Mensaje a devolver: Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. 
-2021-05-05 21:12:27.683 ERROR 18828 --- [http-nio-8080-exec-9] o.j.e.ApiErrorAttributes                 : Message: Estas reglas no se pueden establecer. Los puntos por resultado deben ser mayores al resto y los puntos por goles del Burgos C.F. deben ser mayores a los puntos por signo. 
-2021-05-05 21:12:46.164  INFO 18828 --- [http-nio-8080-exec-10] o.j.s.g.FileSystemStorageServiceImpl     : extensión del fichero-> pdf
-2021-05-05 21:12:46.165  INFO 18828 --- [http-nio-8080-exec-10] o.j.s.g.FileSystemStorageServiceImpl     : El pdf de reglas es válido, se procede a guardar en el storage secundario.
-2021-05-05 21:12:46.187  INFO 18828 --- [http-nio-8080-exec-10] o.j.s.repositoryservice.RulesService     : Se actualizaron las reglas correctamente
+2021-05-09 12:38:15.215 ERROR 5996 --- [http-nio-8080-exec-1] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
+2021-05-09 12:38:15.215 ERROR 5996 --- [http-nio-8080-exec-1] o.j.e.ApiErrorAttributes                 : Status: 400
+2021-05-09 12:38:15.216 ERROR 5996 --- [http-nio-8080-exec-1] o.j.e.ApiErrorAttributes                 : Throwable: org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "Imposible obtener los datos de la jornada ya que aún no existe un partido abierto. "
+2021-05-09 12:38:15.216 ERROR 5996 --- [http-nio-8080-exec-1] o.j.e.ApiErrorAttributes                 : Mensaje a devolver: Imposible obtener los datos de la jornada ya que aún no existe un partido abierto. 
+2021-05-09 12:38:15.216 ERROR 5996 --- [http-nio-8080-exec-1] o.j.e.ApiErrorAttributes                 : Message: Imposible obtener los datos de la jornada ya que aún no existe un partido abierto. 
+2021-05-09 12:38:28.845  WARN 5996 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<?> org.jeycode.controllers.PlayerController.insertOnePlayer(org.jeycode.dtos.playerdto.PlayerDtoToCreate) with 4 errors: [Field error in object 'playerDtoToCreate' on field 'playerNick': rejected value []; codes [Size.playerDtoToCreate.playerNick,Size.playerNick,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [playerDtoToCreate.playerNick,playerNick]; arguments []; default message [playerNick],20,1]; default message [El nombre del jugador no puede ser nulo o estar en blanco, tampoco se aceptan nicks repetidos. Sólo se aceptan 20 caracteres máximo para el nick de un jugador, mínimo 1 para identificarlo.]] [Field error in object 'playerDtoToCreate' on field 'playerMail': rejected value []; codes [NotBlank.playerDtoToCreate.playerMail,NotBlank.playerMail,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [playerDtoToCreate.playerMail,playerMail]; arguments []; default message [playerMail]]; default message [El email del jugador no puede ser nulo o estar en blanco y debe tener un formato de email válido. El mail puede contener 50 caracteres máximo.]] [Field error in object 'playerDtoToCreate' on field 'playerMail': rejected value []; codes [Email.playerDtoToCreate.playerMail,Email.playerMail,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [playerDtoToCreate.playerMail,playerMail]; arguments []; default message [playerMail],[Ljavax.validation.constraints.Pattern$Flag;@24d76920,^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*]; default message [El email del jugador no puede ser nulo o estar en blanco y debe tener un formato de email válido. El mail puede contener 50 caracteres máximo.]] [Field error in object 'playerDtoToCreate' on field 'playerNick': rejected value []; codes [NotBlank.playerDtoToCreate.playerNick,NotBlank.playerNick,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [playerDtoToCreate.playerNick,playerNick]; arguments []; default message [playerNick]]; default message [El nombre del jugador no puede ser nulo o estar en blanco, tampoco se aceptan nicks repetidos. Sólo se aceptan 20 caracteres máximo para el nick de un jugador, mínimo 1 para identificarlo.]] ]
+2021-05-09 12:38:28.847 ERROR 5996 --- [http-nio-8080-exec-4] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
+2021-05-09 12:38:28.847 ERROR 5996 --- [http-nio-8080-exec-4] o.j.e.ApiErrorAttributes                 : Status: 400
+2021-05-09 12:38:28.847 ERROR 5996 --- [http-nio-8080-exec-4] o.j.e.ApiErrorAttributes                 : Throwable: org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<?> org.jeycode.controllers.PlayerController.insertOnePlayer(org.jeycode.dtos.playerdto.PlayerDtoToCreate) with 4 errors: [Field error in object 'playerDtoToCreate' on field 'playerNick': rejected value []; codes [Size.playerDtoToCreate.playerNick,Size.playerNick,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [playerDtoToCreate.playerNick,playerNick]; arguments []; default message [playerNick],20,1]; default message [El nombre del jugador no puede ser nulo o estar en blanco, tampoco se aceptan nicks repetidos. Sólo se aceptan 20 caracteres máximo para el nick de un jugador, mínimo 1 para identificarlo.]] [Field error in object 'playerDtoToCreate' on field 'playerMail': rejected value []; codes [NotBlank.playerDtoToCreate.playerMail,NotBlank.playerMail,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [playerDtoToCreate.playerMail,playerMail]; arguments []; default message [playerMail]]; default message [El email del jugador no puede ser nulo o estar en blanco y debe tener un formato de email válido. El mail puede contener 50 caracteres máximo.]] [Field error in object 'playerDtoToCreate' on field 'playerMail': rejected value []; codes [Email.playerDtoToCreate.playerMail,Email.playerMail,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [playerDtoToCreate.playerMail,playerMail]; arguments []; default message [playerMail],[Ljavax.validation.constraints.Pattern$Flag;@24d76920,^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*]; default message [El email del jugador no puede ser nulo o estar en blanco y debe tener un formato de email válido. El mail puede contener 50 caracteres máximo.]] [Field error in object 'playerDtoToCreate' on field 'playerNick': rejected value []; codes [NotBlank.playerDtoToCreate.playerNick,NotBlank.playerNick,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [playerDtoToCreate.playerNick,playerNick]; arguments []; default message [playerNick]]; default message [El nombre del jugador no puede ser nulo o estar en blanco, tampoco se aceptan nicks repetidos. Sólo se aceptan 20 caracteres máximo para el nick de un jugador, mínimo 1 para identificarlo.]] 
+2021-05-09 12:38:28.848 ERROR 5996 --- [http-nio-8080-exec-4] o.j.e.ApiErrorAttributes                 : Mensaje a devolver: El nombre del jugador no puede ser nulo o estar en blanco, tampoco se aceptan nicks repetidos. Sólo se aceptan 20 caracteres máximo para el nick de un jugador, mínimo 1 para identificarlo.:err:El email del jugador no puede ser nulo o estar en blanco y debe tener un formato de email válido. El mail puede contener 50 caracteres máximo.:err:El email del jugador no puede ser nulo o estar en blanco y debe tener un formato de email válido. El mail puede contener 50 caracteres máximo.:err:El nombre del jugador no puede ser nulo o estar en blanco, tampoco se aceptan nicks repetidos. Sólo se aceptan 20 caracteres máximo para el nick de un jugador, mínimo 1 para identificarlo.
+2021-05-09 12:38:28.848 ERROR 5996 --- [http-nio-8080-exec-4] o.j.e.ApiErrorAttributes                 : Message: El nombre del jugador no puede ser nulo o estar en blanco, tampoco se aceptan nicks repetidos. Sólo se aceptan 20 caracteres máximo para el nick de un jugador, mínimo 1 para identificarlo.:err:El email del jugador no puede ser nulo o estar en blanco y debe tener un formato de email válido. El mail puede contener 50 caracteres máximo.:err:El email del jugador no puede ser nulo o estar en blanco y debe tener un formato de email válido. El mail puede contener 50 caracteres máximo.:err:El nombre del jugador no puede ser nulo o estar en blanco, tampoco se aceptan nicks repetidos. Sólo se aceptan 20 caracteres máximo para el nick de un jugador, mínimo 1 para identificarlo.

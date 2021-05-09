@@ -17,13 +17,13 @@ import lombok.experimental.SuperBuilder;
 public class PlayerDtoToCreate implements ApplicationExceptionUtils
 {
 
-      @NotNull(message = PLAYERNAME_NON_VALID)
-      @NotBlank(message = PLAYERNAME_NON_VALID)
-      @Size(max = 20, min = 1, message = PLAYERNAME_NON_VALID)
+      @NotNull(message = PLAYERNAME_NON_NULL)
+      @NotBlank(message = PLAYERNAME_NON_BLANK)
+      @Size(max = 20, min = 1, message = PLAYERNAME_NON_VALID_SIZE)
       protected String playerNick;
-      @NotNull(message = PLAYERMAIL_NON_VALID)
-      @NotBlank(message = PLAYERMAIL_NON_VALID)
-      @Size(max = 50, message = PLAYERMAIL_NON_VALID)
-      @Email(regexp = MAIL_REGEXP, message = PLAYERMAIL_NON_VALID)
+      @NotNull(message = PLAYERMAIL_NON_NULL)
+      @NotBlank(message = PLAYERMAIL_NON_BLANK)
+      @Size(max = 50, message = PLAYERMAIL_NON_VALID_SIZE)
+      @Email(regexp = MAIL_REGEXP, message = PLAYERMAIL_NON_VALID_PATTERN)
       protected String playerMail;
 }

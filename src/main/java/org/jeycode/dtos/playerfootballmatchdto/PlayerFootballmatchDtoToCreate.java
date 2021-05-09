@@ -22,6 +22,6 @@ public class PlayerFootballmatchDtoToCreate implements ApplicationExceptionUtils
 
       @NotNull(message = MATCHRESULT_NON_NULL)
       @NotBlank(message = MATCHRESULT_NON_BLANK)
-      @Pattern(regexp = MATCH_RESULT_REGEXP, message = MATCHRESULT_NON_VALID)
+      @Pattern(regexp = MATCH_RESULT_REGEXP, message = MATCHRESULT_NON_VALID_PATTERN)
       private String playerFootBallMatchResult;
 }

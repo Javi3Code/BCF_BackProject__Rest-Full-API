@@ -19,12 +19,12 @@ import lombok.experimental.SuperBuilder;
 public class ConcreteMatchDtoToUpdate extends ConcreteMatchDtoToCreate
 {
 
-      @NotNull(message = NON_VALID_ID)
-      @Positive(message = NON_VALID_ID)
+      @NotNull(message = NON_VALID_ID_NULL)
+      @Positive(message = NON_VALID_ID_VALUE)
       protected long concreteMatchId;
 
-      @NotNull(message = MATCHRESULT_NON_VALID)
-      @NotBlank(message = MATCHRESULT_NON_VALID)
-      @Pattern(regexp = MATCH_RESULT_REGEXP, message = MATCHRESULT_NON_VALID)
+      @NotNull(message = MATCHRESULT_NON_NULL)
+      @NotBlank(message = MATCHRESULT_NON_BLANK)
+      @Pattern(regexp = MATCH_RESULT_REGEXP, message = MATCHRESULT_NON_VALID_PATTERN)
       private String resultOfConcreteMatch;
 }

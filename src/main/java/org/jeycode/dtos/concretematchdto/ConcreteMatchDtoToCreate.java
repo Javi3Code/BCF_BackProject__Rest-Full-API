@@ -16,8 +16,8 @@ import lombok.experimental.SuperBuilder;
 public class ConcreteMatchDtoToCreate implements ApplicationExceptionUtils
 {
 
-      @NotNull(message = TEAMNAME_NON_VALID)
-      @NotBlank(message = TEAMNAME_NON_VALID)
-      @Size(min = 3, max = 60, message = TEAMNAME_NON_VALID)
+      @NotNull(message = TEAMNAME_NON_NULL)
+      @NotBlank(message = TEAMNAME_NON_BLANK)
+      @Size(min = 3, max = 60, message = TEAMNAME_NON_VALID_SIZE)
       protected String localTeam,visitorTeam;
 }
