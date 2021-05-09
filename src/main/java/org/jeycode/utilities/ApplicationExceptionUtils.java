@@ -91,11 +91,11 @@ public interface ApplicationExceptionUtils
       String TEAMNAME_NON_VALID_SIZE = "Sólo se aceptan 60 caracteres máximo para el nombre de un equipo, mínimo 3 para identificarlo.";
 
       String PLAYERNAME_NON_NULL = "El nick del jugador no puede ser nulo";
-      String PLAYERNAME_NON_BLANK = "El nick del jugador no estar en blanco.";
+      String PLAYERNAME_NON_BLANK = "El nick del jugador no puede estar en blanco.";
       String PLAYERNAME_NON_VALID_SIZE = "Sólo se aceptan 20 caracteres máximo para el nick de un jugador, mínimo 1 para identificarlo.";
       String PLAYERMAIL_NON_NULL = "El email del jugador no puede ser nulo.";
       String PLAYERMAIL_NON_BLANK = "El email del jugador no puede estar en blanco.";
-      String PLAYERMAIL_NON_VALID_PATTERN = "El email del jugador no puede ser nulo o estar en blanco y debe tener un formato de email válido.";
+      String PLAYERMAIL_NON_VALID_PATTERN = "El email del jugador debe tener un formato de email válido.";
       String PLAYERMAIL_NON_VALID_SIZE = " El mail puede contener 50 caracteres máximo.";
 
       String MATCHRESULT_NON_NULL = "El resultado a actualizar no puede ser nulo.";
