@@ -94,7 +94,7 @@ public interface ApplicationExceptionUtils
       String PLAYERNAME_NON_BLANK = "El nick del jugador no estar en blanco.";
       String PLAYERNAME_NON_VALID_SIZE = "Sólo se aceptan 20 caracteres máximo para el nick de un jugador, mínimo 1 para identificarlo.";
       String PLAYERMAIL_NON_NULL = "El email del jugador no puede ser nulo.";
-      String PLAYERMAIL_NON_BLANK = "El email del jugador estar en blanco.";
+      String PLAYERMAIL_NON_BLANK = "El email del jugador no puede estar en blanco.";
       String PLAYERMAIL_NON_VALID_PATTERN = "El email del jugador no puede ser nulo o estar en blanco y debe tener un formato de email válido.";
       String PLAYERMAIL_NON_VALID_SIZE = " El mail puede contener 50 caracteres máximo.";
 
