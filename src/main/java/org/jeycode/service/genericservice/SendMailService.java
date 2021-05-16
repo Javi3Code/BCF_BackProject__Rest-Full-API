@@ -75,7 +75,7 @@ public class SendMailService implements RestServiceUtils
                         var now = LocalDateTime.now();
                         mail.setText(MAIL_INIT_NEW_FB_DAY_HEADER + MAIL_INIT_NEW_FB_DAY_BODY_HEADER + footballMatch
                                                 + MAIL_INIT_NEW_FB_DAY_BODY_PREDICATE1 + mapOfDayOfWeek.get(now.getDayOfWeek())
-                                                + MAIL_INIT_NEW_FB_DAY_BODY_PREDICATE1_1 + now.getHour() + SPACE + HOURS + now.getMinute()
+                                                + MAIL_INIT_NEW_FB_DAY_BODY_PREDICATE1_1 + now.getHour() + SPACE + HOURS + SPACE + now.getMinute()
                                                 + SPACE + MINUTES + MAIL_INIT_NEW_FB_DAY_BODY_PREDICATE2 + MAIL_GENERIC_OWNER_INFO,
                                      true);
                         mail.setTo(allPlayerMail);

@@ -30,12 +30,11 @@ public class LogsController implements ControllerUtils
                              @ApiResponse(code = CODE_400, message = ERR_400 + DEFAULT_ERROR_JSON_RESPONSE),
                              @ApiResponse(code = CODE_409, message = ERR_409 + DEFAULT_ERROR_JSON_RESPONSE),
                              @ApiResponse(code = CODE_500, message = ERR_500 + DEFAULT_ERROR_JSON_RESPONSE)})
-      @GetMapping
-      @ResponseBody
+      @GetMapping @ResponseBody
       public boolean sendLogsToApplicationSupport(@ApiParam(defaultValue = LOGS_REQUEST_DEFAULT_MSG, value = GET_SEND_LOGS_DESC,
             name = LOGS_REQUEST_DEFAULT_MSG_NAME) @RequestParam(required = false,
                   defaultValue = LOGS_REQUEST_DEFAULT_MSG) String clientErrorMessage)
-      {
+      { 
             return sendLogsToSupportService.sendLogsToApplicationSupport(clientErrorMessage);
       }
 

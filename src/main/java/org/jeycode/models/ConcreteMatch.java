@@ -24,15 +24,16 @@ public class ConcreteMatch
 
       @Id
       @GeneratedValue(strategy = GenerationType.AUTO)
+      @Column(name = "concretematch_id")
       private long concreteMatchId;
 
-      @Column(nullable = false, length = 50)
+      @Column(name="local",nullable = false, length = 50)
       private String localTeam;
 
-      @Column(nullable = false, length = 50)
+      @Column(name="visitor",nullable = false, length = 50)
       private String visitorTeam;
 
-      @Column(length = 5)
+      @Column(name="result",length = 5)
       private String resultOfConcreteMatch;
 
       @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "concreteMatch", fetch = FetchType.LAZY)

@@ -6,10 +6,13 @@ import javax.validation.constraints.Size;
 
 import org.jeycode.utilities.ApplicationExceptionUtils;
 
+import io.swagger.annotations.ApiModel;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
+@ApiModel(description = "Es el DTO que se espera en la operacion POST en el controlador de partidos.", value = "CR - Partido DTO",
+      subTypes = {ConcreteMatchDtoToUpdate.class})
 @SuperBuilder(builderMethodName = "of", buildMethodName = "get")
 @Data
 @NoArgsConstructor

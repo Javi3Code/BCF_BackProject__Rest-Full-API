@@ -13,7 +13,8 @@
 	<artifactId>BCF_Project_Backend_RestFullAPI</artifactId>
 	<version>0.0.1-springShot</version>
 	<name>BCF_Project_Backend_RestFullAPI</name>
-	<description>Full Rest API que maneja el backend de aplicación de porras BCF</description>
+	<description>Full Rest API que maneja el backend de aplicación de
+		porras BCF</description>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>11</java.version>

@@ -6,10 +6,13 @@ import javax.validation.constraints.Pattern;
 
 import org.jeycode.utilities.ApplicationExceptionUtils;
 
+import io.swagger.annotations.ApiModel;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
+@ApiModel(description = "Usado para crear una apuesta en el controlador de estas.", value = "Externo - CR - Apuesta DTO",
+      subTypes = {PlayerFootballMatchDtoToUpdate.class})
 @SuperBuilder(builderMethodName = "of", buildMethodName = "get")
 @Data
 @NoArgsConstructor

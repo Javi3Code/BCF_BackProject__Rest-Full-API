@@ -22,16 +22,20 @@ public class SeasonService
 
       public boolean tryToResetSeason()
       {
-            teamService.tryToDeleteOneOrMoreTeams(ALL,null);
-            playerService.resetOfPlayerStateToInitial();
-            concreteMatchService.deleteConcreteMatch(ALL);
             var allPlayerMail = playerService.allPlayerMail();
             if (allPlayerMail.length != 0)
             {
                   sendMailService.sendSeasonRestartInfoMail(allPlayerMail,playerService.getPlayerWinnerNick());
                   log.info("Éxisten usuarios a los que avisar.");
             }
-            log.info("Aún no existen usuarios a los que avisar.");
+            else
+            {
+                  log.info("Aún no existen usuarios a los que avisar.");
+            }
+            teamService.tryToDeleteOneOrMoreTeams(ALL,null);
+            playerService.resetOfPlayerStateToInitial();
+            concreteMatchService.deleteConcreteMatch(ALL);
+           
             return ALL;
       }
 

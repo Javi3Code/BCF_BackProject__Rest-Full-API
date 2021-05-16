@@ -148,10 +148,12 @@ public class PlayerService implements RestServiceUtils
 
             log.info("Se obtiene el mayor número de puntos conseguidos.");
 
-            List<String> lstOfPlayerWinner = playerRepository.findAllPlayerNickByPlayerTotalPoints(winnerTotalPoints);
+            List<Player> lstOfPlayerWinner = playerRepository.findByPlayerTotalPoints(winnerTotalPoints);
             if (lstOfPlayerWinner.size() > 1)
             {
                   return lstOfPlayerWinner.stream()
+                                          .map(Player::getPlayerNick)
+                                          .peek(pl-> log.info(pl + " es uno de los ganadores de la temporada"))
                                           .collect(Collectors.joining(", "));
             }
 

@@ -5,12 +5,14 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Positive;
 
+import io.swagger.annotations.ApiModel;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 import lombok.experimental.SuperBuilder;
 
+@ApiModel(description = "Es el DTO que se espera en la operacion PUT en el controlador de apuestas.", value = "UP - Partido DTO")
 @SuperBuilder(builderMethodName = "of", buildMethodName = "get")
 @Data
 @EqualsAndHashCode(callSuper = true)

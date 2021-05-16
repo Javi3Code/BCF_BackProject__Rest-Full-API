@@ -34,11 +34,11 @@ public class PlayerFootballMatch
       private short burgosCFGoals;
 
       @ManyToOne(optional = false)
-      @JoinColumn(nullable = false)
+      @JoinColumn(name = "player",nullable = false)
       private Player player;
 
       @ManyToOne(optional = false)
-      @JoinColumn(nullable = false)
+      @JoinColumn(name = "match",nullable = false)
       private ConcreteMatch concreteMatch;
 
       @Column(name = "pfm_matchpoints")
