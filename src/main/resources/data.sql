@@ -20,20 +20,20 @@ values('Burgos C.F.'),
 
 insert into Player (player_id,player_nick,player_mail,player_totalpoints) 
 values
-(NEXTVAL('hibernate_sequence'),'Javi_0','j.code.initialize@gmail.com',18),
-(NEXTVAL('hibernate_sequence'),'PePe_0','asdad@gmail.com',12),
-(NEXTVAL('hibernate_sequence'),'erre_0','dsad@gmail.com',10),
-(NEXTVAL('hibernate_sequence'),'Jose_0','asd@gmail.com',16),
-(NEXTVAL('hibernate_sequence'),'Héctor_0','sda@gmail.com',17),
-(NEXTVAL('hibernate_sequence'),'Rocío_0','asd@gmail.com',24),
-(NEXTVAL('hibernate_sequence'),'David_0','a@gmail.com',22),
-(NEXTVAL('hibernate_sequence'),'Alberto_0','a@gmail.com',10),
-(NEXTVAL('hibernate_sequence'),'Andrés_0','f@gmail.com',21),
-(NEXTVAL('hibernate_sequence'),'Diego_0','s@gmail.com',18),
-(NEXTVAL('hibernate_sequence'),'Ángel_0','f@gmail.com',24),
-(NEXTVAL('hibernate_sequence'),'Sergio_0','a@gmail.com',16),
-(NEXTVAL('hibernate_sequence'),'Rigoberto_0','f@gmail.com',13),
-(NEXTVAL('hibernate_sequence'),'Recaredo_0','f@gmail.com',11);
+(NEXTVAL('hibernate_sequence'),'Javi','j.code.initialize@gmail.com',18),
+(NEXTVAL('hibernate_sequence'),'PePe','asdad@gmail.com',12),
+(NEXTVAL('hibernate_sequence'),'erre','dsad@gmail.com',10),
+(NEXTVAL('hibernate_sequence'),'Jose','asd@gmail.com',16),
+(NEXTVAL('hibernate_sequence'),'Héctor','sda@gmail.com',17),
+(NEXTVAL('hibernate_sequence'),'Rocío','asd@gmail.com',24),
+(NEXTVAL('hibernate_sequence'),'David','a@gmail.com',22),
+(NEXTVAL('hibernate_sequence'),'Alberto','a@gmail.com',10),
+(NEXTVAL('hibernate_sequence'),'Andrés','f@gmail.com',21),
+(NEXTVAL('hibernate_sequence'),'Diego','s@gmail.com',18),
+(NEXTVAL('hibernate_sequence'),'Ángel','f@gmail.com',24),
+(NEXTVAL('hibernate_sequence'),'Sergio','a@gmail.com',16),
+(NEXTVAL('hibernate_sequence'),'Rigoberto','f@gmail.com',13),
+(NEXTVAL('hibernate_sequence'),'Recaredo','f@gmail.com',11);
 
 insert into Concrete_Match (concretematch_id,local,visitor,result) 
 values
@@ -57,7 +57,9 @@ values
 (NEXTVAL('hibernate_sequence'),'2-0',1,2,9,22,0),
 (NEXTVAL('hibernate_sequence'),'0-1',2,0,10,22,0),
 (NEXTVAL('hibernate_sequence'),'2-0',1,2,11,22,0),
-(NEXTVAL('hibernate_sequence'),'3-4',2,3,12,22,0)
+(NEXTVAL('hibernate_sequence'),'3-4',2,3,12,22,0),
+(NEXTVAL('hibernate_sequence'),'3-4',2,3,13,22,0),
+(NEXTVAL('hibernate_sequence'),'3-4',2,3,14,22,0)
 ;
 
 

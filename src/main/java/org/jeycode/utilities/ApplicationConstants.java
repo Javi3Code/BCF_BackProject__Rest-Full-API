@@ -99,7 +99,7 @@ public interface ApplicationConstants
 
       String MAIL_END_SEASON_SUBJECT = "Ha finalizado la temporada.";
       String MAIL_END_SEASON_HEADER = "<html><h2 align=\"center\">Ha finalizado la temporada y se han restablecido los valores predeterminados.</h2>";
-      String MAIL_END_SEASON_BODY_HEADER = "<body align=\"center\"><div><p style=\"font-size:15px;\">Enhorabuena a el/los ganador/es <b>";
+      String MAIL_END_SEASON_BODY_HEADER = "<body align=\"center\"><div><p style=\"font-size:15px;\">-Dar la enhorabuena a <b>";
       String MAIL_END_SEASON_BODY_PREDICATE = "</b>. Suerte para el próximo año a los demás...HASTA PRONTO!! ";
 
       String MAIL_END_FOOTBALLDAY_SUBJECT = "Jornada finalizada";

@@ -1,174 +1,128 @@
-2021-05-16 19:08:50.056  INFO 17544 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-05-16 19:08:50.216  INFO 17544 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 136 ms. Found 5 JPA repository interfaces.
-2021-05-16 19:08:51.292  INFO 17544 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-05-16 19:08:51.352  INFO 17544 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-05-16 19:08:51.353  INFO 17544 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
-2021-05-16 19:08:51.532  INFO 17544 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-05-16 19:08:51.532  INFO 17544 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2722 ms
-2021-05-16 19:08:51.593  INFO 17544 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-05-16 19:08:51.810  INFO 17544 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-05-16 19:08:51.817  INFO 17544 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:a398cdb2-535f-41c7-bc66-d32f5b664f84'
-2021-05-16 19:08:52.000  INFO 17544 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-05-16 19:08:52.051  INFO 17544 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
-2021-05-16 19:08:52.293  INFO 17544 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2021-05-16 19:08:52.581  INFO 17544 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2021-05-16 19:08:53.710  INFO 17544 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-05-16 19:08:53.719  INFO 17544 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-05-16 19:08:54.821  INFO 17544 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService
-2021-05-16 19:08:54.823  INFO 17544 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'sendMailServiceTaskExecutor'
-2021-05-16 19:08:54.853  INFO 17544 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2021-05-16 19:08:55.242  INFO 17544 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-05-16 19:08:55.243  INFO 17544 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2021-05-16 19:08:55.272  INFO 17544 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2021-05-16 19:08:55.318  INFO 17544 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2021-05-16 19:08:55.460  INFO 17544 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-05-16 19:08:55.462  INFO 17544 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-05-16 19:08:55.465  INFO 17544 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2021-05-16 19:08:55.761  INFO 17544 --- [main] org.jeycode.ApplicationRunner            : Started ApplicationRunner in 7.508 seconds (JVM running for 8.049)
-2021-05-16 19:09:00.613  INFO 17544 --- [http-nio-8080-exec-2] o.j.s.g.FileSystemStorageServiceImpl     : extensión del fichero-> pdf
-2021-05-16 19:09:00.613  INFO 17544 --- [http-nio-8080-exec-2] o.j.s.g.FileSystemStorageServiceImpl     : El pdf de reglas es válido, se procede a guardar en el storage secundario.
-2021-05-16 19:09:00.676  INFO 17544 --- [http-nio-8080-exec-2] o.j.s.repositoryservice.RulesService     : Existen correos de usuarios activos, por lo que se les va a enviar notificación.
-2021-05-16 19:09:00.683  INFO 17544 --- [http-nio-8080-exec-2] o.j.s.genericservice.SendMailService     : Se inicia servicio de mail para notificar nuevas reglas establecidas.
-2021-05-16 19:09:15.902  INFO 17544 --- [http-nio-8080-exec-2] o.j.s.genericservice.SendMailService     : Se enviaron los mails de notificación, nuevas reglas.
-2021-05-16 19:09:15.913  INFO 17544 --- [http-nio-8080-exec-2] o.j.s.repositoryservice.RulesService     : Las reglas ya se encontraban con los valores por defecto
-2021-05-16 20:49:18.318  INFO 1764 --- [main] org.jeycode.ApplicationRunner            : Starting ApplicationRunner using Java 11.0.6 on LAPTOP-0FVBB724 with PID 1764 (C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI\target\classes started by JAVIER in C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI)
-2021-05-16 20:49:18.328  INFO 1764 --- [main] org.jeycode.ApplicationRunner            : No active profile set, falling back to default profiles: default
-2021-05-16 20:49:19.481  INFO 1764 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-05-16 20:49:19.644  INFO 1764 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 153 ms. Found 5 JPA repository interfaces.
-2021-05-16 20:49:20.741  INFO 1764 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-05-16 20:49:20.753  INFO 1764 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-05-16 20:49:20.753  INFO 1764 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
-2021-05-16 20:49:20.878  INFO 1764 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-05-16 20:49:20.878  INFO 1764 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2501 ms
-2021-05-16 20:49:21.004  INFO 1764 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-05-16 20:49:21.254  INFO 1764 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-05-16 20:49:21.269  INFO 1764 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:58bdefdf-d4f1-42da-a35e-d0fa782bd67e'
-2021-05-16 20:49:21.459  INFO 1764 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-05-16 20:49:21.506  INFO 1764 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
-2021-05-16 20:49:21.632  INFO 1764 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2021-05-16 20:49:21.788  INFO 1764 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2021-05-16 20:49:22.833  INFO 1764 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-05-16 20:49:22.849  INFO 1764 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-05-16 20:49:24.543  INFO 1764 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService
-2021-05-16 20:49:24.556  INFO 1764 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'sendMailServiceTaskExecutor'
-2021-05-16 20:49:24.589  INFO 1764 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2021-05-16 20:49:25.237  INFO 1764 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-05-16 20:49:25.237  INFO 1764 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2021-05-16 20:49:25.284  INFO 1764 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2021-05-16 20:49:25.330  INFO 1764 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2021-05-16 20:49:25.784  INFO 1764 --- [main] org.jeycode.ApplicationRunner            : Started ApplicationRunner in 7.939 seconds (JVM running for 8.47)
-2021-05-16 20:49:36.094  INFO 1764 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-05-16 20:49:36.101  INFO 1764 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-05-16 20:49:36.103  INFO 1764 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2021-05-16 20:49:38.983 ERROR 1764 --- [http-nio-8080-exec-9] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-05-16 20:49:38.984 ERROR 1764 --- [http-nio-8080-exec-9] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-05-16 20:49:38.984 ERROR 1764 --- [http-nio-8080-exec-9] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-05-16 20:49:38.984 ERROR 1764 --- [http-nio-8080-exec-9] o.j.e.ApiErrorAttributes                 : Message: 
-2021-05-16 20:49:39.011 ERROR 1764 --- [http-nio-8080-exec-6] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-05-16 20:49:39.011 ERROR 1764 --- [http-nio-8080-exec-6] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-05-16 20:49:39.011 ERROR 1764 --- [http-nio-8080-exec-6] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-05-16 20:49:39.011 ERROR 1764 --- [http-nio-8080-exec-6] o.j.e.ApiErrorAttributes                 : Message: 
-2021-05-16 20:50:33.726  INFO 1764 --- [ForkJoinPool.commonPool-worker-3] o.j.s.g.FileSystemStorageServiceImpl     : error_logs.log es uno de los ficheros de logs a enviar.
-2021-05-16 20:50:33.727  INFO 1764 --- [ForkJoinPool.commonPool-worker-3] o.j.s.g.FileSystemStorageServiceImpl     : error_logs.log.2021-05-16.3.gz es uno de los ficheros de logs a enviar.
-2021-05-16 20:50:33.727  INFO 1764 --- [ForkJoinPool.commonPool-worker-3] o.j.s.g.FileSystemStorageServiceImpl     : error_logs.log.2021-05-16.2.gz es uno de los ficheros de logs a enviar.
-2021-05-16 20:50:33.727  INFO 1764 --- [ForkJoinPool.commonPool-worker-3] o.j.s.g.FileSystemStorageServiceImpl     : error_logs.log.2021-05-16.1.gz es uno de los ficheros de logs a enviar.
-2021-05-16 20:50:33.727  INFO 1764 --- [ForkJoinPool.commonPool-worker-3] o.j.s.g.FileSystemStorageServiceImpl     : error_logs.log.2021-05-16.0.gz es uno de los ficheros de logs a enviar.
-2021-05-16 20:50:33.727  INFO 1764 --- [ForkJoinPool.commonPool-worker-3] o.j.s.g.FileSystemStorageServiceImpl     : Se han recuperado todos los ficheros de logs a enviar.
-2021-05-16 20:50:33.728  INFO 1764 --- [ForkJoinPool.commonPool-worker-3] o.j.s.g.FileSystemStorageServiceImpl     : Se ha creado el directorio temporal: src\main\resources\system_files\tempdir\Logs-Support
-2021-05-16 20:50:33.732  INFO 1764 --- [ForkJoinPool.commonPool-worker-3] o.j.s.g.FileSystemStorageServiceImpl     : Se copió un fichero de logs en el directorio: //Logs-Support
-2021-05-16 20:50:33.734  INFO 1764 --- [ForkJoinPool.commonPool-worker-3] o.j.s.g.FileSystemStorageServiceImpl     : Se copió un fichero de logs en el directorio: //Logs-Support
-2021-05-16 20:50:33.736  INFO 1764 --- [ForkJoinPool.commonPool-worker-3] o.j.s.g.FileSystemStorageServiceImpl     : Se copió un fichero de logs en el directorio: //Logs-Support
-2021-05-16 20:50:33.738  INFO 1764 --- [ForkJoinPool.commonPool-worker-3] o.j.s.g.FileSystemStorageServiceImpl     : Se copió un fichero de logs en el directorio: //Logs-Support
-2021-05-16 20:50:33.739  INFO 1764 --- [ForkJoinPool.commonPool-worker-3] o.j.s.g.FileSystemStorageServiceImpl     : Se copió un fichero de logs en el directorio: //Logs-Support
-2021-05-16 20:50:33.740  INFO 1764 --- [ForkJoinPool.commonPool-worker-3] o.j.s.g.FileSystemStorageServiceImpl     : Se cargaron todos los logs a comprimir en el directorio: //Logs-Support
-2021-05-16 20:50:33.764  INFO 1764 --- [ForkJoinPool.commonPool-worker-3] o.j.s.components.ZipFileComponentImpl    : Se ha comprimido con éxito el fichero.
-2021-05-16 20:50:33.764  INFO 1764 --- [ForkJoinPool.commonPool-worker-3] o.j.s.g.FileSystemStorageServiceImpl     : Se comprimieron los archivos de log.
-2021-05-16 20:50:33.775  INFO 1764 --- [ForkJoinPool.commonPool-worker-3] o.j.s.genericservice.SendMailService     : Se inicia servicio de mail para enviar los logs a soporte.
-2021-05-16 20:50:33.842  INFO 1764 --- [ForkJoinPool.commonPool-worker-3] o.j.s.genericservice.SendMailService     : Se añade al correo de soporte los files comprimidos en: src\main\resources\system_files\tempdir\Logs-Temp.zip
-2021-05-16 20:50:46.100  INFO 1764 --- [ForkJoinPool.commonPool-worker-3] o.j.s.genericservice.SendMailService     : Se envió el correo con los logs a soporte.
-2021-05-16 20:50:46.108  INFO 1764 --- [ForkJoinPool.commonPool-worker-3] o.j.s.g.SendLogsToSupportService         : Se envió el correo a soporte correctamente.
-2021-05-16 20:50:46.154  INFO 1764 --- [ForkJoinPool.commonPool-worker-3] o.j.s.g.SendLogsToSupportService         : Se borraron los directorios temporales para los logs.
-2021-05-16 20:52:19.134  INFO 1764 --- [http-nio-8080-exec-1] o.j.s.repositoryservice.PlayerService    : Se han obtenido todos los jugadores de la database.
-2021-05-16 20:52:45.472  INFO 1764 --- [http-nio-8080-exec-4] o.j.s.repositoryservice.PlayerService    : Se obtiene el mayor número de puntos conseguidos.
-2021-05-16 20:52:45.484  INFO 1764 --- [http-nio-8080-exec-4] o.j.s.repositoryservice.PlayerService    : Rocío_0 es uno de los ganadores de la temporada
-2021-05-16 20:52:45.484  INFO 1764 --- [http-nio-8080-exec-4] o.j.s.repositoryservice.PlayerService    : Ángel_0 es uno de los ganadores de la temporada
-2021-05-16 20:52:45.485  INFO 1764 --- [http-nio-8080-exec-4] o.j.s.repositoryservice.SeasonService    : Éxisten usuarios a los que avisar.
-2021-05-16 20:52:45.485  INFO 1764 --- [Jey-Code-BCF1] o.j.s.genericservice.SendMailService     : Se resetea la temporada, se envía aviso a todos los jugadores.
-2021-05-16 20:52:45.499  INFO 1764 --- [http-nio-8080-exec-4] o.j.s.repositoryservice.TeamService      : Se borraron todos los equipos correctamente.
-2021-05-16 20:52:45.522  INFO 1764 --- [http-nio-8080-exec-4] o.j.s.repositoryservice.PlayerService    : Se han reseteado los puntos de todos los jugadores
-2021-05-16 20:52:45.557  INFO 1764 --- [http-nio-8080-exec-4] o.j.s.r.ConcreteMatchService             : Se han borrado todos los partidos de la temporada.
-2021-05-16 20:52:57.483  INFO 1764 --- [Jey-Code-BCF1] o.j.s.genericservice.SendMailService     : Se envío mail de aviso a todos los usuarios.
-2021-05-16 20:57:54.939  INFO 4596 --- [main] org.jeycode.ApplicationRunner            : Starting ApplicationRunner using Java 11.0.6 on LAPTOP-0FVBB724 with PID 4596 (C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI\target\classes started by JAVIER in C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI)
-2021-05-16 20:57:54.948  INFO 4596 --- [main] org.jeycode.ApplicationRunner            : No active profile set, falling back to default profiles: default
-2021-05-16 20:57:56.113  INFO 4596 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-05-16 20:57:56.249  INFO 4596 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 116 ms. Found 5 JPA repository interfaces.
-2021-05-16 20:57:57.146  INFO 4596 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-05-16 20:57:57.149  INFO 4596 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-05-16 20:57:57.149  INFO 4596 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
-2021-05-16 20:57:57.243  INFO 4596 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-05-16 20:57:57.243  INFO 4596 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2242 ms
-2021-05-16 20:57:57.290  INFO 4596 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-05-16 20:57:57.485  INFO 4596 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-05-16 20:57:57.485  INFO 4596 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:f1b9ce0a-b06f-4d3e-94a2-c85ab66ae263'
-2021-05-16 20:57:57.678  INFO 4596 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-05-16 20:57:57.727  INFO 4596 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
-2021-05-16 20:57:57.864  INFO 4596 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2021-05-16 20:57:58.020  INFO 4596 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2021-05-16 20:57:58.828  INFO 4596 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-05-16 20:57:58.828  INFO 4596 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-05-16 20:58:00.359  INFO 4596 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService
-2021-05-16 20:58:00.362  INFO 4596 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'sendMailServiceTaskExecutor'
-2021-05-16 20:58:00.378  INFO 4596 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2021-05-16 20:58:00.674  INFO 4596 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-05-16 20:58:00.690  INFO 4596 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2021-05-16 20:58:00.706  INFO 4596 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2021-05-16 20:58:00.737  INFO 4596 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2021-05-16 20:58:00.987  INFO 4596 --- [main] org.jeycode.ApplicationRunner            : Started ApplicationRunner in 6.582 seconds (JVM running for 7.055)
-2021-05-16 20:58:05.888  INFO 4596 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-05-16 20:58:05.889  INFO 4596 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-05-16 20:58:05.890  INFO 4596 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-05-16 20:58:06.310 ERROR 4596 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-05-16 20:58:06.311 ERROR 4596 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-05-16 20:58:06.311 ERROR 4596 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-05-16 20:58:06.311 ERROR 4596 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Message: 
-2021-05-16 20:58:06.332 ERROR 4596 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-05-16 20:58:06.332 ERROR 4596 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-05-16 20:58:06.333 ERROR 4596 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-05-16 20:58:06.333 ERROR 4596 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Message: 
-2021-05-16 21:36:34.556  INFO 4020 --- [main] org.jeycode.ApplicationRunner            : Starting ApplicationRunner using Java 11.0.6 on LAPTOP-0FVBB724 with PID 4020 (C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI\target\classes started by JAVIER in C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI)
-2021-05-16 21:36:34.559  INFO 4020 --- [main] org.jeycode.ApplicationRunner            : No active profile set, falling back to default profiles: default
-2021-05-16 21:36:35.695  INFO 4020 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-05-16 21:36:35.829  INFO 4020 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 122 ms. Found 5 JPA repository interfaces.
-2021-05-16 21:36:36.777  INFO 4020 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-05-16 21:36:36.789  INFO 4020 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-05-16 21:36:36.790  INFO 4020 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
-2021-05-16 21:36:36.898  INFO 4020 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-05-16 21:36:36.899  INFO 4020 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2281 ms
-2021-05-16 21:36:36.954  INFO 4020 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-05-16 21:36:37.144  INFO 4020 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-05-16 21:36:37.152  INFO 4020 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:650242f1-6c42-44ad-a58d-379419877709'
-2021-05-16 21:36:37.332  INFO 4020 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-05-16 21:36:37.387  INFO 4020 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
-2021-05-16 21:36:37.545  INFO 4020 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2021-05-16 21:36:37.704  INFO 4020 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2021-05-16 21:36:38.459  INFO 4020 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-05-16 21:36:38.469  INFO 4020 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-05-16 21:36:40.131  INFO 4020 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService
-2021-05-16 21:36:40.132  INFO 4020 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'sendMailServiceTaskExecutor'
-2021-05-16 21:36:40.154  INFO 4020 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2021-05-16 21:36:40.450  INFO 4020 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-05-16 21:36:40.452  INFO 4020 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2021-05-16 21:36:40.474  INFO 4020 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2021-05-16 21:36:40.511  INFO 4020 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2021-05-16 21:36:40.777  INFO 4020 --- [main] org.jeycode.ApplicationRunner            : Started ApplicationRunner in 6.675 seconds (JVM running for 7.167)
-2021-05-16 21:36:45.607  INFO 4020 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-05-16 21:36:45.608  INFO 4020 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-05-16 21:36:45.610  INFO 4020 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-05-16 21:36:45.862 ERROR 4020 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-05-16 21:36:45.863 ERROR 4020 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-05-16 21:36:45.863 ERROR 4020 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-05-16 21:36:45.864 ERROR 4020 --- [http-nio-8080-exec-7] o.j.e.ApiErrorAttributes                 : Message: 
-2021-05-16 21:36:45.884 ERROR 4020 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Ha ocurrido un error, obteniendo atributos y mensajes.
-2021-05-16 21:36:45.884 ERROR 4020 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Status: 404
-2021-05-16 21:36:45.884 ERROR 4020 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Throwable: null
-2021-05-16 21:36:45.884 ERROR 4020 --- [http-nio-8080-exec-8] o.j.e.ApiErrorAttributes                 : Message: 
+2021-06-02 18:28:06.668  INFO 18844 --- [main] org.jeycode.ApplicationRunner            : Starting ApplicationRunner using Java 11.0.6 on LAPTOP-0FVBB724 with PID 18844 (C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI\target\classes started by JAVIER in C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI)
+2021-06-02 18:28:06.684  INFO 18844 --- [main] org.jeycode.ApplicationRunner            : No active profile set, falling back to default profiles: default
+2021-06-02 18:28:08.818  INFO 18844 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-02 18:28:09.064  INFO 18844 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 232 ms. Found 5 JPA repository interfaces.
+2021-06-02 18:28:10.269  INFO 18844 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-06-02 18:28:10.282  INFO 18844 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-02 18:28:10.282  INFO 18844 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-06-02 18:28:10.523  INFO 18844 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-02 18:28:10.523  INFO 18844 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3740 ms
+2021-06-02 18:28:10.617  INFO 18844 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-02 18:28:10.993  INFO 18844 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-02 18:28:11.008  INFO 18844 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:55545610-bcc4-461f-aedb-b274f0a64cb9'
+2021-06-02 18:28:11.314  INFO 18844 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-02 18:28:11.413  INFO 18844 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-06-02 18:28:11.686  INFO 18844 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-02 18:28:11.973  INFO 18844 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-06-02 18:28:13.457  INFO 18844 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-02 18:28:13.490  INFO 18844 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-02 18:28:13.564  WARN 18844 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Initialization of bean failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #5 of URL [file:/C:/Users/JAVIER/Desktop/EClipse%20ACTIV/GIT_REPOSITORY/BCF_Project_Backend_RestFullAPI/target/classes/data.sql]: insert into Player_Football_Match (pfm_id,pfm_result,pfm_sign,pfm_bcfgoals,player,match,pfm_matchpoints) values (NEXTVAL('hibernate_sequence'),'2-1',1,2,2,22,0), (NEXTVAL('hibernate_sequence'),'2-2',0,2,3,22,0), (NEXTVAL('hibernate_sequence'),'2-3',2,2,4,22,0), (NEXTVAL('hibernate_sequence'),'3-1',1,3,5,22,0), (NEXTVAL('hibernate_sequence'),'1-1',0,1,6,22,0), (NEXTVAL('hibernate_sequence'),'4-1',1,4,7,22,0), (NEXTVAL('hibernate_sequence'),'0-1',2,0,8,22,0), (NEXTVAL('hibernate_sequence'),'2-0',1,2,9,22,0), (NEXTVAL('hibernate_sequence'),'0-1',2,0,10,22,0), (NEXTVAL('hibernate_sequence'),'2-0',1,2,11,22,0), (NEXTVAL('hibernate_sequence'),'3-4',2,3,12,22,0), (NEXTVAL('hibernate_sequence'),'3-4',2,3,13,22,0), (NEXTVAL('hibernate_sequence'),'3-4',2,3,14,22,0) ; nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "PLAYER" no encontrada
+Column "PLAYER" not found; SQL statement:
+insert into Player_Football_Match (pfm_id,pfm_result,pfm_sign,pfm_bcfgoals,player,match,pfm_matchpoints) values (NEXTVAL('hibernate_sequence'),'2-1',1,2,2,22,0), (NEXTVAL('hibernate_sequence'),'2-2',0,2,3,22,0), (NEXTVAL('hibernate_sequence'),'2-3',2,2,4,22,0), (NEXTVAL('hibernate_sequence'),'3-1',1,3,5,22,0), (NEXTVAL('hibernate_sequence'),'1-1',0,1,6,22,0), (NEXTVAL('hibernate_sequence'),'4-1',1,4,7,22,0), (NEXTVAL('hibernate_sequence'),'0-1',2,0,8,22,0), (NEXTVAL('hibernate_sequence'),'2-0',1,2,9,22,0), (NEXTVAL('hibernate_sequence'),'0-1',2,0,10,22,0), (NEXTVAL('hibernate_sequence'),'2-0',1,2,11,22,0), (NEXTVAL('hibernate_sequence'),'3-4',2,3,12,22,0), (NEXTVAL('hibernate_sequence'),'3-4',2,3,13,22,0), (NEXTVAL('hibernate_sequence'),'3-4',2,3,14,22,0)  [42122-200]
+2021-06-02 18:28:13.580  INFO 18844 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-06-02 18:28:13.580  INFO 18844 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-06-02 18:28:13.580  INFO 18844 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-06-02 18:28:13.611  INFO 18844 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-06-02 18:28:13.642 ERROR 18844 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Initialization of bean failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #5 of URL [file:/C:/Users/JAVIER/Desktop/EClipse%20ACTIV/GIT_REPOSITORY/BCF_Project_Backend_RestFullAPI/target/classes/data.sql]: insert into Player_Football_Match (pfm_id,pfm_result,pfm_sign,pfm_bcfgoals,player,match,pfm_matchpoints) values (NEXTVAL('hibernate_sequence'),'2-1',1,2,2,22,0), (NEXTVAL('hibernate_sequence'),'2-2',0,2,3,22,0), (NEXTVAL('hibernate_sequence'),'2-3',2,2,4,22,0), (NEXTVAL('hibernate_sequence'),'3-1',1,3,5,22,0), (NEXTVAL('hibernate_sequence'),'1-1',0,1,6,22,0), (NEXTVAL('hibernate_sequence'),'4-1',1,4,7,22,0), (NEXTVAL('hibernate_sequence'),'0-1',2,0,8,22,0), (NEXTVAL('hibernate_sequence'),'2-0',1,2,9,22,0), (NEXTVAL('hibernate_sequence'),'0-1',2,0,10,22,0), (NEXTVAL('hibernate_sequence'),'2-0',1,2,11,22,0), (NEXTVAL('hibernate_sequence'),'3-4',2,3,12,22,0), (NEXTVAL('hibernate_sequence'),'3-4',2,3,13,22,0), (NEXTVAL('hibernate_sequence'),'3-4',2,3,14,22,0) ; nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "PLAYER" no encontrada
+Column "PLAYER" not found; SQL statement:
+insert into Player_Football_Match (pfm_id,pfm_result,pfm_sign,pfm_bcfgoals,player,match,pfm_matchpoints) values (NEXTVAL('hibernate_sequence'),'2-1',1,2,2,22,0), (NEXTVAL('hibernate_sequence'),'2-2',0,2,3,22,0), (NEXTVAL('hibernate_sequence'),'2-3',2,2,4,22,0), (NEXTVAL('hibernate_sequence'),'3-1',1,3,5,22,0), (NEXTVAL('hibernate_sequence'),'1-1',0,1,6,22,0), (NEXTVAL('hibernate_sequence'),'4-1',1,4,7,22,0), (NEXTVAL('hibernate_sequence'),'0-1',2,0,8,22,0), (NEXTVAL('hibernate_sequence'),'2-0',1,2,9,22,0), (NEXTVAL('hibernate_sequence'),'0-1',2,0,10,22,0), (NEXTVAL('hibernate_sequence'),'2-0',1,2,11,22,0), (NEXTVAL('hibernate_sequence'),'3-4',2,3,12,22,0), (NEXTVAL('hibernate_sequence'),'3-4',2,3,13,22,0), (NEXTVAL('hibernate_sequence'),'3-4',2,3,14,22,0)  [42122-200]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:610) ~[spring-beans-5.3.4.jar:5.3.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.4.jar:5.3.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.4.jar:5.3.4]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.4.jar:5.3.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.4.jar:5.3.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.4.jar:5.3.4]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1153) ~[spring-context-5.3.4.jar:5.3.4]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:907) ~[spring-context-5.3.4.jar:5.3.4]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:582) ~[spring-context-5.3.4.jar:5.3.4]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.3.jar:2.4.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767) ~[spring-boot-2.4.3.jar:2.4.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) ~[spring-boot-2.4.3.jar:2.4.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426) ~[spring-boot-2.4.3.jar:2.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) ~[spring-boot-2.4.3.jar:2.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311) ~[spring-boot-2.4.3.jar:2.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300) ~[spring-boot-2.4.3.jar:2.4.3]
+	at org.jeycode.ApplicationRunner.main(ApplicationRunner.java:15) ~[classes/:na]
+Caused by: org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #5 of URL [file:/C:/Users/JAVIER/Desktop/EClipse%20ACTIV/GIT_REPOSITORY/BCF_Project_Backend_RestFullAPI/target/classes/data.sql]: insert into Player_Football_Match (pfm_id,pfm_result,pfm_sign,pfm_bcfgoals,player,match,pfm_matchpoints) values (NEXTVAL('hibernate_sequence'),'2-1',1,2,2,22,0), (NEXTVAL('hibernate_sequence'),'2-2',0,2,3,22,0), (NEXTVAL('hibernate_sequence'),'2-3',2,2,4,22,0), (NEXTVAL('hibernate_sequence'),'3-1',1,3,5,22,0), (NEXTVAL('hibernate_sequence'),'1-1',0,1,6,22,0), (NEXTVAL('hibernate_sequence'),'4-1',1,4,7,22,0), (NEXTVAL('hibernate_sequence'),'0-1',2,0,8,22,0), (NEXTVAL('hibernate_sequence'),'2-0',1,2,9,22,0), (NEXTVAL('hibernate_sequence'),'0-1',2,0,10,22,0), (NEXTVAL('hibernate_sequence'),'2-0',1,2,11,22,0), (NEXTVAL('hibernate_sequence'),'3-4',2,3,12,22,0), (NEXTVAL('hibernate_sequence'),'3-4',2,3,13,22,0), (NEXTVAL('hibernate_sequence'),'3-4',2,3,14,22,0) ; nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "PLAYER" no encontrada
+Column "PLAYER" not found; SQL statement:
+insert into Player_Football_Match (pfm_id,pfm_result,pfm_sign,pfm_bcfgoals,player,match,pfm_matchpoints) values (NEXTVAL('hibernate_sequence'),'2-1',1,2,2,22,0), (NEXTVAL('hibernate_sequence'),'2-2',0,2,3,22,0), (NEXTVAL('hibernate_sequence'),'2-3',2,2,4,22,0), (NEXTVAL('hibernate_sequence'),'3-1',1,3,5,22,0), (NEXTVAL('hibernate_sequence'),'1-1',0,1,6,22,0), (NEXTVAL('hibernate_sequence'),'4-1',1,4,7,22,0), (NEXTVAL('hibernate_sequence'),'0-1',2,0,8,22,0), (NEXTVAL('hibernate_sequence'),'2-0',1,2,9,22,0), (NEXTVAL('hibernate_sequence'),'0-1',2,0,10,22,0), (NEXTVAL('hibernate_sequence'),'2-0',1,2,11,22,0), (NEXTVAL('hibernate_sequence'),'3-4',2,3,12,22,0), (NEXTVAL('hibernate_sequence'),'3-4',2,3,13,22,0), (NEXTVAL('hibernate_sequence'),'3-4',2,3,14,22,0)  [42122-200]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:622) ~[spring-jdbc-5.3.4.jar:5.3.4]
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254) ~[spring-jdbc-5.3.4.jar:5.3.4]
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:49) ~[spring-jdbc-5.3.4.jar:5.3.4]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer.runScripts(DataSourceInitializer.java:202) ~[spring-boot-autoconfigure-2.4.3.jar:2.4.3]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer.initSchema(DataSourceInitializer.java:119) ~[spring-boot-autoconfigure-2.4.3.jar:2.4.3]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.onApplicationEvent(DataSourceInitializerInvoker.java:91) ~[spring-boot-autoconfigure-2.4.3.jar:2.4.3]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.onApplicationEvent(DataSourceInitializerInvoker.java:38) ~[spring-boot-autoconfigure-2.4.3.jar:2.4.3]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176) ~[spring-context-5.3.4.jar:5.3.4]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169) ~[spring-context-5.3.4.jar:5.3.4]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143) ~[spring-context-5.3.4.jar:5.3.4]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:420) ~[spring-context-5.3.4.jar:5.3.4]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:377) ~[spring-context-5.3.4.jar:5.3.4]
+	at org.springframework.boot.autoconfigure.orm.jpa.DataSourceInitializedPublisher.publishEventIfRequired(DataSourceInitializedPublisher.java:111) ~[spring-boot-autoconfigure-2.4.3.jar:2.4.3]
+	at org.springframework.boot.autoconfigure.orm.jpa.DataSourceInitializedPublisher.postProcessAfterInitialization(DataSourceInitializedPublisher.java:102) ~[spring-boot-autoconfigure-2.4.3.jar:2.4.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:437) ~[spring-beans-5.3.4.jar:5.3.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790) ~[spring-beans-5.3.4.jar:5.3.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602) ~[spring-beans-5.3.4.jar:5.3.4]
+	... 16 common frames omitted
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "PLAYER" no encontrada
+Column "PLAYER" not found; SQL statement:
+insert into Player_Football_Match (pfm_id,pfm_result,pfm_sign,pfm_bcfgoals,player,match,pfm_matchpoints) values (NEXTVAL('hibernate_sequence'),'2-1',1,2,2,22,0), (NEXTVAL('hibernate_sequence'),'2-2',0,2,3,22,0), (NEXTVAL('hibernate_sequence'),'2-3',2,2,4,22,0), (NEXTVAL('hibernate_sequence'),'3-1',1,3,5,22,0), (NEXTVAL('hibernate_sequence'),'1-1',0,1,6,22,0), (NEXTVAL('hibernate_sequence'),'4-1',1,4,7,22,0), (NEXTVAL('hibernate_sequence'),'0-1',2,0,8,22,0), (NEXTVAL('hibernate_sequence'),'2-0',1,2,9,22,0), (NEXTVAL('hibernate_sequence'),'0-1',2,0,10,22,0), (NEXTVAL('hibernate_sequence'),'2-0',1,2,11,22,0), (NEXTVAL('hibernate_sequence'),'3-4',2,3,12,22,0), (NEXTVAL('hibernate_sequence'),'3-4',2,3,13,22,0), (NEXTVAL('hibernate_sequence'),'3-4',2,3,14,22,0)  [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.table.Table.getColumn(Table.java:703) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parseColumn(Parser.java:1450) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parseColumnList(Parser.java:1435) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parseInsertGivenTable(Parser.java:1804) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parseInsert(Parser.java:1749) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parsePrepared(Parser.java:954) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parse(Parser.java:843) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parse(Parser.java:815) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.prepareCommand(Parser.java:738) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.Session.prepareLocal(Session.java:657) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.Session.prepareCommand(Session.java:595) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201) ~[h2-1.4.200.jar:1.4.200]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.4.5.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.4.5.jar:na]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:601) ~[spring-jdbc-5.3.4.jar:5.3.4]
+	... 32 common frames omitted
+
+2021-06-02 18:28:45.480  INFO 9488 --- [main] org.jeycode.ApplicationRunner            : Starting ApplicationRunner using Java 11.0.6 on LAPTOP-0FVBB724 with PID 9488 (C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI\target\classes started by JAVIER in C:\Users\JAVIER\Desktop\EClipse ACTIV\GIT_REPOSITORY\BCF_Project_Backend_RestFullAPI)
+2021-06-02 18:28:45.488  INFO 9488 --- [main] org.jeycode.ApplicationRunner            : No active profile set, falling back to default profiles: default
+2021-06-02 18:28:47.505  INFO 9488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-02 18:28:47.777  INFO 9488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 253 ms. Found 5 JPA repository interfaces.
+2021-06-02 18:28:49.159  INFO 9488 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-06-02 18:28:49.180  INFO 9488 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-02 18:28:49.182  INFO 9488 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-06-02 18:28:49.433  INFO 9488 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-02 18:28:49.434  INFO 9488 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3844 ms
+2021-06-02 18:28:49.520  INFO 9488 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-02 18:28:49.900  INFO 9488 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-02 18:28:49.913  INFO 9488 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:9d3ca1e2-ba5e-4052-82f8-89413caf7b93'
+2021-06-02 18:28:50.193  INFO 9488 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-02 18:28:50.301  INFO 9488 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-06-02 18:28:50.577  INFO 9488 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-02 18:28:50.851  INFO 9488 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-06-02 18:28:52.359  INFO 9488 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-02 18:28:52.378  INFO 9488 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-02 18:28:54.161  INFO 9488 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService
+2021-06-02 18:28:54.163  INFO 9488 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'sendMailServiceTaskExecutor'
+2021-06-02 18:28:54.196  INFO 9488 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-06-02 18:28:54.740  INFO 9488 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-02 18:28:54.741  INFO 9488 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-06-02 18:28:54.803  INFO 9488 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-06-02 18:28:54.872  INFO 9488 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-06-02 18:28:55.080  INFO 9488 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-06-02 18:28:55.366  INFO 9488 --- [main] org.jeycode.ApplicationRunner            : Started ApplicationRunner in 10.734 seconds (JVM running for 20.209)
+2021-06-02 18:28:55.925  INFO 9488 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'sendMailServiceTaskExecutor'
+2021-06-02 18:28:55.939  INFO 9488 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-02 18:28:55.940  INFO 9488 --- [RMI TCP Connection(2)-127.0.0.1] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-06-02 18:28:55.957  INFO 9488 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-06-02 18:28:55.965  INFO 9488 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

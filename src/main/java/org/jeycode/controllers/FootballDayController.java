@@ -51,7 +51,7 @@ public class FootballDayController implements ControllerUtils
                              @ApiResponse(code = CODE_400, message = ERR_400 + DEFAULT_ERROR_JSON_RESPONSE),
                              @ApiResponse(code = CODE_500, message = ERR_500 + DEFAULT_ERROR_JSON_RESPONSE)})
       @GetMapping
-      public ResponseEntity<?> getFootballDayData(@ApiParam(value = BET_GET_DESC) @RequestParam(name = FT_DAY_TYPE_OF_DATA_PARAM,
+      public ResponseEntity<?> getFootballDayData(@ApiParam( defaultValue = ZERO_DFLT_VALUE,value = BET_GET_DESC,allowableValues = PLAYERS_GET_ALOWABLES_VALUES) @RequestParam(name = FT_DAY_TYPE_OF_DATA_PARAM,
             required = false, defaultValue = ZERO_DFLT_VALUE) int typeOfData)
       {
             return footballDayService.getFootballDayData(typeOfData);
